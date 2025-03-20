@@ -16,6 +16,9 @@ interface FilterBarProps {
   selectedClasses: string[];
   toggleClasseFilter: (classe: string) => void;
   classesMagia: string[];
+  selectedSources: string[];
+  toggleSourceFilter: (source: string) => void;
+  availableSources: {id: string; fileName: string}[];
   limparFiltros: () => void;
 }
 
@@ -34,6 +37,8 @@ interface FiltrosAplicadosProps {
   toggleEscolaFilter: (escola: string) => void;
   selectedClasses: string[];
   toggleClasseFilter: (classe: string) => void;
+  selectedSources: string[];
+  toggleSourceFilter: (source: string) => void;
   limparFiltros: () => void;
 }
 
@@ -52,6 +57,9 @@ interface FiltrosAvancadosProps {
   selectedClasses: string[];
   toggleClasseFilter: (classe: string) => void;
   classesMagia: string[];
+  selectedSources: string[];
+  toggleSourceFilter: (source: string) => void;
+  availableSources: {id: string; fileName: string}[];
   totalFiltrosAplicados: number;
   limparFiltros: () => void;
 }
@@ -80,6 +88,9 @@ export function FilterBar({
   selectedClasses,
   toggleClasseFilter,
   classesMagia,
+  selectedSources,
+  toggleSourceFilter,
+  availableSources,
   limparFiltros,
 }: FilterBarProps) {
   const [filtrosAvancadosOpen, setFiltrosAvancadosOpen] = useState(false);
@@ -87,9 +98,10 @@ export function FilterBar({
 
   // Verificar quantos filtros estão aplicados
   useEffect(() => {
-    const total = selectedNiveis.length + selectedEscolas.length + selectedClasses.length;
+    const total = selectedNiveis.length + selectedEscolas.length + selectedClasses.length + 
+      (selectedSources.length > 1 || (selectedSources.length === 1 && selectedSources[0] !== 'PHB') ? selectedSources.length : 0);
     setTotalFiltrosAplicados(total);
-  }, [selectedNiveis, selectedEscolas, selectedClasses]);
+  }, [selectedNiveis, selectedEscolas, selectedClasses, selectedSources]);
 
   // Lista de níveis de magia (0-9)
   const niveis = Array.from({ length: 10 }, (_, i) => i);
@@ -116,6 +128,8 @@ export function FilterBar({
             toggleEscolaFilter={toggleEscolaFilter}
             selectedClasses={selectedClasses}
             toggleClasseFilter={toggleClasseFilter}
+            selectedSources={selectedSources}
+            toggleSourceFilter={toggleSourceFilter}
             limparFiltros={limparFiltros}
           />
         )}
@@ -132,6 +146,9 @@ export function FilterBar({
             selectedClasses={selectedClasses}
             toggleClasseFilter={toggleClasseFilter}
             classesMagia={classesMagia}
+            selectedSources={selectedSources}
+            toggleSourceFilter={toggleSourceFilter}
+            availableSources={availableSources}
             totalFiltrosAplicados={totalFiltrosAplicados}
             limparFiltros={limparFiltros}
           />
@@ -194,7 +211,9 @@ function FiltrosAplicados({
   selectedEscolas, 
   toggleEscolaFilter, 
   selectedClasses, 
-  toggleClasseFilter, 
+  toggleClasseFilter,
+  selectedSources,
+  toggleSourceFilter,
   limparFiltros 
 }: FiltrosAplicadosProps) {
   return (
@@ -222,6 +241,14 @@ function FiltrosAplicados({
           key={`classe-${classe}`}
           label={classe}
           onRemove={() => toggleClasseFilter(classe)}
+        />
+      ))}
+      
+      {selectedSources.map((source: string) => (
+        <FilterTag 
+          key={`source-${source}`}
+          label={`Fonte: ${source}`}
+          onRemove={() => toggleSourceFilter(source)}
         />
       ))}
       
@@ -259,6 +286,9 @@ function FiltrosAvancados({
   selectedClasses,
   toggleClasseFilter,
   classesMagia,
+  selectedSources,
+  toggleSourceFilter,
+  availableSources,
   totalFiltrosAplicados,
   limparFiltros
 }: FiltrosAvancadosProps) {
@@ -268,7 +298,7 @@ function FiltrosAvancados({
         <p className="text-sm text-purple-300">Selecione múltiplas opções em cada categoria para filtrar as magias</p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Filtro por nível */}
         <FilterSection 
           title="Nível da Magia"
@@ -305,12 +335,28 @@ function FiltrosAvancados({
           title="Classes"
           layout="list"
         >
-          {classesMagia.map((classe: string) => (
+          {classesMagia.map((classe, index) => (
             <ToggleButton
-              key={classe}
+              key={`classe-${classe}-${index}`}
               label={classe}
               isSelected={selectedClasses.includes(classe)}
               onClick={() => toggleClasseFilter(classe)}
+              layout="list"
+            />
+          ))}
+        </FilterSection>
+        
+        {/* Filtro por fonte */}
+        <FilterSection 
+          title="Fontes"
+          layout="list"
+        >
+          {availableSources.map((source) => (
+            <ToggleButton
+              key={source.id}
+              label={source.id}
+              isSelected={selectedSources.includes(source.id)}
+              onClick={() => toggleSourceFilter(source.id)}
               layout="list"
             />
           ))}

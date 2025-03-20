@@ -253,8 +253,8 @@ export function MagiaDetalhes({ magia, onClose }: MagiaDetalhesProps) {
                 <div>
                   <h3 className="text-amber-200 font-medium">Classes</h3>
                   <div className="flex flex-wrap gap-1 mt-1">
-                    {classes.map(classe => (
-                      <span key={classe} className="px-2 py-0.5 text-xs rounded-full bg-purple-800/40 border border-purple-500/20 text-amber-300/80">
+                    {classes.map((classe, index) => (
+                      <span key={`${classe}-${index}`} className="px-2 py-0.5 text-xs rounded-full bg-purple-800/40 border border-purple-500/20 text-amber-300/80">
                         {classe}
                       </span>
                     ))}

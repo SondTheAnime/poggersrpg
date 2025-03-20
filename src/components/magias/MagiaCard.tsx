@@ -80,8 +80,8 @@ export function MagiaCard({ magia, onModalOpen, onModalClose }: MagiaCardProps) 
           <div className="mb-3">
             <p className="text-xs text-purple-300/70 mb-1">Classes:</p>
             <div className="flex flex-wrap gap-1">
-              {classesUnicas.map(classe => (
-                <span key={classe} className="px-2 py-0.5 text-xs rounded-full bg-purple-800/40 border border-purple-500/20 text-amber-300/80">
+              {classesUnicas.map((classe, index) => (
+                <span key={`${classe}-${index}`} className="px-2 py-0.5 text-xs rounded-full bg-purple-800/40 border border-purple-500/20 text-amber-300/80">
                   {classe}
                 </span>
               ))}
