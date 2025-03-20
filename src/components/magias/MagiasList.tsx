@@ -2,7 +2,7 @@ import { SpellData } from "@/types/spell";
 import { MagiaCard } from "./MagiaCard";
 import { NoSpellsFound } from "./NoSpellsFound";
 import { Pagination } from "./Pagination";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 interface MagiasListProps {
   magias: SpellData[];
@@ -24,7 +24,7 @@ export function MagiasList({ magias, onModalOpen, onModalClose }: MagiasListProp
   }, [magias, currentPage, itemsPerPage]);
 
   // Redefinir para a primeira página quando os filtros mudam
-  useMemo(() => {
+  useEffect(() => {
     setCurrentPage(1);
   }, [magias.length]);
 

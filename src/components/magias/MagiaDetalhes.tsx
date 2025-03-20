@@ -206,14 +206,14 @@ export function MagiaDetalhes({ magia, onClose }: MagiaDetalhesProps) {
                   {verbal && <span className="px-2 py-0.5 text-xs rounded-full bg-amber-900/30 border border-amber-500/30 text-amber-300">Verbal (V)</span>}
                   {somatico && <span className="px-2 py-0.5 text-xs rounded-full bg-amber-900/30 border border-amber-500/30 text-amber-300">Somático (S)</span>}
                   {material && (
-                    <span className="px-2 py-0.5 text-xs rounded-full bg-amber-900/30 border border-amber-500/30 text-amber-300">
-                      Material (M)
+                    <>
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-amber-900/30 border border-amber-500/30 text-amber-300">Material (M)</span>
                       {typeof material === 'string' && (
-                        <span className="block mt-1 text-purple-200 text-xs">
+                        <div className="w-full mt-2 bg-purple-900/40 px-3 py-2 rounded border border-purple-500/30 text-purple-100 text-sm">
                           {material}
-                        </span>
+                        </div>
                       )}
-                    </span>
+                    </>
                   )}
                 </div>
               </div>

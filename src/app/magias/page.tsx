@@ -6,7 +6,7 @@ import { BackgroundEffects } from "@/components/magias/BackgroundEffects";
 import { MagiasHeader } from "@/components/magias/MagiasHeader";
 import { FilterBar } from "@/components/magias/FilterBar";
 import { MagiasList } from "@/components/magias/MagiasList";
-import { ApiDevMessage } from "@/components/magias/ApiDevMessage";
+// import { ApiDevMessage } from "@/components/magias/ApiDevMessage";
 import { Footer } from "@/components/magias/Footer";
 import { MagiasLoading } from "@/components/magias/MagiasLoading";
 
@@ -164,9 +164,9 @@ export default function MagiasPage() {
           />
           
           {/* Mensagem de desenvolvimento */}
-          <div className="mt-12">
+          {/* <div className="mt-12">
             <ApiDevMessage />
-          </div>
+          </div> */}
         </div>
       </div>
 
