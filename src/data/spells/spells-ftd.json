@@ -1,0 +1,449 @@
+{
+  "spell": [
+    {
+      "name": "Ashardalon's Stride",
+      "source": "FTD",
+      "page": 19,
+      "level": 3,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "As chamas onduladas de uma explosão de dragão de seus pés, concedendo velocidade explosiva. Durante a duração, sua velocidade aumenta em 20 pés e a mudança não provoca ataques de oportunidade.",
+        "Quando você se move a um metro e meio de uma criatura ou um objeto que não está sendo usado ou transportado, é preciso dano de incêndio {@damage 1d6} da sua trilha de calor. Uma criatura ou objeto pode sofrer esse dano apenas uma vez durante um turno."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um feitiço do 4º nível ou superior, aumente sua velocidade em 5 pés para cada nível de feitiço acima do 3º. O feitiço trata de um {@ScaledAdamage 1d6 | 3-9 | 1d6} dano de incêndio para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "miscTags": [
+        "Obj"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Draconic Transformation",
+      "source": "FTD",
+      "page": 19,
+      "level": 7,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a statuette of a dragon, worth at least 500 gp",
+          "cost": 50000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Com um rugido, você se baseia na magia dos dragões para se transformar, assumindo recursos dracônicos. Você obtém os seguintes benefícios até que o feitiço termine:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Blindsight",
+              "entries": [
+                "You have {@sense blindsight} with a range of 30 feet. Within that range, you can effectively see anything that isn't behind {@quickref Cover||3||total cover}, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature, unless the creature successfully hides from you."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Breath Weapon",
+              "entries": [
+                "When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, taking {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Wings",
+              "entries": [
+                "Incorporeal wings sprout from your back, giving you a flying speed of 60 feet."
+              ]
+            }
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "SGT",
+        "Uba"
+      ]
+    },
+    {
+      "name": "Fizban's Platinum Shield",
+      "source": "FTD",
+      "page": 20,
+      "level": 6,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a platinum-plated dragon scale, worth at least 500 gp",
+          "cost": 50000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria um campo de luz prateada que envolve uma criatura de sua escolha dentro do alcance (você pode escolher você mesmo). O campo lança luz escurecida para 5 pés. Enquanto cercado pelo campo, uma criatura ganha os seguintes benefícios:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Cover",
+              "entries": [
+                "The creature has {@quickref Cover||3||half cover}."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Damage Resistance",
+              "entries": [
+                "The creature has resistance to acid, cold, fire, lightning, and poison damage."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Evasion",
+              "entries": [
+                "If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+              ]
+            }
+          ]
+        },
+        "Como uma ação de bônus nas voltas subsequentes, você pode mover o campo para outra criatura dentro de 60 pés do campo."
+      ],
+      "miscTags": [
+        "Uba"
+      ]
+    },
+    {
+      "name": "Nathair's Mischief",
+      "source": "FTD",
+      "page": 20,
+      "level": 2,
+      "school": "Ilusão",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "a piece of crust from an apple pie"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você preenche um cubo de 20 pés que pode ver ao alcance da magia Fey e Draconic. Role sobre a mesa de surto travessa para determinar o efeito mágico produzido e role novamente no início de cada uma das suas curvas até que o feitiço termine. Você pode mover o cubo até 10 pés antes de rolar.",
+        {
+          "type": "table",
+          "caption": "Mischievous Surge",
+          "colLabels": [
+            "d4",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1",
+              "The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become {@condition charmed} by you until the start of your next turn."
+            ],
+            [
+              "2",
+              "Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be {@condition blinded} until the start of your next turn as the flowers spray water in their faces."
+            ],
+            [
+              "3",
+              "Each creature in the cube must succeed on a Wisdom saving throw or begin giggling until the start of your next turn. A giggling creature is {@condition incapacitated} and uses all its movement to move in a random direction."
+            ],
+            [
+              "4",
+              "Drops of molasses hover in the cube, making it {@quickref difficult terrain||3} until the start of your next turn."
+            ]
+          ]
+        }
+      ],
+      "savingThrow": [
+        "destreza",
+        "sabedoria"
+      ],
+      "miscTags": [
+        "Ro",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Raulothim's Psychic Lance",
+      "source": "FTD",
+      "page": 21,
+      "level": 4,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você libera uma lança cintilante de poder psíquico da sua testa em uma criatura que você pode ver ao alcance. Como alternativa, você pode pronunciar o nome de uma criatura. Se o alvo nomeado estiver dentro do intervalo, ele se tornará o alvo do feitiço, mesmo que você não possa vê -lo. Se o alvo nomeado não estiver dentro do intervalo, a lança se dissipa sem efeito.",
+        "O alvo deve fazer um lance de economia de inteligência. Em um salvamento falhado, o alvo leva {@damage 7d6} dano psíquico e é {@condition incapacitado} até o início do seu próximo turno. Em um salvamento bem -sucedido, a criatura leva metade do dano e não é {@condition incapacitada}."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 5º nível ou superior, o dano aumenta em {@ScaledAmage 7d6 | 4-9 | 1d6} para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "conditionInflict": [
+        "incapacitado"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Rime's Binding Ice",
+      "source": "FTD",
+      "page": 21,
+      "level": 2,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "a vial of meltwater"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma explosão de energia fria emana de você em um cone de 30 pés. Cada criatura nessa área deve fazer um lance de economia de constituição. Em uma defesa fracassada, uma criatura leva {@damage 3d8} dano frio e é prejudicada por formações de gelo por 1 minuto, ou até que ela ou outra criatura ao alcance use uma ação para quebrar o gelo. Uma criatura prejudicada pelo gelo reduz a velocidade para 0. Em uma defesa bem -sucedida, uma criatura leva metade da dano e não é prejudicada pelo gelo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 3º nível ou superior, aumente o dano ao frio por {@ScaledAmage 3d8 | 2-9 | 1d8} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "frio"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "areaTags": [
+        "N"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Summon Draconic Spirit",
+      "source": "FTD",
+      "page": 21,
+      "reprintedAs": [
+        "Invocar Dragão | XPHB"
+      ],
+      "level": 5,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an object with the image of a dragon engraved on it, worth at least 500 gp",
+          "cost": 50000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um {@creature draconic Spirit | ftd}. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Esta forma corporal usa o Draconic Spirit Stat Block. Quando você lançar esse feitiço, escolha uma família de dragão: cromático, jóia ou metálico. A criatura se assemelha a um dragão da família escolhida, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 6º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "spell": [
+    {
+      "name": "Gate Seal",
+      "source": "SatO",
+      "page": 12,
+      "level": 4,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a broken portal key, which the spell consumes",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 24
+          }
+        }
+      ],
+      "entries": [
+        "Você fortifica o tecido dos aviões em um cubo de 30 pés que pode ver ao alcance. Nessa área, os portais fecham e não podem ser abertos durante o período. Feitiços e outros efeitos que permitem viagens planas ou portais abertos, como {@Spell Gate} ou {@Spell Plane Shift}, falham se usados ​​para entrar ou sair da área. O cubo está estacionário."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 6º nível ou superior, o feitiço dura até se dissipar."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Warp Sense",
+      "source": "SatO",
+      "page": 12,
+      "level": 2,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a razorvine leaf"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Durante o período, você sente a presença de portais, mesmo os inativos, a 30 metros de si mesmo.",
+        "Se você detectar um portal dessa maneira, poderá usar sua ação para estudá -la. Faça uma verificação de habilidade {@DC 15} usando sua capacidade de classificação. Em uma verificação bem -sucedida, você aprende o plano de destino do portal e qual chave de portal necessária, o feitiço termina. Em uma verificação fracassada, você não aprende nada e não pode estudar esse portal novamente usando esse feitiço até lançá -lo novamente.",
+        "O feitiço pode penetrar na maioria das barreiras, mas é bloqueado por 1 pé de pedra, 1 polegada de metal comum, uma folha fina de chumbo ou 3 pés de madeira ou sujeira."
+      ]
+    }
+  ]
+}

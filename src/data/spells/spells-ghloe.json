@@ -1,0 +1,300 @@
+{
+  "spell": [
+    {
+      "name": "Arboreal Curse",
+      "source": "GHLoE",
+      "level": 7,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a cup of sap"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você tenta transformar uma criatura que pode ver ao alcance da madeira. Se o corpo do alvo for feito de carne, a criatura deve fazer um lance de economia de constituição. Em um salvamento falhado, é {@condition restrito} quando sua carne começa a endurecer na casca. Em uma defesa bem -sucedida, a criatura não é afetada.",
+        "Uma criatura {@condition restrita} por esse feitiço deve fazer outro arremesso de economia de constituição no final de cada uma de suas curvas. Se salvar com sucesso contra esse feitiço três vezes, o feitiço termina. Se falhar seu arremesso de economia de constituição três vezes, ele será transformado em uma árvore e submetido à condição {@condition petrificada} para a duração. Os sucessos e falhas não precisam ser consecutivos; Acompanhe ambos até que o alvo coleta três do tipo.",
+        "Se a criatura transformada for queimada, cortada ou destruída de outra forma enquanto {@condition petrificou}, a criatura é morta.",
+        "Uma criatura permanece transformada, a menos que o efeito seja revertido dentro de um ano com {@Spell Greater Restoration}, {@Spell Wish} ou efeitos mágicos semelhantes. Se a criatura gasta um ano e um dia como uma árvore, a transformação se torna permanente e nada pode devolver a criatura à sua forma original."
+      ],
+      "conditionInflict": [
+        "petrificado",
+        "contido"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Prm",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Consume Mind",
+      "source": "GHLoE",
+      "level": 4,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a 1-ounce fresh or magically preserved portion of another creature's brain"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você consome o cérebro do cadáver de outra criatura, ganhando suas memórias e conhecimentos. O cadáver deve ter um cérebro e não pode ser morto -vivo. O feitiço falha se o cadáver estiver morto (e não preservado) por mais de três dias.",
+        "Até que o feitiço termine, você pode tentar lembrar qualquer fato importante conhecido pela criatura - história da família, eventos recentes, criando layouts, senhas, detalhes da morte da criatura e informações semelhantes. Para lembrar uma informação, você deve fazer uma verificação de habilidade usando o seu modificador de conjuração. O DC é igual à pontuação de inteligência do cadáver.",
+        "Uma vez que o lançador rola para determinar se eles se lembram de um fato, eles não podem tentar recordá -lo novamente."
+      ]
+    },
+    {
+      "name": "Heartseeker",
+      "source": "GHLoE",
+      "level": 6,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 91
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a ruby worth at least 100 gp",
+          "cost": 10000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Como parte do lançamento deste feitiço, você deve gastar seis dados de acerto ou o feitiço falha automaticamente. Quando você faz, o sangue flui do seu corpo e depois cristaliza em uma seta farpada, que é lançada em uma criatura de sua escolha dentro do alcance. Faça um ataque de feitiço à distância contra a criatura escolhida. Em um golpe, role os dados de sucesso gastos para lançar esse feitiço, e a criatura sofre dano penetrante igual ao resultado.",
+        "Uma vez alojado na criatura, a flecha sangrenta começa a se escavar em direção ao seu coração, tornando -a vulnerável a novos ataques. No início do próximo turno da criatura, ela deve fazer um lance de economia de constituição. Em um fracasso, ataques contra a criatura pontuam acertos críticos em 19 ou 20 no rolo de ataque.",
+        "No início de cada uma das voltas da criatura, ele deve repetir o arremesso de economia da Constituição ou o intervalo crítico de ataques contra ataques contra a criatura aumenta em 1 novamente. Se a criatura for bem -sucedida em três desses arremessos de economia (esses sucessos não precisam ser consecutivos), esse feitiço termina. O aumento da faixa crítica de acerto termina quando o feitiço acontece."
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "constituição"
+      ]
+    },
+    {
+      "name": "Hunter Sense",
+      "source": "GHLoE",
+      "level": 0,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você toca em uma criatura disposta. Embora esse feitiço esteja ativo, os sentidos do alvo são aumentados. Se o alvo rolar um 9 ou abaixo do dado ao fazer uma sabedoria ({@skill percepção}), verifique, eles agem como se rolassem um 10."
+      ]
+    },
+    {
+      "name": "Magic Mirror",
+      "source": "GHLoE",
+      "level": 5,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reação",
+          "condition": "que você toma quando é alvo de um feitiço"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a polished silver marble"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma bolha momentânea de energia iridescente brilha no ar entre você e o lançador do feitiço de gatilho. O feitiço é redirecionado para uma criatura de sua escolha que você pode ver em 60 pés. Se o feitiço for o 5º nível ou inferior, você não é mais um alvo do feitiço e a criatura escolhida é. Se o feitiço for o 6º nível ou superior, faça uma verificação de habilidade usando sua capacidade de classificação. O DC é igual a 10 + o nível do feitiço. Em uma verificação bem -sucedida, você não é mais um alvo do feitiço e a criatura escolhida é. Em uma verificação fracassada, você continua sendo o alvo do feitiço de disparo."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Suffocate",
+      "source": "GHLoE",
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a leather glove"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria um par de mãos agarradas feitas de forças {@condition invisible}. Faça um ataque de feitiço contra uma criatura que você pode ver ao alcance. Em um golpe, a criatura é {@condition restrita}, pois as mãos esmagam sua garganta ou equivalentes corporais.",
+        "Se a criatura exigir o ar para respirar, ela começa a sufocar. Uma criatura sufocante pode sobreviver por várias rodadas iguais a 1 + seu modificador de constituição (mínimo de 1 rodada). No início de seu próximo turno, depois que essas rodadas terminarem, ela se torna {@condition inconsciente} e não pode recuperar pontos de acertar até que possa respirar novamente.",
+        "Uma criatura consciente {@condition restrita} pelas mãos pode usar sua ação para fazer uma verificação de força ou destreza (sua escolha) contra o seu feitiço Save DC. Em um sucesso, o feitiço termina no alvo."
+      ],
+      "conditionInflict": [
+        "invisível",
+        "contido",
+        "inconsciente"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Wrack",
+      "source": "GHLoE",
+      "level": 2,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a frayed piece of cord"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Escolha uma criatura que você possa ver dentro do intervalo. O alvo deve ter sucesso em um arremesso de economia de constituição ou ser atingido por espasmos musculares excruciantes durante o período. Uma criatura afetada dessa maneira tem sua velocidade reduzida pela metade e rola ataques com desvantagem. No final de cada uma de suas curvas, o alvo pode fazer outro arremesso de economia de constituição. Em um sucesso, o feitiço termina no alvo."
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    }
+  ]
+}

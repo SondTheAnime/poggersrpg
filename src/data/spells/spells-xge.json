@@ -1,0 +1,5781 @@
+{
+  "spell": [
+    {
+      "name": "Abi-Dalzim's Horrid Wilting",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 8,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a bit of sponge"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você desenha a umidade de todas as criaturas em um cubo de 30 pés centrado em um ponto que você escolhe dentro do alcance. Cada criatura nessa área deve fazer um lance de economia de constituição. Construções e mortos -vivos não são afetados, e as plantas e os elementares da água fazem com que esse lance salvador com desvantagem. Uma criatura leva {@damage 12d8} dano necrótico em um salvamento falhado ou na metade do dano em um bem -sucedido.",
+        "Plantas não mágicas na área que não são criaturas, como árvores e arbustos, murcharam e morrem instantaneamente."
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "affectsCreatureType": [
+        "aberração",
+        "besta",
+        "celestial",
+        "dragão",
+        "elementar",
+        "Fey",
+        "demônio",
+        "gigante",
+        "humanóide",
+        "monstruosidade",
+        "ooze",
+        "plantar"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Absorb Elements",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 1,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reação",
+          "condition": "que você toma quando toma danos ácidos, frios, fogo, raios ou trovões"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "O feitiço captura parte da energia de entrada, diminuindo seu efeito sobre você e armazenando -o para o seu próximo ataque corpo a corpo. Você tem resistência ao tipo de dano desencadeador até o início do seu próximo turno. Além disso, a primeira vez que você acerta com um ataque corpo a corpo no seu próximo turno, o alvo recebe um dano extra {@damage 1d6} do tipo de disparo e o feitiço termina."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano extra aumenta em {@ScaledAdamage 1d6 | 1-9 | 1d6} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageResist": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "trovão"
+      ]
+    },
+    {
+      "name": "Aganazzar's Scorcher",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 2,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a red dragon's scale"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma linha de chama rugindo de 30 pés de comprimento e 5 pés de largura emana de você em uma direção que você escolher. Cada criatura na linha deve fazer um arremesso de economia de destreza. Uma criatura leva {@damage 3d8} dano de incêndio em uma defesa falhada ou na metade da dano em um bem -sucedido."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o dano aumenta em {@ScaledAdamage 3d8 | 2-9 | 1d8} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "L"
+      ]
+    },
+    {
+      "name": "Beast Bond",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 1,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a bit of fur wrapped in a cloth"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você estabelece um link telepático com uma besta que você toca que é amigável com você ou {@condition encantado} por você. O feitiço falha se a pontuação de inteligência da besta for 4 ou mais. Até que o feitiço termine, o link está ativo enquanto você e a besta estão na linha de vista um do outro. Através do link, a besta pode entender suas mensagens telepáticas e pode comunicar telepaticamente emoções e conceitos simples de volta a você. Enquanto o link está ativo, a besta ganha vantagem nos rolos de ataque contra qualquer criatura a um metro e meio de você que você pode ver."
+      ],
+      "conditionInflict": [
+        "Encantado"
+      ],
+      "affectsCreatureType": [
+        "besta"
+      ],
+      "miscTags": [
+        "Adv",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Bones of the Earth",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você causa até seis pilares de pedra explodir em lugares no chão que pode ver ao alcance. Cada pilar é um cilindro que tem um diâmetro de 5 pés e uma altura de até 30 pés. O solo onde um pilar aparece deve ser largo o suficiente para o seu diâmetro, e você pode atingir o solo sob uma criatura se essa criatura for médio ou menor. Cada pilar tem pontos de vida CA 5 e 30. Quando reduzido para 0 pontos de acertar, um pilar desmorona em escombros, que cria uma área de {@quickref Terrain Difícil || 3} com um raio de 10 pés que dura até que os escombros sejam limpos. Cada parte de 5 pés de diâmetro da área requer pelo menos 1 minuto para limpar manualmente.",
+        "Se um pilar for criado sob uma criatura, essa criatura deve ter sucesso em um arremesso de economia de destreza ou ser levantada pelo pilar. Uma criatura pode optar por falhar no salvamento.",
+        "Se um pilar for impedido de atingir toda a sua altura por causa de um teto ou outro obstáculo, uma criatura no pilar leva {@damage 6d6} dano de espancamento e é {@condition restrito}, apertado entre o pilar e o obstáculo. A criatura {@condition restrita} pode usar uma ação para fazer uma verificação de força ou destreza (a escolha da criatura) contra o Save DC do feitiço. Em um sucesso, a criatura não é mais {@condition restrita} e deve sair do pilar ou cair."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 7º nível ou superior, você pode criar dois pilares adicionais para cada nível de slot acima do 6º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "abilityCheck": [
+        "força",
+        "destreza"
+      ],
+      "miscTags": [
+        "Dft",
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Catapult",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 15
+        }
+      ],
+      "level": 1,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Escolha um objeto pesando 1 a 5 libras dentro do alcance que não esteja sendo usado ou transportado. O objeto voa em uma linha reta de até 90 pés em uma direção que você escolhe antes de cair no chão, parando cedo se isso afetar uma superfície sólida. Se o objeto atingir uma criatura, essa criatura deve fazer um arremesso de economia de destreza. Em um salvamento falhado, o objeto atinge o alvo e para de se mover. Quando o objeto atinge alguma coisa, o objeto e o que atinge cada um sofre de dano {@damage 3d8}."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o peso máximo dos objetos que você pode atingir com esse feitiço aumenta em 5 libras, e o dano aumenta em {@ScaledAdamage 3d8 | 1-9 | 1d8}, para cada nível de slot acima de 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "Obj"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Catnap",
+      "source": "XGE",
+      "page": 151,
+      "level": 3,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "a pinch of sand"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          }
+        }
+      ],
+      "entries": [
+        "Você faz um gesto calmante e até três criaturas dispostas de sua escolha que você pode ver dentro do intervalo de queda {@condition inconsciente} para a duração do feitiço. O feitiço termina em um alvo mais cedo se sofrer dano ou alguém usa uma ação para agitar ou dar um tapa em acordado. Se um alvo permanecer inconsciente {@condition} por toda a duração, esse alvo ganha o benefício de um breve descanso e não poderá ser afetado por esse feitiço novamente até terminar um longo descanso."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, você pode atingir uma criatura disposta adicional para cada nível de slot acima do terceiro."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "inconsciente"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Cause Fear",
+      "source": "XGE",
+      "page": 151,
+      "level": 1,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você despertou o senso de mortalidade em uma criatura que pode ver ao alcance. Um construto ou morto -vivo é imune a esse efeito. O alvo deve ter sucesso em um arremesso de economia de sabedoria ou se tornar {@condition assustado} de você até que o feitiço termine. O alvo {@condition assustado} pode repetir o arremesso de economia no final de cada uma de suas curvas, encerrando o efeito em si mesmo em um sucesso."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do primeiro. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "com medo"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "affectsCreatureType": [
+        "aberração",
+        "besta",
+        "celestial",
+        "dragão",
+        "elementar",
+        "Fey",
+        "demônio",
+        "gigante",
+        "humanóide",
+        "monstruosidade",
+        "ooze",
+        "plantar"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Ceremony",
+      "source": "XGE",
+      "page": 151,
+      "level": 1,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "25 gp worth of powdered silver, which the spell consumes",
+          "cost": 2500,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "Você realiza uma cerimônia religiosa especial que é infundida com magia. Quando você lançar o feitiço, escolha um dos seguintes ritos, cujo alvo deve estar a 10 metros de você durante todo o elenco.",
+        {
+          "type": "entries",
+          "name": "Expiação",
+          "entries": [
+            "Você toca em uma criatura disposta cujo alinhamento mudou e faz uma verificação {@dc 20} ({@skill insight}). Em uma verificação bem -sucedida, você restaura o alvo ao seu alinhamento original."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Abençoe a água",
+          "entries": [
+            "Você toca um {@item frasco | phb} de água e faz com que ela se torne {@item água benta (frasco) | phb | água benta}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Chegando à maioridade",
+          "entries": [
+            "Você toca em um humanóide que é um jovem adulto. Nas próximas 24 horas, sempre que o alvo fizer uma verificação de habilidade, ele pode rolar um {@dice d4} e adicionar o número rolo à verificação da capacidade. Uma criatura pode se beneficiar desse rito apenas uma vez."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dedicação",
+          "entries": [
+            "Você toca em um humanóide que deseja se dedicar ao serviço de seu Deus. Nas próximas 24 horas, sempre que o alvo faz um arremesso de salvamento, ele pode rolar um {@dice d4} e adicionar o número rolado ao salvamento. Uma criatura pode se beneficiar desse rito apenas uma vez."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "RITO FUNERAL",
+          "entries": [
+            "Você toca em um cadáver e, nos próximos 7 dias, o alvo não pode ficar morto -vivo por qualquer meio aquém do feitiço {@Spell Wish}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Casamento",
+          "entries": [
+            "Você toca em humanóides adultos dispostos a se unir no casamento. Nos 7 dias seguintes, cada alvo ganha um bônus de +2 de CA enquanto eles estão a 30 pés um do outro. Uma criatura pode se beneficiar desse rito novamente apenas se viúvo."
+          ]
+        }
+      ],
+      "affectsCreatureType": [
+        "humanóide"
+      ],
+      "miscTags": [
+        "MAC"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Chaos Bolt",
+      "source": "XGE",
+      "page": 151,
+      "otherSources": [
+        {
+          "source": "Ggr"
+        }
+      ],
+      "level": 1,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você lança uma massa ondulada e prejudicada de energia caótica em uma criatura ao alcance. Faça um ataque de feitiço à distância contra o alvo. Em um acerto, o alvo recebe {@damage 2d8 + 1d6} dano. Escolha um dos {@dice d8} s. O número enrolado nessa matriz determina o tipo de dano do ataque, como mostrado abaixo.",
+        {
+          "type": "table",
+          "caption": "Chaos Bolt",
+          "colLabels": [
+            "{@dice d8}",
+            "Damage Type"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 1
+                }
+              },
+              "Acid"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 2
+                }
+              },
+              "Cold"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 3
+                }
+              },
+              "Fire"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 4
+                }
+              },
+              "Force"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 5
+                }
+              },
+              "Lightning"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 6
+                }
+              },
+              "Poison"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 7
+                }
+              },
+              "Psychic"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 8
+                }
+              },
+              "Thunder"
+            ]
+          ]
+        },
+        "Se você rolar o mesmo número em ambos {@dice d8} s, a energia caótica salta do alvo para uma criatura diferente de sua escolha a 30 pés dela. Faça um novo ataque de ataque contra o novo alvo e faça um novo rolo de dano, o que pode causar o salto da energia caótica.",
+        "Uma criatura pode ser direcionada apenas uma vez por cada fundição desse feitiço."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, cada alvo leva {@ScaledAdamage 2d8 + 1d6 | 1-9 | 1d6} dano extra do tipo rolado para cada nível de slot acima de 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "ácido",
+        "frio",
+        "fogo",
+        "vigor",
+        "raio",
+        "tóxico",
+        "psíquico",
+        "trovão"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "miscTags": [
+        "Ro"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Charm Monster",
+      "source": "XGE",
+      "page": 151,
+      "reprintedAs": [
+        "Monstro de charme | xphb"
+      ],
+      "level": 4,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você tenta encantar uma criatura que pode ver ao alcance. Deve fazer um arremesso de economia de sabedoria, e o faz com vantagem se você ou seus companheiros o estiverem lutando. Se falhar no arremesso de salvamento, será {@condition encantado} por você até que o feitiço termine ou até que você ou seus companheiros façam qualquer coisa prejudicial a ele. A criatura {@Condition Charmed} é amigável com você. Quando o feitiço termina, a criatura sabe que estava {@condition encantada} por você."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 5º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 4º. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "Encantado"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Control Flames",
+      "source": "XGE",
+      "page": 152,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 16
+        }
+      ],
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        },
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você escolhe chama não mágica que pode ver dentro do intervalo e que se encaixa em um cubo de 5 pés. Você afeta de uma das seguintes maneiras:",
+        {
+          "type": "list",
+          "items": [
+            "You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.",
+            "You instantaneously extinguish the flames within the cube.",
+            "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.",
+            "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+          ]
+        },
+        "Se você lançar esse feitiço várias vezes, poderá ter até três efeitos não instantâneos criados por ele ativos por vez, e poderá descartar esse efeito como uma ação."
+      ],
+      "miscTags": [
+        "LGT",
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Control Winds",
+      "source": "XGE",
+      "page": 152,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 16
+        }
+      ],
+      "level": 5,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 91
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você assume o controle do ar em um cubo de 100 pés que pode ver ao alcance. Escolha um dos seguintes efeitos ao lançar o feitiço. O efeito dura a duração do feitiço, a menos que você use sua ação em uma curva posterior para mudar para um efeito diferente. Você também pode usar sua ação para interromper temporariamente o efeito ou reiniciar um que você interrompeu.",
+        {
+          "type": "entries",
+          "name": "Rajadas",
+          "entries": [
+            "Um vento aumenta dentro do cubo, soprando continuamente em uma direção horizontal que você designará. Você escolhe a intensidade do vento: calmo, moderado ou forte. Se o vento for moderado ou forte, os ataques de armas de longo alcance que passam por ele ou que são feitos contra alvos dentro do cubo têm desvantagem em seus rolos de ataque. Se o vento for forte, qualquer criatura que se move contra o vento deve gastar um pé extra de movimento por cada pé movido."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Downdraft",
+          "entries": [
+            "Você causa uma explosão sustentada de vento forte sopra para baixo do topo do cubo. Ataques de armas à distância que passam pelo cubo ou que são feitos contra alvos dentro dela têm desvantagem em seus rolos de ataque. Uma criatura deve fazer um arremesso de economia se voar para o cubo pela primeira vez em uma curva ou começar sua vez lá voando. Em um salvamento falhado, a criatura é batida {@condition propensa}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Updraft",
+          "entries": [
+            "Você causa uma atualização sustentada dentro do cubo, subindo para cima do lado inferior do cubo. Criaturas que terminam uma queda dentro do cubo sofrem apenas meio dano do outono. Quando uma criatura no cubo faz um salto vertical, a criatura pode pular até 10 pés mais alta que o normal."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "propenso"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Create Bonfire",
+      "source": "XGE",
+      "page": 152,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 16
+        }
+      ],
+      "level": 0,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria uma fogueira no chão que pode ver dentro do alcance. Até que o feitiço termine, a fogueira mágica preenche um cubo de 5 pés. Qualquer criatura no espaço da fogueira quando você lançar o feitiço deve ter sucesso em um arremesso de economia de destreza ou tomar {@damage 1d8} dano de incêndio. Uma criatura também deve fazer o lance salvador quando se move para o espaço da fogueira pela primeira vez em uma curva ou termina sua curva lá.",
+        "A fogueira acende objetos inflamáveis ​​em sua área que não estão sendo usados ​​ou transportados.",
+        "O dano do feitiço aumenta em {@damage 1d8} quando você atinge o 5º nível ({@damage 2d8}), 11º nível ({@damage 3d8}) e 17º nível ({@damage 4d8})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano de incêndio",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      "damageInflict": [
+        "fogo"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "Obj",
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Create Homunculus",
+      "source": "XGE",
+      "page": 152,
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp",
+          "cost": 100000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Enquanto fala um encantamento complexo, você se corta com uma adaga incrustada de jóias, tomando danos de piercing {@damage 2d4} que não podem ser reduzidos de forma alguma. Você então pica seu sangue nos outros componentes do feitiço e os toca, transformando -os em uma construção especial chamada {@creature homúnculus}.",
+        "As estatísticas do {@creature homunculus} estão no manual do monstro. É seu companheiro fiel, e morre se você morrer. Sempre que você termina um longo descanso, você pode gastar até metade dos dados de hit se o homúnculo estiver no mesmo plano de existência que você. Quando você fizer isso, role cada matriz e adicione seu modificador de constituição a ele. Seu máximo de ponto de vida é reduzido pelo total, e o ponto de vida do Homúnculo e os pontos de vida atuais aumentam por ele. Esse processo pode reduzi -lo a não menos de 1 ponto de acerto, e a alteração para os pontos de vida do seu e do homúnculo termina quando você termina seu próximo tempo. A redução ao máximo do seu ponto de vida não pode ser removida de forma alguma antes disso, exceto pela morte do homúnculo.",
+        "Você pode ter apenas um homúnculo de cada vez. Se você lançar esse feitiço enquanto seu homúnculo vive, o feitiço falha."
+      ],
+      "miscTags": [
+        "Prm"
+      ]
+    },
+    {
+      "name": "Crown of Stars",
+      "source": "XGE",
+      "page": 152,
+      "level": 7,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Sete motos de luz parecidos com a luz aparecem e orbita sua cabeça até que o feitiço termine. Você pode usar uma ação de bônus para enviar um dos motivos que se destaca em uma criatura ou objeto a 120 pés de você. Quando você o fizer, faça um ataque de feitiço à distância. Em um acerto, o alvo leva {@damage 4d12} dano radiante. Se você acertar ou perder, o mote é gasto. O feitiço termina cedo se você gastar o último mote.",
+        "Se você tiver quatro ou mais motos restantes, eles derramam luz brilhante em um raio de 30 pés e luz escura por mais 30 pés. Se você tiver um a três motivos restantes, eles derramam luz escura em um raio de 30 pés."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 8º nível ou superior, o número de motivos criados aumenta em dois para cada nível de slot acima do 7º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiante"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "miscTags": [
+        "LGT",
+        "Obj",
+        "Uba"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Danse Macabre",
+      "source": "XGE",
+      "page": 153,
+      "level": 5,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Os fios de energia escura saltam dos dedos para perfurar até cinco cadáveres pequenos ou médios que você pode ver ao alcance. Cada cadáver imediatamente se levanta e fica morto -vivo. Você decide se é um {@creature zumbie} ou um esqueleto {@creature} (as estatísticas para {@creature zumbie || zumbis} e {@creature skeleton || esqueletos} estão no manual monstro), e ganha um bônus de ataque ao ataque e aos rolos de danos a que os danos para os rolos de monstros), e ganha um bônus de ataque.",
+        "Você pode usar uma ação de bônus para comandar mentalmente as criaturas que você faz com esse feitiço, emitindo o mesmo comando para todos eles. Para receber o comando, uma criatura deve estar a 60 metros de você. Você decide qual ação as criaturas tomarão e onde elas se moverão durante o próximo turno, ou poderá emitir um comando geral, como proteger uma câmara ou passagem contra seus inimigos. Se você não emitir comandos, as criaturas não fazem nada, exceto se defenderem contra criaturas hostis. Uma vez recebido um pedido, as criaturas continuam a segui -lo até que a tarefa seja concluída.",
+        "As criaturas estão sob seu controle até que o feitiço termine, após o que se tornam inanimados mais uma vez."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 6º nível ou superior, você anima até dois cadáveres adicionais para cada nível de slot acima do 5º."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn",
+        "Uba"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Dawn",
+      "source": "XGE",
+      "page": 153,
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a sunburst pendant worth at least 100 gp",
+          "cost": 10000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "A luz do amanhecer brilha em um local que você especifica dentro do intervalo. Até que o feitiço termine, um cilindro de 30 metros e 40 pés de altura de luz brilhante brilha lá. Esta luz é a luz do sol.",
+        "Quando o cilindro aparece, cada criatura deve fazer um arremesso de economia de constituição, sofrendo danos radiantes {@Damage 4D10} em uma defesa fracassada, ou metade da dano em um bem -sucedido. Uma criatura também deve fazer esse lançamento de salvamento sempre que termina sua curva no cilindro.",
+        "Se você estiver a 60 metros do cilindro, poderá movê -lo até 60 pés como uma ação de bônus na sua vez."
+      ],
+      "damageInflict": [
+        "radiante"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "LGTS",
+        "Uba"
+      ],
+      "areaTags": [
+        "Y"
+      ]
+    },
+    {
+      "name": "Dragon's Breath",
+      "source": "XGE",
+      "page": 154,
+      "reprintedAs": [
+        "Respiração do dragão | xphb"
+      ],
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a hot pepper"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você toca em uma criatura disposta e a imbua com o poder de vomitar energia mágica de sua boca, desde que ela tenha uma. Escolha ácido, frio, fogo, raios ou veneno. Até que o feitiço termine, a criatura pode usar uma ação para exalar energia do tipo escolhido em um cone de 15 pés. Cada criatura nessa área deve fazer um lançamento de economia de destreza, sofrendo danos {@damage 3d6} do tipo escolhido em uma defesa falhada ou na metade da dano em um bem -sucedido."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o dano aumenta em {@ScaledAdamage 3d6 | 2-9 | 1d6} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "tóxico"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "N",
+        "St"
+      ]
+    },
+    {
+      "name": "Druid Grove",
+      "source": "XGE",
+      "page": 154,
+      "level": 6,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 24
+          }
+        }
+      ],
+      "entries": [
+        "Você invoca os espíritos da natureza para proteger uma área ao ar livre ou subterrânea. A área pode ser tão pequena quanto um cubo de 30 pés ou um cubo de 90 pés. Edifícios e outras estruturas são excluídos da área afetada. Se você lançar esse feitiço na mesma área todos os dias durante um ano, o feitiço dura até se dissipar.",
+        "O feitiço cria os seguintes efeitos dentro da área. Quando você lança esse feitiço, você pode especificar criaturas como amigos imunes aos efeitos. Você também pode especificar uma senha que, quando falada em voz alta, torna o alto -falante imune a esses efeitos.",
+        "Toda a área da Afermada irradia mágica. Um {@Spell Dispel Magic} fundido na área, se for bem -sucedido, remove apenas um dos seguintes efeitos, não toda a área. O lançador do feitiço escolhe qual efeito terminar. Somente quando todos os seus efeitos se foram, esse feitiço é dissipado.",
+        {
+          "type": "entries",
+          "name": "Nevoeiro sólido",
+          "entries": [
+            "Você pode preencher qualquer número de quadrados de 5 pés no chão com neblina espessa, tornando-os fortemente obscurecidos. O nevoeiro atinge 10 pés de altura. Além disso, cada pé de movimento através da névoa custa 2 pés extras. Para uma criatura imune a esse efeito, o nevoeiro não obscurece nada e se parece com a névoa macia, com movimentos de luz verde flutuando no ar."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Agarrar a vegetação rasteira",
+          "entries": [
+            "Você pode preencher qualquer número de quadrados de 5 pés no chão que não estão cheios de neblina com ervas daninhas e videiras, como se fossem afetadas por um feitiço {@Spell Entangle}. Para uma criatura imune a esse efeito, as ervas daninhas e videiras se sentem macias e se remodelam para servir como assentos temporários ou camas."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Grove Guardians",
+          "entries": [
+            "Você pode animar até quatro árvores na área, fazendo com que elas se arrancassem do chão. Essas árvores têm as mesmas estatísticas que uma árvore {@creature despertada}, que aparece no manual do monstro, exceto que elas não podem falar, e sua casca é coberta com símbolos druídicos. Se alguma criatura não imune a esse efeito entrar na área de Warded, os guardiões do Grove lutam até que tenham expulso ou matasse os intrusos. Os Guardiões Grove também obedecem aos seus comandos falados (nenhuma ação necessária por você) que você emite na área. Se você não der a eles comandos e não há intrusos presentes, os Guardiões Grove não fazem nada. Os Guardiões Grove não podem deixar a área abrigada. Quando o feitiço termina, o magia os anima desaparece e as árvores se enraízes novamente, se possível."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Efeito de feitiço adicional",
+          "entries": [
+            "Você pode colocar sua escolha de um dos seguintes efeitos mágicos dentro da área de guarda:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "A constant {@spell gust of wind} in two locations of your choice",
+            "{@spell Spike growth} in one location of your choice",
+            "{@spell Wind wall} in two locations of your choice"
+          ]
+        },
+        "Para uma criatura imune a esse efeito, os ventos são uma brisa perfumada e suave, e a área do crescimento {@Spell Spike} é inofensiva."
+      ],
+      "miscTags": [
+        "Ob",
+        "Pir",
+        "Prm",
+        "Smn"
+      ],
+      "areaTags": [
+        "C",
+        "Q"
+      ]
+    },
+    {
+      "name": "Dust Devil",
+      "source": "XGE",
+      "page": 154,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 17
+        }
+      ],
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a pinch of dust"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Escolha um cubo de ar de 5 pés desocupado que você possa ver ao alcance. Uma força elementar que se assemelha a um diabo de poeira aparece no cubo e dura a duração do feitiço.",
+        "Qualquer criatura que termine sua vez a um metro e meio do diabo da poeira deve fazer um lance de economia. Em uma defesa fracassada, a criatura leva {@damage 1d8} dano de espancamento e é empurrado a 10 pés de distância do diabo de poeira. Em uma defesa bem -sucedida, a criatura leva metade da dano e não é empurrada.",
+        "Como ação de bônus, você pode mover o diabo de poeira até 30 pés em qualquer direção. Se o diabo de poeira se mover sobre areia, poeira, sujeira solta ou cascalho leve, ele suga o material e forma uma nuvem de detritos de 10 pés-radius em torno de si que dura até o início do seu próximo turno. A nuvem obscurece fortemente sua área."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 3º nível ou superior, o dano aumenta em {@ScaledAmage 1d8 | 2-9 | 1d8} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "Fmv",
+        "SGT",
+        "Uba"
+      ]
+    },
+    {
+      "name": "Earth Tremor",
+      "source": "XGE",
+      "page": 155,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 17
+        }
+      ],
+      "level": 1,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 3
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você causa um tremor no chão ao alcance. Cada criatura que não seja você nessa área deve fazer um arremesso de economia de destreza. Em um salvamento fracassado, uma criatura recebe {@damage 1d6} de dano de espancamento e é derrubada {@condition propensa}. Se o solo nessa área for solto de terra ou pedra, ela se tornará {@quickref Terrain Difícil || 3} até ser liberada, com cada porção de 5 pés de diâmetro exigindo pelo menos 1 minuto para limpar à mão."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano aumenta em {@ScaledAmage 1d6 | 1-9 | 1d6} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "propenso"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "Dft"
+      ],
+      "areaTags": [
+        "R"
+      ]
+    },
+    {
+      "name": "Earthbind",
+      "source": "XGE",
+      "page": 154,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 17
+        }
+      ],
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 91
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Escolha uma criatura que você possa ver dentro do intervalo. Tiras amarelas de loop de energia mágica ao redor da criatura. O alvo deve ter sucesso em um arremesso de economia de força, ou sua velocidade de vôo (se houver) é reduzida para 0 pés para a duração do feitiço. Uma criatura aérea afetada por esse feitiço desce com segurança a 60 pés por rodada até chegar ao solo ou o feitiço termina."
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Elemental Bane",
+      "source": "XGE",
+      "page": 155,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 17
+        }
+      ],
+      "level": 4,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Escolha uma criatura que você possa ver ao alcance e escolha um dos seguintes tipos de danos: ácido, frio, fogo, raio ou trovão. O alvo deve ter sucesso em um arremesso de economia de constituição ou ser afetado pelo feitiço por sua duração. A primeira vez que cada volta ao alvo afetado sofre dano do tipo escolhido, o alvo recebe um dano extra {@damage 2d6} desse tipo. Além disso, o alvo perde qualquer resistência a esse tipo de dano até que o feitiço termine."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 5º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 4º. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "trovão"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Enemies Abound",
+      "source": "XGE",
+      "page": 155,
+      "level": 3,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você alcança a mente de uma criatura que pode ver e forçá -la a fazer um lance de economia de inteligência. Uma criatura é bem -sucedida automaticamente se estiver imune a ser {@condition assustado}. Em uma defesa fracassada, o alvo perde a capacidade de distinguir o amigo do inimigo, sobre todas as criaturas que ele pode ver como inimigos até que o feitiço termine. Cada vez que o alvo sofre de dano, ele pode repetir o arremesso de economia, encerrando o efeito sobre o sucesso.",
+        "Sempre que a criatura afetada escolhe outra criatura como alvo, ela deve escolher o alvo aleatoriamente entre as criaturas que pode ver dentro do alcance do ataque, feitiço ou outra habilidade que está usando. Se um inimigo provocar um ataque de oportunidade da criatura afetada, a criatura deve fazer esse ataque, se for capaz."
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Enervation",
+      "source": "XGE",
+      "page": 155,
+      "level": 5,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Uma gavinha de escuridão em tinta se estende por você, tocando uma criatura que você pode ver ao alcance para drenar a vida. O alvo deve fazer um arremesso de economia de destreza. Em um salvamento bem -sucedido, o alvo leva {@damage 2d8} dano necrótico, e o feitiço termina. Em um salvamento falhado, o alvo leva {@damage 4d8} dano necrótico e, até que o feitiço termine, você pode usar sua ação em cada uma das suas voltas para causar danos necróticos automaticamente {@damage 4d8} no alvo. O feitiço termina se você usar sua ação para fazer qualquer outra coisa, se o alvo estiver fora do alcance do feitiço ou se o alvo tiver {@quickref capa || 3 || cobertura total} de você.",
+        "Sempre que o feitiço causa dano a um alvo, você recupera pontos de vida igual à metade da quantidade de dano necrótico que o alvo recebe."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 6º nível ou superior, o dano aumenta em {@scaledamage 4d8; 2d8 | 5-9 | 1d8} para cada nível de slot acima do 5º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "HL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Erupting Earth",
+      "source": "XGE",
+      "page": 155,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 17
+        }
+      ],
+      "level": 3,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of obsidian"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Escolha um ponto que você possa ver no solo dentro do alcance. Uma fonte de terra e pedra agitada em um cubo de 6 metros centrado nesse ponto. Cada criatura nessa área deve fazer um arremesso de economia de destreza. Uma criatura leva {@Damage 3D12} Danos por um salvamento falhado ou metade do dano em um bem -sucedido. Além disso, o solo nessa área se torna {@quickref Terrain Difícil || 3} até ser liberado. Cada parte de 5 pés quadrados da área requer pelo menos 1 minuto para limpar manualmente."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAdamage 3D12 | 3-9 | 1d12} para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "Dft",
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Far Step",
+      "source": "XGE",
+      "page": 155,
+      "level": 5,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você se teletransporta até 60 pés para um espaço desocupado que pode ver. Em cada uma das suas voltas antes do fim do feitiço, você pode usar uma ação de bônus para se teletransportar dessa maneira novamente."
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp",
+        "Uba"
+      ]
+    },
+    {
+      "name": "Find Greater Steed",
+      "source": "XGE",
+      "page": 156,
+      "additionalSources": [
+        {
+          "source": "Ftd",
+          "page": 190
+        }
+      ],
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você convoca um espírito que assume a forma de um monte leal e majestoso. Aparecendo em um espaço desocupado dentro do alcance, o espírito assume uma forma que você escolhe: a {@creature griffon}, um {@creature pegasus}, um {@creature peryton}, um {@creature ters wolf}, um rinoceros} {@creature {@}} {@crereure rinoceros} ou a {. A criatura tem as estatísticas fornecidas no manual do monstro para a forma escolhida, embora seja um celeste, um fey ou um demônio (sua escolha) em vez de seu tipo de criatura normal. Além disso, se tiver uma pontuação de inteligência de 5 ou menos, sua inteligência se tornará 6 e ganha a capacidade de entender um idioma de sua escolha que você fala.",
+        "Você controla a montagem em combate. Enquanto a montagem está a 1,6 km, você pode se comunicar com ela telepaticamente. Enquanto montado nele, você pode fazer qualquer feitiço que você lançar que tem como alvo apenas você também tem como alvo a montagem.",
+        "A montagem desaparece temporariamente quando cai para 0 pontos de acerto ou quando você a descarta como uma ação. Lançar esse feitiço novamente re-resmunga a montagem ligada, com todos os seus pontos de vida restaurados e quaisquer condições removidas.",
+        "Você não pode ter mais de um montado ligado por esse feitiço ou {@Spell Find Steed} ao mesmo tempo. Como ação, você pode liberar uma montagem de seu vínculo, fazendo com que ele desapareça permanentemente.",
+        "Sempre que a montagem desaparece, deixa para trás quaisquer objetos que ela estava usando ou carregando.",
+        {
+          "type": "inset",
+          "source": "FTD",
+          "page": 190,
+          "name": "Dragonnel corcedos",
+          "entries": [
+            "Com a permissão do DM, um paladino pode convocar um espírito na forma de um {@creature dragonnel | ftd} usando o feitiço Find Maior Steed, que aparece em {@i xanathar's Guide to Everything}."
+          ]
+        }
+      ],
+      "miscTags": [
+        "Prm",
+        "Smn"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Flame Arrows",
+      "source": "XGE",
+      "page": 156,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 18
+        }
+      ],
+      "level": 3,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você toca em uma aljava contendo setas ou parafusos. Quando um alvo é atingido por um ataque de armas de longo alcance usando um pedaço de munição retirado da aljava, o alvo leva um dano extra de incêndio {@damage 1d6}. A magia do feitiço termina em um pedaço de munição quando atinge ou erra, e o feitiço termina quando doze pedaços de munição foram retirados da aljava."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o número de pedaços de munição que você pode afetar com esse feitiço aumenta em dois para cada nível de slot acima do terceiro."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "miscTags": [
+        "Extremamente"
+      ]
+    },
+    {
+      "name": "Frostbite",
+      "source": "XGE",
+      "page": 156,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 18
+        }
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você faz com que a geada entorpecente se forme em uma criatura que você pode ver ao alcance. O alvo deve fazer um lance de economia de constituição. Em uma defesa fracassada, o alvo leva {@damage 1d6} dano frio e tem desvantagem no próximo rolo de ataque de arma que faz antes do final do próximo turno.",
+        "O dano do feitiço aumenta em {@damage 1d6} quando você atinge o 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano frio",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "frio"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Guardian of Nature",
+      "source": "XGE",
+      "page": 157,
+      "level": 4,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Um espírito de natureza atende seu chamado e o transforma em um poderoso guardião. A transformação dura até que o feitiço termine. Você escolhe uma das seguintes formas para assumir: besta primordial ou grande árvore.",
+        {
+          "type": "entries",
+          "name": "Besta primordial",
+          "entries": [
+            "O peles bestial cobre seu corpo, seus recursos faciais se tornam ferozes e você obtém os seguintes benefícios:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your walking speed increases by 10 feet.",
+            "You gain {@sense darkvision} with a range of 120 feet.",
+            "You make Strength-based attack rolls with advantage.",
+            "Your melee weapon attacks deal an extra {@damage 1d6} force damage on a hit."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Grande árvore",
+          "entries": [
+            "Sua pele parece estridente, as folhas brotam do seu cabelo e você ganha os seguintes benefícios:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "You gain 10 temporary hit points.",
+            "You make Constitution saving throws with advantage.",
+            "You make Dexterity- and Wisdom-based attack rolls with advantage.",
+            "While you are on the ground, the ground within 15 feet of you is {@quickref difficult terrain||3} for your enemies."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "Adv",
+        "Dft",
+        "THP"
+      ]
+    },
+    {
+      "name": "Gust",
+      "source": "XGE",
+      "page": 157,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        },
+        {
+          "source": "Erlw",
+          "page": 50
+        },
+        {
+          "source": "TCE",
+          "page": 50
+        }
+      ],
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você apreende o ar e o obriga a criar um dos seguintes efeitos em um ponto que você pode ver dentro do intervalo:",
+        {
+          "type": "list",
+          "items": [
+            "One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.",
+            "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
+            "You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "Fmv",
+        "Obj",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Healing Spirit",
+      "source": "XGE",
+      "page": 157,
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito da natureza para acalmar os feridos. O espírito intangível aparece em um espaço que é um cubo de 5 pés que você pode ver ao alcance. O Espírito parece uma fera transparente ou fey (sua escolha).",
+        "Até que o feitiço termine, sempre que você ou uma criatura, poderá ver se move no espaço do Espírito pela primeira vez em uma curva ou inicia sua vez lá, você pode fazer com que o espírito restaure {@dice 1d6} pontos de vida para essa criatura (nenhuma ação necessária). O Espírito não pode curar construções ou mortos -vivos. O Espírito pode curar várias vezes iguais a 1 + seu modificador de capacidade de conjuração (mínimo de duas vezes). Depois de curar esse número de vezes, o espírito desaparece.",
+        "Como uma ação de bônus por sua vez, você pode mover o espírito até 30 pés para um espaço que pode ver."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, a cura aumenta em {@Scaledice 1d6 | 2-9 | 1d6} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "affectsCreatureType": [
+        "aberração",
+        "besta",
+        "celestial",
+        "dragão",
+        "elementar",
+        "Fey",
+        "demônio",
+        "gigante",
+        "humanóide",
+        "monstruosidade",
+        "ooze",
+        "plantar"
+      ],
+      "miscTags": [
+        "HL",
+        "SGT",
+        "Uba"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Holy Weapon",
+      "source": "XGE",
+      "page": 157,
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você imbue uma arma que toca com o poder sagrado. Até que o feitiço termine, a arma emite luz brilhante em um raio de 30 pés e luz fraca por mais 30 pés. Além disso, os ataques de armas fizeram com isso um dano radiante {@damage 2d8} em um golpe. Se a arma ainda não é uma arma mágica, ela se torna uma por duração.",
+        "Como uma ação de bônus por sua vez, você pode descartar esse feitiço e fazer com que a arma emite uma explosão de brilho. Cada criatura de sua escolha que você pode ver a 30 metros da arma deve fazer um lance de economia de constituição. Em um salvamento falhado, uma criatura leva {@damage 4d8} dano radiante, e é {@condition cego} por 1 minuto. Em um salvamento bem -sucedido, uma criatura leva metade do dano e não é cegada {@condition}. No final de cada uma de suas curvas, uma criatura {@condition cegada} pode fazer um lance de economia de constituição, encerrando o efeito sobre si mesmo em um sucesso."
+      ],
+      "damageInflict": [
+        "radiante"
+      ],
+      "conditionInflict": [
+        "cego"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "LGT",
+        "SGT",
+        "Uba"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Ice Knife",
+      "source": "XGE",
+      "page": 157,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        }
+      ],
+      "reprintedAs": [
+        "Faca de gelo | XPHB"
+      ],
+      "level": 1,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "a drop of water or piece of ice"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você cria um fragmento de gelo e jogando -o em uma criatura dentro do alcance. Faça um ataque de feitiço à distância contra o alvo. Em um acerto, o alvo leva {@damage 1d10} dano de piercing. Bata ou erra, o fragmento explode. O alvo e cada criatura a um metro e oitenta de ela devem ter sucesso em um arremesso de economia de destreza ou tomar {@damage 2d6} dano frio."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano ao frio aumenta em {@ScaledAdamage 2d6 | 1-9 | 1d6} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "frio",
+        "piercing"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Illusory Dragon",
+      "source": "XGE",
+      "page": 157,
+      "level": 8,
+      "school": "Ilusão",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Ao reunir fios de material de sombra do Shadowfell, você cria um enorme dragão sombrio em um espaço desocupado que você pode ver ao alcance. A ilusão dura a duração do feitiço e ocupa seu espaço, como se fosse uma criatura.",
+        "Quando a ilusão aparece, qualquer um de seus inimigos que pode vê -la deve ter sucesso em um arremesso de economia de sabedoria ou se tornar {@condition assustado} dela por 1 minuto. Se uma criatura {@condition assustou} termina sua curva em um local onde não tem linha de visão para a ilusão, ela pode repetir o arremesso de salvamento, encerrando o efeito sobre o sucesso.",
+        "Como ação de bônus, você pode mover a ilusão de até 60 pés. Em qualquer momento durante seu movimento, você pode fazer com que expire uma explosão de energia em um cone de 60 pés originário de seu espaço. Ao criar o dragão, escolha um tipo de dano: ácido, frio, fogo, raios, necróticos ou veneno. Cada criatura no cone deve fazer um lance de economia de inteligência, sofrendo danos {@damage 7d6} do tipo de dano escolhido em um salvamento falhado ou na metade da dano em um sucesso bem -sucedido.",
+        "A ilusão é tangível por causa do material da sombra usado para criá -lo, mas os ataques perdem automaticamente, consegue todos os lances de poupança e é imune a todos os danos e condições. Uma criatura que usa uma ação para examinar o dragão pode determinar que é uma ilusão tendo sucesso em uma inteligência ({@skill Investigation}) verificar seu feitiço Save DC. Se uma criatura discerne a ilusão pelo que é, a criatura pode ver através dela e tem vantagem em salvar lances contra a respiração."
+      ],
+      "damageInflict": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "necrótico",
+        "tóxico"
+      ],
+      "conditionInflict": [
+        "com medo"
+      ],
+      "savingThrow": [
+        "sabedoria",
+        "inteligência"
+      ],
+      "abilityCheck": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT",
+        "Uba"
+      ],
+      "areaTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Immolation",
+      "source": "XGE",
+      "page": 158,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        }
+      ],
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Chamas gorda uma criatura que você pode ver ao alcance. O alvo deve fazer um arremesso de economia de destreza. É preciso dano de incêndio {@damage 8d6} em uma defesa falhada ou na metade da dano em um bem -sucedido. Em um salvamento falhado, o alvo também queima pela duração do feitiço. O alvo em chamas lança luz brilhante em um raio de 30 pés e luz fraca por mais 30 pés. No final de cada uma de suas curvas, o alvo repete o arremesso de salvamento. É preciso dano de incêndio {@damage 4d6} em uma defesa falhada, e o feitiço termina em um bem -sucedido. Essas chamas mágicas não podem ser extintas por meios não mágicos.",
+        "Se o dano desse feitiço mata um alvo, o alvo será transformado em cinzas."
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "LGT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Infernal Calling",
+      "source": "XGE",
+      "page": 158,
+      "level": 5,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a ruby worth at least 999 gp",
+          "cost": 99900
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Ditando um encantamento sombrio, você convoca um diabo dos nove infernos. Você escolhe o tipo de diabo, que deve ser um dos {@Filter Challenge Classing 6 ou Lower | bestiário | Classificação do desafio = [& 0; & 6] | tag = Devil | Miscellanesty =! Swarm}, como um {@creature farped Devil} ou um {@creature barbed diabo}. O diabo aparece em um espaço desocupado que você pode ver ao alcance. O diabo desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "O diabo é hostis para você e seus companheiros. Roll Initiative for the Devil, que tem suas próprias voltas. Está sob o controle do mestre da masmorra e age de acordo com sua natureza em cada uma de suas curvas, o que pode resultar em atacá -lo se achar que pode prevalecer, ou tentar tentá -lo a empreender um ato maligno em troca de serviços limitados. O Mestre tem as estatísticas da criatura.",
+        "Em cada uma das suas curvas, você pode tentar emitir um comando verbal para o diabo (nenhuma ação exigida por você). Ele obedece ao comando se o resultado provável estiver de acordo com seus desejos, especialmente se o resultado o levaria ao mal. Caso contrário, você deve fazer um carisma ({@skill decepção}, {@skill intimidation} ou {@skill persuasion}) verifique a verificação de sua sabedoria ({@skill insight}). Você faz o cheque com vantagem se disser o nome verdadeiro do diabo. Se o seu cheque falhar, o diabo se tornará imune aos seus comandos verbais durante a duração do feitiço, embora ainda possa realizar seus comandos, se escolher. Se o seu cheque for bem -sucedido, o diabo cumpre seu comando - como \"atacar meus inimigos\", \"explore a sala à frente\" ou \"leve esta mensagem à rainha\" - até que ela complete a atividade, quando ele retorna a você relatar que o fizeram.",
+        "Se a sua concentração {@status} terminar antes que o feitiço atinja toda a sua duração, o diabo não desaparecerá se se tornar imune aos seus comandos verbais. Em vez disso, ele age da maneira que escolher para os minutos {@Dice 3D6} e depois desaparece.",
+        "Se você possui talismã de um diabo individual, pode convocar esse diabo se for da classificação de desafio apropriada mais 1, e isso obedece a todos os seus comandos, sem verificação de carisma necessária."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 6º nível ou superior, a classificação do desafio aumenta em 1 para cada nível de slot acima do 5º."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Infestation",
+      "source": "XGE",
+      "page": 158,
+      "level": 0,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a living flea"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você causa uma nuvem de ácaros, pulgas e outros parasitas para aparecer momentaneamente em uma criatura que você pode ver ao alcance. O alvo deve ter sucesso em um arremesso de economia de constituição, ou é preciso dano ao veneno {@damage 1d6} e se move 5 pés em uma direção aleatória se puder se mover e sua velocidade for de pelo menos 5 pés. Role um {@Dice D4} para a direção: 1, norte; 2, sul; 3, leste; ou 4, oeste. Esse movimento não provoca ataques de oportunidade e, se a direção rolada for bloqueada, o alvo não se move.",
+        "O dano do feitiço aumenta em {@damage 1d6} quando você atinge o 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano de veneno",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "tóxico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Investiture of Flame",
+      "source": "XGE",
+      "page": 159,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        }
+      ],
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "As chamas correm pelo seu corpo, derramando luz brilhante em um raio de 30 metros e fraca luz por mais 30 pés para a duração do feitiço. As chamas não prejudicam você. Até que o feitiço termine, você obtém os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "You are immune to fire damage and have resistance to cold damage.",
+            "Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes {@damage 1d10} fire damage.",
+            "You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 4d8} fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "damageResist": [
+        "frio"
+      ],
+      "damageImmune": [
+        "fogo"
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "LGT"
+      ],
+      "areaTags": [
+        "L"
+      ]
+    },
+    {
+      "name": "Investiture of Ice",
+      "source": "XGE",
+      "page": 159,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        }
+      ],
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Até que o feitiço termine, o gelo abre seu corpo e você ganha os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "You are immune to cold damage and have resistance to fire damage.",
+            "You can move across {@quickref difficult terrain||3} created by ice or snow without spending extra movement.",
+            "The ground in a 10-foot radius around you is icy and is {@quickref difficult terrain||3} for creatures other than you. The radius moves with you.",
+            "You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
+          ]
+        }
+      ],
+      "damageResist": [
+        "fogo"
+      ],
+      "damageImmune": [
+        "frio"
+      ],
+      "damageInflict": [
+        "frio"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Dft"
+      ],
+      "areaTags": [
+        "N",
+        "S"
+      ]
+    },
+    {
+      "name": "Investiture of Stone",
+      "source": "XGE",
+      "page": 159,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 19
+        }
+      ],
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Até que o feitiço termine, pedaços de rocha se espalharam por seu corpo e você obtém os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+            "You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone}.",
+            "You can move across {@quickref difficult terrain||3} made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition stunned} until the end of your next turn."
+          ]
+        }
+      ],
+      "damageResist": [
+        "Budgeoning",
+        "piercing",
+        "cortando"
+      ],
+      "conditionInflict": [
+        "propenso",
+        "atordoado"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Investiture of Wind",
+      "source": "XGE",
+      "page": 160,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 20
+        }
+      ],
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Até que o feitiço termine, o vento gira ao seu redor e você ganha os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "Ranged weapon attacks made against you have disadvantage on the attack roll.",
+            "You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.",
+            "You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes {@damage 2d10} bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Fmv",
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Invulnerability",
+      "source": "XGE",
+      "page": 160,
+      "level": 9,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a small piece of adamantine worth at least 500 gp, which the spell consumes",
+          "cost": 50000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você está imune a todos os danos até que o feitiço termine."
+      ]
+    },
+    {
+      "name": "Life Transference",
+      "source": "XGE",
+      "page": 160,
+      "level": 3,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você sacrifica parte de sua saúde para consertar os ferimentos de outra criatura. Você recebe danos necróticos {@damage 4d8}, que não podem ser reduzidos de forma alguma, e uma criatura de sua escolha que você pode ver dentro do alcance recupere uma série de pontos de vida igual a duas vezes o dano necrótico que você sofre."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAmage 4d8 | 3-9 | 1d8} para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "miscTags": [
+        "HL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Maddening Darkness",
+      "source": "XGE",
+      "page": 160,
+      "level": 8,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "a drop of pitch mixed with a drop of mercury"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "A escuridão mágica se espalha de um ponto que você escolhe dentro do alcance para preencher uma esfera de 60 pés de rádio até que o feitiço termine. A escuridão se espalha nos cantos. Uma criatura com {@Sense DarkVision} não pode ver nessa escuridão. A luz não mágica, bem como a luz criada por feitiços do 8º nível ou inferior, não podem iluminar a área.",
+        "Gritos, tagarelas e risadas loucas podem ser ouvidas dentro da esfera. Sempre que uma criatura inicia sua vez na esfera, ela deve fazer um lance de economia de sabedoria, sofrendo danos psíquicos {@damage 8d8} em um salvamento falhado ou na metade da dano em um bem -sucedido."
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Maelstrom",
+      "source": "XGE",
+      "page": 160,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 20
+        }
+      ],
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "paper or leaf in the shape of a funnel"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Uma massa em turbilhão de água de um metro e meio de profundidade aparece em um raio de 30 pés centrado em um ponto que você pode ver ao alcance. O ponto deve estar no chão ou em um corpo de água. Até que o feitiço termine, essa área é {@quickref Terrain Difícil || 3}, e qualquer criatura que inicie sua vez, deve ter sucesso em um lance de economia de força ou tomar {@damage 6d6} dano de espancamento e ser puxado 10 pés em direção ao centro."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "Dft",
+        "Fmv",
+        "SGT"
+      ],
+      "areaTags": [
+        "R"
+      ]
+    },
+    {
+      "name": "Magic Stone",
+      "source": "XGE",
+      "page": 160,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 20
+        }
+      ],
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você toca um a três seixos e os imbua com magia. Você ou outra pessoa podem fazer um ataque de feitiço com uma das seixos jogando -o ou arremessando -o com um {@item sling | phb}. Se jogado, uma pedra tem um alcance de 60 pés. Se alguém atacar com uma pedra, esse atacante adiciona seu modificador de capacidade de conjuração, não o atacante, ao rolo de ataque. Em um acerto, o alvo sofre dano de espancamento igual a {@damage 1d6} + seu modificador de habilidade de conjuração. Seja o ataque ou erra, o feitiço termina na pedra.",
+        "Se você lançar esse feitiço novamente, o feitiço termina em qualquer seixa ainda afetada pelo seu elenco anterior."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Mass Polymorph",
+      "source": "XGE",
+      "page": 160,
+      "level": 9,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a caterpillar cocoon"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você transforma até dez criaturas de sua escolha que pode ver ao alcance. Um alvo relutante deve ter sucesso em um arremesso de economia de sabedoria para resistir à transformação. Um Shapechanger relutante é bem -sucedido no salvamento.",
+        "Cada destino assume uma forma besta de sua escolha e você pode escolher o mesmo formulário ou diferente para cada destino. O novo formulário pode ser {@filter qualquer besta | bestiário | type = beast | diversos =! Swarm} Você viu cuja classificação de desafio é igual ou menor que a do alvo (ou metade do nível do alvo, se o alvo não tiver uma classificação de desafio). As estatísticas do jogo do alvo, incluindo as pontuações de capacidade mental, são substituídas pelas estatísticas da besta escolhida, mas o alvo mantém seus pontos de vida, alinhamento e personalidade.",
+        "Cada alvo ganha vários pontos de vida temporários iguais aos pontos de vida de sua nova forma. Esses pontos de vida temporários não podem ser substituídos por pontos de vida temporários de outra fonte. Um alvo reverte para sua forma normal quando não tem mais pontos de vida temporários ou morre. Se o feitiço terminar antes disso, a criatura perde todos os seus pontos de vida temporários e reverte para sua forma normal.",
+        "A criatura é limitada nas ações que pode executar pela natureza de sua nova forma. Não pode falar, fundir feitiços ou fazer qualquer outra coisa que exija mãos ou fala.",
+        "O equipamento do alvo se fundem no novo formulário. O alvo não pode ativar, usar, usar ou se beneficiar de qualquer um de seus equipamentos."
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SGT",
+        "THP"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Maximilian's Earthen Grasp",
+      "source": "XGE",
+      "page": 161,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 20
+        }
+      ],
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a miniature hand sculpted from clay"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você escolhe um espaço desocupado de 5 pés quadrados no terreno que pode ver ao alcance. Uma mão média feita de solo compactado sobe lá e alcança uma criatura que você pode ver dentro de um metro e meio dela. O alvo deve fazer um lance de economia de força. Em um salvamento falhado, o alvo leva {@damage 2d6} de dano de espancamento e é {@condition restrito} para a duração do feitiço.",
+        "Como ação, você pode fazer com que a mão esmagasse o alvo {@condition restrito}, que deve fazer um arremesso de economia. O alvo sofre {@damage 2d6} danos causados ​​por um salvamento falhado ou na metade do dano em um sucesso bem -sucedido.",
+        "Para quebrar, o alvo {@condition restrito} pode usar sua ação para fazer uma verificação de força no seu feitiço Salvar DC. Em um sucesso, o alvo escapa e não é mais {@condition restrito} pela mão.",
+        "Como ação, você pode fazer com que a mão alcance uma criatura diferente ou se mova para um espaço desocupado diferente dentro do alcance. A mão libera um destino {@condition restrito}, se você o fizer."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "abilityCheck": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Melf's Minute Meteors",
+      "source": "XGE",
+      "page": 161,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 20
+        }
+      ],
+      "level": 3,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "niter, sulfur, and pine tar formed into a bead"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria seis pequenos meteoros em seu espaço. Eles flutuam no ar e orbitam você pela duração do feitiço. Quando você lança o feitiço - e como uma ação de bônus em cada uma das suas curvas depois - você pode gastar um ou dois dos meteoros, enviando -os para um ponto ou pontos que você escolher a 120 pés de você. Uma vez que um meteoro chega ao seu destino ou impactos contra uma superfície sólida, o meteoro explode. Cada criatura a 5 pés do ponto em que o meteoro explode deve fazer um arremesso de economia de destreza. Uma criatura leva {@damage 2d6} dano de incêndio em uma defesa falhada ou na metade da dano em um bem -sucedido."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o número de meteoros criados aumenta em dois para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "Uba"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Mental Prison",
+      "source": "XGE",
+      "page": 161,
+      "level": 6,
+      "school": "Ilusão",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você tenta vincular uma criatura dentro de uma célula ilusória que só ela percebe. Uma criatura que você pode ver ao alcance deve fazer um arremesso de economia de inteligência. O destino é bem -sucedido automaticamente se estiver imune a ser {@condition encantado}. Em um salvamento bem -sucedido, o alvo leva {@damage 5d10} dano psíquico, e o feitiço termina. Em um salvamento falhado, o alvo leva {@damage 5d10} dano psíquico e você faz a área imediatamente ao redor do espaço do alvo parece perigoso para ele de alguma forma. Você pode fazer com que o alvo se considere cercado por fogo, barbeadores flutuantes ou maças hediondas cheias de dentes pingando. Qualquer que seja a forma da ilusão, o alvo não pode ver ou ouvir nada além dela e é {@condition restrito} para a duração do feitiço. Se o alvo for retirado da ilusão, fizer um ataque corpo a corpo através dele ou atingir qualquer parte do seu corpo através dele, o alvo leva {@damage 10d10} dano psíquico e o feitiço termina."
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Mighty Fortress",
+      "source": "XGE",
+      "page": 161,
+      "otherSources": [
+        {
+          "source": "Aitfr-AVT",
+          "page": 10
+        },
+        {
+          "source": "Aitfr-fcd",
+          "page": 12
+        }
+      ],
+      "level": 8,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "miles",
+          "amount": 1
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a diamond worth at least 500 gp, which the spell consumes",
+          "cost": 50000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma fortaleza de pedra entra em erupção de uma área quadrada de terra de sua escolha que você pode ver ao alcance. A área é de 120 pés de cada lado e não deve ter edifícios ou outras estruturas. Quaisquer criaturas na área são inofensivamente levantadas à medida que a fortaleza sobe.",
+        "A fortaleza possui quatro torres com bases quadradas, cada uma de 20 pés em um lado e 30 pés de altura, com uma torre em cada canto. As torres são conectadas entre si por paredes de pedra com 80 pés de comprimento, criando uma área fechada. Cada parede tem 1,80m de espessura e é composta de painéis com 10 pés de largura e 20 pés de altura. Cada painel é contíguo com dois outros painéis ou outro painel e uma torre. Você pode colocar até quatro portas de pedra na parede externa da fortaleza.",
+        "Uma pequena manutenção fica dentro da área fechada. O Keep possui uma base quadrada com 50 pés de cada lado e possui três andares com tetos de 10 pés de altura. Cada um dos pisos pode ser dividido em quantos quartos desejar, desde que cada sala tenha pelo menos 5 pés de cada lado. Os pisos da manutenção são conectados por escadas de pedra, suas paredes têm 15 cm de espessura e as salas interiores podem ter portas de pedra ou arcos abertos conforme você escolher. A fortaleza é fornecida e decorada como você quiser, e contém alimentos suficientes para servir um banquete de nove pratos para até 100 pessoas por dia. Mobiliários, comida e outros objetos criados por esse feitiço desmoronar para pó se removidos da fortaleza.",
+        "Uma equipe de cem servos invisíveis obedece a qualquer comando dado a eles por criaturas que você designará quando lança o feitiço. Cada servo funciona como se criado pelo feitiço {@Spell Inviseen Servan}.",
+        "As paredes, torres e mantimentos são todos feitos de pedra que podem ser danificados. Cada seção de pedra de 10 pés por 10 pés tem 15 e 30 pontos de vida por polegada de espessura. É imune a veneno e danos psíquicos. Reduzir uma seção de pedra para 0 pontos de vida a destrói e pode fazer com que as seções conectadas se dobrem e colapssem a critério do Mestre.",
+        "Depois de 7 dias ou quando você lança esse feitiço em outro lugar, a fortaleza desmorona inofensivamente e afunda de volta no chão, deixando qualquer criaturas que o estivessem dentro dela com segurança no chão.",
+        "O lançar esse feitiço no mesmo local uma vez a cada 7 dias por um ano torna a fortaleza permanente."
+      ],
+      "damageImmune": [
+        "tóxico",
+        "psíquico"
+      ],
+      "miscTags": [
+        "Pir",
+        "Prm",
+        "SGT"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Mind Spike",
+      "source": "XGE",
+      "page": 162,
+      "reprintedAs": [
+        "Mente Spike | Xphb"
+      ],
+      "level": 2,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você alcança a mente de uma criatura que pode ver ao alcance. O alvo deve fazer um arremesso de economia de sabedoria, sofrendo danos psíquicos {@damage 3d8} em uma defesa falhada ou na metade da dano em um bem -sucedido. Em uma defesa fracassada, você também sempre conhece a localização do alvo até que o feitiço termine, mas apenas enquanto vocês dois estão no mesmo plano de existência. Embora você tenha esse conhecimento, o alvo não pode ficar oculto de você e, se for {@Condition Invisible}, não ganha benefícios dessa condição contra você."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o dano aumenta em {@ScaledAdamage 3d8 | 2-9 | 1d8} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Mold Earth",
+      "source": "XGE",
+      "page": 162,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 21
+        }
+      ],
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        },
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você escolhe uma parte de sujeira ou pedra que pode ver ao alcance e que se encaixa em um cubo de 5 pés. Você o manipula de uma das seguintes maneiras:",
+        {
+          "type": "list",
+          "items": [
+            "If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.",
+            "You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
+            "If the dirt or stone you target is on the ground, you cause it to become {@quickref difficult terrain||3}. Alternatively, you can cause the ground to become normal terrain if it is already {@quickref difficult terrain||3}. This change lasts for 1 hour."
+          ]
+        },
+        "Se você lançar esse feitiço várias vezes, não poderá ter mais do que dois de seus efeitos não instantâneos ativos por vez, e poderá descartar esse efeito como uma ação."
+      ],
+      "miscTags": [
+        "Dft",
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Negative Energy Flood",
+      "source": "XGE",
+      "page": 163,
+      "level": 5,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "a broken bone and a square of black silk"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você envia fitas de energia negativa em uma criatura que pode ver ao alcance. A menos que o alvo seja morto -vivo, ele deve fazer um arremesso de economia de constituição, sofrendo danos necróticos {@damage 5d12} em uma defesa fracassada ou na metade do dano em um bem -sucedido. Um alvo morto por esse dano aumenta como um {@creature zumbie} no início do seu próximo turno. O zumbi persegue qualquer criatura que possa ver que é mais próxima. As estatísticas para o {@creature zumbie} estão no manual do monstro.",
+        "Se você tem como alvo um morto -vivo com esse feitiço, o alvo não fará um lance salvador. Em vez disso, role {@dice 5d12}. O alvo ganha metade do total como pontos de vida temporários."
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn",
+        "THP"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Power Word Pain",
+      "source": "XGE",
+      "page": 163,
+      "level": 7,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você fala uma palavra de poder que causa ondas de dor intensa para atacar uma criatura que você pode ver ao alcance. Se o alvo tiver 100 pontos de vida ou menos, estará sujeito a dor incapacitante. Caso contrário, o feitiço não tem efeito sobre ele. Um alvo também não é afetado se estiver imune a ser {@Condition Charmed}.",
+        "Enquanto o alvo é afetado pela dor incapacitante, qualquer velocidade que ele tenha não pode ser superior a 10 pés. O alvo também tem desvantagem nos rolos de ataque, verificações de habilidade e lances de poupança, exceto os arremessos de economia de constituição. Finalmente, se o alvo tentar lançar um feitiço, ele deve primeiro ter sucesso em um arremesso de economia de constituição, ou o elenco falha e o feitiço será desperdiçado.",
+        "Um alvo que sofre essa dor pode fazer um lance de economia de constituição no final de cada uma de suas curvas. Em uma defesa bem -sucedida, a dor termina."
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Primal Savagery",
+      "source": "XGE",
+      "page": 163,
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você canaliza a magia primordial para causar seus dentes ou unhas afiadas, prontas para oferecer um ataque corrosivo. Faça um ataque de feitiço corpo a corpo contra uma criatura a um metro e meio de você. Em um acerto, o alvo leva {@damage 1d10} dano ácido. Depois de fazer o ataque, seus dentes ou unhas retornam ao normal.",
+        "O dano do feitiço aumenta em {@damage 1d10} quando você atinge o 5º nível ({@damage 2d10}), 11º nível ({@damage 3d10}) e 17º nível ({@damage 4d10})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano ácido",
+        "scaling": {
+          "1": "1d10",
+          "5": "2d10",
+          "11": "3d10",
+          "17": "4d10"
+        }
+      },
+      "damageInflict": [
+        "ácido"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "miscTags": [
+        "SCL"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Primordial Ward",
+      "source": "XGE",
+      "page": 163,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 21
+        }
+      ],
+      "level": 6,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você tem resistência ao ácido, frio, fogo, raio e trovão danos pela duração do feitiço.",
+        "Quando você sofre dano de um desses tipos, você pode usar sua reação para obter imunidade a esse tipo de dano, inclusive contra os danos causados ​​pelo desencadeamento. Se você fizer isso, as resistências terminam e você terá a imunidade até o final do seu próximo turno, quando o feitiço termina."
+      ],
+      "damageResist": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "trovão"
+      ],
+      "damageImmune": [
+        "ácido",
+        "frio",
+        "fogo",
+        "raio",
+        "trovão"
+      ]
+    },
+    {
+      "name": "Psychic Scream",
+      "source": "XGE",
+      "page": 163,
+      "level": 9,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você libera o poder de sua mente de explodir o intelecto de até dez criaturas de sua escolha que você pode ver ao alcance. As criaturas que têm uma pontuação de inteligência de 2 ou menos não são afetadas.",
+        "Cada alvo deve fazer um lance de economia de inteligência. Em um salvamento falhado, um alvo leva {@damage 14d6} dano psíquico e é {@condition atordoado}. Em um salvamento bem -sucedido, um alvo leva metade do dano e não está atordoado {@condition}. Se um alvo é morto por esse dano, sua cabeça explode, assumindo que ele tem um.",
+        "Um alvo {@condition atordoado} pode fazer um arremesso de economia de inteligência no final de cada uma de suas curvas. Em uma defesa bem -sucedida, o efeito impressionante termina."
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "conditionInflict": [
+        "atordoado"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Pyrotechnics",
+      "source": "XGE",
+      "page": 163,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 21
+        }
+      ],
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Escolha uma área de chama não mágica que você possa ver e que se encaixe em um cubo de 5 pés dentro do alcance. Você pode extinguir o fogo nessa área e criar fogos de artifício ou fumar quando o faz.",
+        {
+          "type": "entries",
+          "name": "Fogos de artifício",
+          "entries": [
+            "O alvo explode com uma exibição deslumbrante de cores. Cada criatura a 10 metros do alvo deve ter sucesso em um arremesso de economia de constituição ou ficar cegada {@condition} até o final do seu próximo turno."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fumaça",
+          "entries": [
+            "A fumaça preta grossa se espalha do alvo em um raio de 6 metros, movendo-se nos cantos. A área da fumaça é fortemente obscurecida. A fumaça persiste por 1 minuto ou até que um vento forte a disperse."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "cego"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Ob",
+        "SGT"
+      ],
+      "areaTags": [
+        "C",
+        "S"
+      ]
+    },
+    {
+      "name": "Scatter",
+      "source": "XGE",
+      "page": 164,
+      "level": 6,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "O ar afunda até cinco criaturas de sua escolha que você pode ver ao alcance. Uma criatura relutante deve ter sucesso em um arremesso de economia de sabedoria para resistir a esse feitiço. Você se teletransportava cada alvo afetado para um espaço desocupado que você pode ver dentro de você. Esse espaço deve estar no chão ou no chão."
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Shadow Blade",
+      "source": "XGE",
+      "page": 164,
+      "level": 2,
+      "school": "Ilusão",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você tece tópicos de sombra para criar uma espada de escuridão solidificada em sua mão. Esta espada mágica dura até que o feitiço termine. Conta como uma arma corpo a corpo simples com a qual você é proficiente. Ele causa {@damage 2d8} dano psíquico em um acerto e tem as propriedades da requinte, luz e arremesso (faixa 20/60). Além disso, quando você usa a espada para atacar um alvo que está em escuridão ou escuridão, você faz o ataque com vantagem.",
+        "Se você soltar a arma ou jogá -la, ela se dissipa no final do turno. Depois disso, enquanto o feitiço persiste, você pode usar uma ação de bônus para fazer com que a espada reapareça na sua mão."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de terceiro ou 4º nível, o dano aumenta para {@damage 3d8}. Quando você o lança usando um slot de feitiço de 5º ou 6º nível, o dano aumenta para {@damage 4d8}. Quando você o lança usando um slot de feitiço do 7º nível ou superior, o dano aumenta para {@damage 5d8}."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "miscTags": [
+        "Uba"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Shadow of Moil",
+      "source": "XGE",
+      "page": 164,
+      "level": 4,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an undead eyeball encased in a gem worth at least 150 gp",
+          "cost": 15000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Sombras em forma de chama gorda seu corpo até que o feitiço termine, fazendo com que você fique fortemente obscurecido para os outros. As sombras transformam a luz fraca a 10 pés de você na escuridão e a luz brilhante na mesma área para escurecer a luz.",
+        "Até que o feitiço termine, você tem resistência a danos radiantes. Além disso, sempre que uma criatura a 10 metros de você atinge você com um ataque, as sombras atacam essa criatura, causando danos necróticos."
+      ],
+      "damageResist": [
+        "radiante"
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "miscTags": [
+        "Ob"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Shape Water",
+      "source": "XGE",
+      "page": 164,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 21
+        },
+        {
+          "source": "EGW"
+        }
+      ],
+      "level": 0,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        },
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você escolhe uma área de água que pode ver ao alcance e que se encaixa em um cubo de 5 pés. Você o manipula de uma das seguintes maneiras:",
+        {
+          "type": "list",
+          "items": [
+            "You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.",
+            "You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.",
+            "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.",
+            "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
+          ]
+        },
+        "Se você lançar esse feitiço várias vezes, não poderá ter mais do que dois de seus efeitos não instantâneos ativos por vez, e poderá descartar esse efeito como uma ação."
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Sickening Radiance",
+      "source": "XGE",
+      "page": 164,
+      "level": 4,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "A luz fraca e esverdeada se espalha dentro de uma esfera de Radio de 30 pés, centrada em um ponto que você escolhe dentro do alcance. A luz se espalha em torno dos cantos, e dura até que o feitiço termine.",
+        "Quando uma criatura se move para a área do feitiço pela primeira vez em uma curva ou começa sua vez, essa criatura deve ter sucesso em um lance de economia de constituição ou tomar {@damage 4d10} dano radiante e sofre um nível de {@condition exaustão} e emite uma luz esverdeada em um raio de 5 pés. Essa luz torna impossível para a criatura se beneficiar de ser {@condition Invisible}. A luz e quaisquer níveis de exaustão {@condition} causados ​​por esse feitiço desaparecem quando o feitiço terminar."
+      ],
+      "damageInflict": [
+        "radiante"
+      ],
+      "conditionInflict": [
+        "exaustão"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Skill Empowerment",
+      "source": "XGE",
+      "page": 165,
+      "level": 5,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Sua magia aprofunda o entendimento de uma criatura sobre seu próprio talento. Você toca em uma criatura disposta e oferece experiência em uma habilidade de sua escolha; Até que o feitiço termine, a criatura dobra seu bônus de proficiência em verificações de habilidades que faz com que use a habilidade escolhida.",
+        "Você deve escolher uma habilidade na qual o alvo é proficiente e que ainda não está se beneficiando de um efeito, como a experiência, que dobra seu bônus de proficiência."
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Skywrite",
+      "source": "XGE",
+      "page": 165,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "visão"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "Você causa até dez palavras para se formar em uma parte do céu que pode ver. As palavras parecem ser feitas de nuvem e permanecem em vigor pela duração do feitiço. As palavras se dissipam quando o feitiço termina. Um vento forte pode dispersar as nuvens e terminar o feitiço cedo."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Snare",
+      "source": "XGE",
+      "page": 165,
+      "level": 1,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "s": true,
+        "m": {
+          "text": "25 feet of rope, which the spell consumes",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 8
+          }
+        }
+      ],
+      "entries": [
+        "Ao lançar esse feitiço, você usa a corda para criar um círculo com um raio de 5 pés no chão ou no chão. Quando você termina de elenco, a corda desaparece e o círculo se torna uma armadilha mágica.",
+        "Essa armadilha é quase invisível, exigindo uma verificação de uma inteligência bem -sucedida ({@skill}) verifique o seu feitiço Save DC para ser discernido.",
+        "A armadilha desencadeia quando uma criatura pequena, média ou grande se move para o chão ou o chão no raio do feitiço. Essa criatura deve ter sucesso em um arremesso de economia de destreza ou ser magicamente içado no ar, deixando -o pendurado de cabeça para baixo a 3 pés acima do solo ou do chão. A criatura é {@condition restrita} até que o feitiço termine.",
+        "Uma criatura {@condition restrita} pode fazer um arremesso de economia de destreza no final de cada uma de suas curvas, encerrando o efeito em si mesmo em um sucesso. Como alternativa, a criatura ou outra pessoa que pode alcançá -la pode usar uma ação para fazer uma inteligência ({@skill arcana}) verificar seu feitiço Save DC. Em um sucesso, o efeito {@condition restrito} termina.",
+        "Depois que a armadilha é acionada, o feitiço termina quando nenhuma criatura é {@condition restrita} por ela."
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "abilityCheck": [
+        "inteligência"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Snilloc's Snowball Swarm",
+      "source": "XGE",
+      "page": 165,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "level": 2,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of ice or a small white rock chip"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma enxurrada de bolas de neve mágica surge de um ponto que você escolhe dentro do alcance. Cada criatura em uma esfera de um raio de 5 pés centrada nesse ponto deve fazer um arremesso de economia de destreza. Uma criatura leva {@damage 3d6} dano frio em uma defesa falhada ou na metade da dano em um bem -sucedido."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o dano aumenta em {@ScaledAdamage 3d6 | 2-9 | 1d6} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "frio"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Soul Cage",
+      "source": "XGE",
+      "page": 165,
+      "level": 6,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reação",
+          "condition": "que você toma quando um humanóide que você pode ver dentro de 60 metros de você morre"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a tiny silver cage worth 100 gp",
+          "cost": 10000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 8
+          }
+        }
+      ],
+      "entries": [
+        "Esse feitiço pega a alma de um humanóide à medida que morre e a prende dentro da pequena gaiola que você usa para o componente material. Uma alma roubada permanece dentro da gaiola até que o feitiço termine ou até você destruir a gaiola, que termina o feitiço. Enquanto você tem uma alma dentro da gaiola, você pode explorá -la de qualquer uma das maneiras descritas abaixo. Você pode usar uma alma presa até seis vezes. Depois de explorar uma alma pela sexta vez, ela é lançada e o feitiço termina. Enquanto uma alma está presa, o humanóide morto de onde veio não pode ser revivido.",
+        {
+          "type": "entries",
+          "name": "Roubar a vida",
+          "entries": [
+            "Você pode usar uma ação de bônus para drenar o vigor da alma e recuperar os pontos de hit {@dice 2d8}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Query Soul",
+          "entries": [
+            "Você faz uma pergunta à alma (nenhuma ação necessária) e recebe uma breve resposta telepática, que você pode entender, independentemente do idioma usado. A alma sabe apenas o que sabia na vida, mas deve responder com sinceridade e da melhor maneira possível. A resposta não passa de uma ou duas frases e pode ser enigmática."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Experiência de emprestar",
+          "entries": [
+            "Você pode usar uma ação de bônus para reforçar -se com a experiência de vida da alma, fazendo com que seu próximo rolo de ataque, verificação de habilidade ou salvamento com vantagem. Se você não usar esse benefício antes do início do seu próximo turno, ele será perdido."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Olhos dos mortos",
+          "entries": [
+            "Você pode usar uma ação para nomear um local que a serra humanóide na vida, que cria um sensor invisível em algum lugar naquele local, se estiver no plano de existência em que você está atualmente. O sensor permanece enquanto você se concentra, até 10 minutos (como se você fosse {@status Concentração || concentrando -se} em um feitiço). Você recebe informações visuais e auditivas do sensor como se estivesse em seu espaço usando seus sentidos."
+          ]
+        },
+        "Uma criatura que pode ver o sensor (como um usando {@Spell Ver Invisibility} ou {@sense truesight}) vê uma imagem translúcida do humanóide atormentado cuja alma você enjaulou."
+      ],
+      "affectsCreatureType": [
+        "humanóide"
+      ],
+      "miscTags": [
+        "Adv",
+        "HL",
+        "Uba"
+      ]
+    },
+    {
+      "name": "Steel Wind Strike",
+      "source": "XGE",
+      "page": 166,
+      "reprintedAs": [
+        "Greve do vento de aço | Xphb"
+      ],
+      "level": 5,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "s": true,
+        "m": {
+          "text": "a melee weapon worth at least 1 sp",
+          "cost": 10
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você floresce a arma usada no elenco e depois desaparece para atacar como o vento. Escolha até cinco criaturas que você pode ver ao alcance. Faça um ataque de feitiço corpo a corpo contra cada alvo. Em um acerto, um alvo leva {@damage 6d10} dano à força.",
+        "Você pode se teletransportar para um espaço desocupado que pode ver dentro de um metro e meio de um dos alvos que você acertou ou perdeu."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Storm Sphere",
+      "source": "XGE",
+      "page": 166,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "level": 4,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Uma esfera de raio de 20 pés de que gira o ar nasce, centralizada em um ponto que você escolhe dentro do alcance. A esfera permanece para a duração do feitiço. Cada criatura na esfera quando aparece ou que termina sua curva, deve ter sucesso em um arremesso de economia de força ou tomar {@damage 2d6} dano de espancamento. O espaço da esfera é {@quickref Terrain Difícil || 3}.",
+        "Até que o feitiço termine, você pode usar uma ação de bônus em cada uma das suas curvas para causar um raio para saltar do centro da esfera em direção a uma criatura que você escolher a 60 pés do centro. Faça um ataque de feitiço à distância. Você tem vantagem no rolo de ataque se o alvo estiver na esfera. Em um acerto, o alvo leva {@damage 4d6} danos causados ​​pelo raio.",
+        "As criaturas a 30 pés da esfera têm desvantagem na sabedoria ({@skill percepção}) verificações feitas para ouvir."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 5º nível ou superior, o dano para cada um de seus efeitos aumenta em {@scaledamage 2d6; 4d6 | 4-9 | 1d6} para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning",
+        "raio"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "Dft",
+        "Uba"
+      ],
+      "areaTags": [
+        "S",
+        "St"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Summon Greater Demon",
+      "source": "XGE",
+      "page": 166,
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a vial of blood from a humanoid killed within the past 24 hours",
+          "consume": "optional"
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você pronuncia palavras sujas, convocando um demônio do caos do abismo. Você escolhe o tipo de demônio, que deve ser {@Filter um da classificação de desafio 5 ou inferior | bestiário | Classificação do desafio = [& 0; & 5] | tag = demon | diversos =! O demônio aparece em um espaço desocupado que você pode ver ao alcance, e o demônio desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "Roll Iniciativa para o Demônio, que tem suas próprias voltas. Ao convocar e, em cada uma das suas turnos, posteriormente, você pode emitir um comando verbal (não exigindo ação de sua parte), dizendo o que deve fazer no próximo turno. Se você não emitir comando, ele gasta sua vez atacando qualquer criatura ao alcance que o atacasse.",
+        "No final de cada uma das curvas do demônio, faz um lance de economia de carisma. O demônio tem desvantagem nesse arremesso de salvamento se você disser seu nome verdadeiro. Em uma defesa fracassada, o demônio continua a obedecê -lo. Em uma defesa bem-sucedida, seu controle do demônio termina durante o restante da duração, e o demônio passa suas voltas perseguindo e atacando os não-demônios mais próximos da melhor maneira possível. Se você parar {@status Concentração || concentrando} no feitiço antes de atingir sua duração total, um demônio descontrolado não desaparece para as rodadas {@dice 1d6}, se ainda tiver pontos de acerto.",
+        "Como parte do lançamento do feitiço, você pode formar um círculo no chão com o sangue usado como componente material. O círculo é grande o suficiente para abranger seu espaço. Enquanto o feitiço durar, o demônio convocado não pode atravessar o círculo ou prejudicá -lo, e não pode atingir ninguém dentro dele. O uso do componente do material dessa maneira o consome quando o feitiço termina."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 5º nível ou superior, a classificação do desafio aumenta em 1 para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "carisma"
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Lesser Demons",
+      "source": "XGE",
+      "page": 167,
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a vial of blood from a humanoid killed within the past 24 hours",
+          "consume": "optional"
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você pronuncia palavras sujas, convocando demônios do caos do abismo. Role na tabela a seguir para determinar o que aparece.",
+        {
+          "type": "table",
+          "colLabels": [
+            "{@dice d6}",
+            "Demons Summoned"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              "Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 3,
+                  "max": 4
+                }
+              },
+              "Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 5,
+                  "max": 6
+                }
+              },
+              "Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
+            ]
+          ]
+        },
+        "O DM escolhe os demônios, como {@Creature Manes} ou {@creature drettch || dretthes}, e você escolhe os espaços desocupados que você pode ver no intervalo onde eles aparecem. Um demônio convocado desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "Os demônios são hostis a todas as criaturas, incluindo você. Roll Iniciativa para os demônios convocados como um grupo, que tem suas próprias voltas. Os demônios perseguem e atacam os não-demônios mais próximos da melhor maneira possível.",
+        "Como parte do lançamento do feitiço, você pode formar um círculo no chão com o sangue usado como componente material. O círculo é grande o suficiente para abranger seu espaço. Enquanto o feitiço durar, os demônios convocados não podem atravessar o círculo ou prejudicá -lo, e eles não podem atingir ninguém dentro dele. O uso do componente do material dessa maneira o consome quando o feitiço termina."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 6º ou 7º nível, convoca o dobro de demônios. Se você o lançar usando um slot de feitiço do 8º ou 9º nível, convoca três vezes mais demônios."
+          ]
+        }
+      ],
+      "miscTags": [
+        "Ro",
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Synaptic Static",
+      "source": "XGE",
+      "page": 167,
+      "reprintedAs": [
+        "Estática sináptica | xphb"
+      ],
+      "level": 5,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você escolhe um ponto dentro do alcance e faz com que a energia psíquica exploda lá. Cada criatura em uma esfera de 20 pés de rádio centrada nesse ponto deve fazer um lance de economia de inteligência. Uma criatura com uma pontuação de inteligência de 2 ou menor não pode ser afetada por esse feitiço. Um alvo leva {@damage 8d6} dano psíquico em uma defesa falhada ou na metade da dano em um sucesso bem -sucedido.",
+        "Após um salvamento fracassado, um alvo tem pensamentos confusos por 1 minuto. Durante esse período, ele rola um {@dice d6} e subtrai o número rolado de todos os seus rolos de ataque e verificações de habilidade, bem como seus lances de economia de constituição para manter {@status Concentração}. O alvo pode fazer um lance de economia de inteligência no final de cada uma de suas curvas, encerrando o efeito sobre o sucesso."
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "inteligência",
+        "constituição"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Temple of the Gods",
+      "source": "XGE",
+      "page": 167,
+      "level": 7,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a holy symbol worth at least 5 gp",
+          "cost": 500
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 24
+          }
+        }
+      ],
+      "entries": [
+        "Você faz com que um templo brilha em existência no chão que pode ver ao alcance. O templo deve caber em um cubo desocupado de espaço, até 120 pés de cada lado. O templo permanece até que o feitiço termine. É dedicado a qualquer Deus, Panteão ou Filosofia é representado pelo símbolo santo usado no elenco.",
+        "Você toma todas as decisões sobre a aparência do templo. O interior é fechado por um piso, paredes e um teto, com uma porta que concede acesso ao interior e tantas janelas quanto você desejar. Somente você e quaisquer criaturas que você designar quando lança o feitiço pode abrir ou fechar a porta.",
+        "O interior do templo é um espaço aberto com um ídolo ou altar em uma extremidade. Você decide se o templo está iluminado e se essa iluminação é luz brilhante ou fraca luz. O cheiro de incenso ardente enche o ar interior e a temperatura é leve.",
+        "O templo se opõe a tipos de criaturas que você escolhe quando você lança esse feitiço. Escolha um ou mais dos seguintes itens: Celestials, Elementals, Fey, Fiends ou Mortos -Vivos. Se uma criatura do tipo escolhido tenta entrar no templo, essa criatura deve fazer um carisma salvador. Em uma defesa fracassada, ele não pode entrar no templo por 24 horas. Mesmo que a criatura possa entrar no templo, a magia o impede; Sempre que faz um rolo de ataque, uma verificação de habilidade ou um arremesso de salvamento dentro do templo, ele deve rolar um {@dice d4} e subtrair o número rolado do rolo {@dice d20}.",
+        "Além disso, os sensores criados por feitiços de adivinhação não podem aparecer dentro do templo, e as criaturas não podem ser alvo de feitiços de adivinhação.",
+        "Finalmente, sempre que qualquer criatura no templo se recupera de pontos de acerto de um feitiço de 1º nível ou superior, a criatura recupera pontos de vida adicionais iguais ao seu modificador de sabedoria (mínimo 1 ponto de acerto).",
+        "O templo é feito de força mágica opaca que se estende ao plano etéreo, bloqueando assim a viagem etérea para o interior do templo. Nada pode passar fisicamente pelo exterior do templo. Não pode ser dissipado por {@Spell Dispel Magic} e {@Spell Antimagic Field} não tem efeito nele. Um feitiço {@Spell desintegrado} destrói o templo instantaneamente.",
+        "O lançar esse feitiço no mesmo local todos os dias durante um ano torna esse efeito permanente."
+      ],
+      "savingThrow": [
+        "carisma"
+      ],
+      "affectsCreatureType": [
+        "celestial",
+        "elementar",
+        "Fey",
+        "demônio",
+        "mortos -vivos"
+      ],
+      "miscTags": [
+        "HL",
+        "LGT",
+        "Pir",
+        "Prm",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Tenser's Transformation",
+      "source": "XGE",
+      "page": 168,
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a few hairs from a bull"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você se dedica de resistência e proezas marciais alimentadas pela magia. Até que o feitiço termine, você não pode lançar feitiços e obtém os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.",
+            "You have advantage on attack rolls that you make with simple and martial weapons.",
+            "When you hit a target with a weapon attack, that target takes an extra {@damage 2d12} force damage.",
+            "You have proficiency with all armor, shields, simple weapons, and martial weapons.",
+            "You have proficiency in Strength and Constitution saving throws.",
+            "You can attack twice, instead of once, when you take the {@action Attack} action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks."
+          ]
+        },
+        "Imediatamente após o término do feitiço, você deve ter sucesso em um arremesso de salvamento da constituição {@DC 15} ou sofrer um nível de {@condition exaustão}."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "conditionInflict": [
+        "exaustão"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "Adv",
+        "THP"
+      ]
+    },
+    {
+      "name": "Thunder Step",
+      "source": "XGE",
+      "page": 168,
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você se teletransporta para um espaço desocupado que pode ver ao alcance. Imediatamente após você desaparecer, um sons estrondoso de boom e cada criatura a 10 pés do espaço que você deixou deve fazer um arremesso de economia de constituição, sofrendo danos no trovão {@damage 3d10} em um salvamento falhado ou na metade da dano em um bem -sucedido. O trovão pode ser ouvido a até 300 pés de distância.",
+        "Você pode trazer objetos, desde que o peso deles não exceda o que você pode carregar. Você também pode teleportar uma criatura disposta ao seu tamanho ou menor que está carregando equipamentos até sua capacidade de carga. A criatura deve estar a um metro e meio de você quando você lançar esse feitiço, e deve haver um espaço desocupado a um metro do seu espaço de destino para a criatura aparecer; Caso contrário, a criatura é deixada para trás."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAdamage 3D10 | 3-9 | 1d10} para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "trovão"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Thunderclap",
+      "source": "XGE",
+      "page": 168,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "reprintedAs": [
+        "Thunderclap | Xphb"
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 2
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você cria uma explosão de som estrondoso que pode ser ouvido a até 30 metros de distância. Cada criatura dentro do alcance, além de você, deve fazer um arremesso de economia de constituição ou tomar danos no trovão {@damage 1d6}.",
+        "O dano do feitiço aumenta em {@damage 1d6} quando você atinge o 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano de trovão",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "trovão"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCL"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Tidal Wave",
+      "source": "XGE",
+      "page": 168,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a drop of water"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você evoca uma onda de água que cai em uma área dentro do alcance. A área pode ter até 30 pés de comprimento, até 10 pés de largura e até 10 pés de altura. Cada criatura nessa área deve fazer um arremesso de economia de destreza. Em um salvamento falhado, uma criatura recebe {@damage 4d8} de dano de espancamento e é derrubada {@condition propensa}. Em um salvamento bem -sucedido, uma criatura leva metade do dano e não é derrubada {@condition propensa}. A água então se espalha pelo chão em todas as direções, extinguindo chamas desprotegidas em sua área e a 30 pés dela, e depois desaparece."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "propenso"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "W"
+      ]
+    },
+    {
+      "name": "Tiny Servant",
+      "source": "XGE",
+      "page": 168,
+      "level": 3,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 8
+          }
+        }
+      ],
+      "entries": [
+        "Você toca em um objeto minúsculo e não mágico que não está preso a outro objeto ou superfície e não está sendo transportado por outra criatura. O alvo anima e brota pequenos braços e pernas, tornando -se uma criatura sob seu controle até que o feitiço termine ou a criatura caia para 0 pontos de vida. Veja o {@creature minúsculo servo | xge | stat bloqueio} para suas estatísticas.",
+        "Como ação de bônus, você pode comandar mentalmente a criatura se estiver a 120 pés de você. (Se você controlar várias criaturas com esse feitiço, poderá comandar qualquer uma ou todas elas ao mesmo tempo, emitindo o mesmo comando para cada um.) Você decide qual ação a criatura tomará e onde ela se moverá durante o próximo turno, ou você poderá emitir um comando simples e geral, como buscar uma chave, vigiar ou empilhar alguns livros. Se você não emitir comandos, o servo não fará nada além de se defender contra criaturas hostis. Uma vez recebido um pedido, o servo continua a seguir esse pedido até que sua tarefa seja concluída.",
+        "Quando a criatura cai para 0 pontos de vida, ela reverte para sua forma original e qualquer dano restante é transferido para essa forma."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, você pode animar dois objetos adicionais para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "miscTags": [
+        "Obj",
+        "Smn",
+        "Uba"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Toll the Dead",
+      "source": "XGE",
+      "page": 169,
+      "reprintedAs": [
+        "Toll the Dead | Xphb"
+      ],
+      "level": 0,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você aponta para uma criatura que pode ver ao alcance e o som de uma campainha dolorosa enche o ar ao seu redor por um momento. O alvo deve ter sucesso em um arremesso de economia de sabedoria ou tomar {@damage 1d8} dano necrótico. Se o alvo estiver faltando algum de seus pontos de vida, é preciso danos necróticos {@damage 1d12}.",
+        "The spell's damage increases by one die when you reach 5th level ({@damage 2d8} or {@damage 2d12}), 11th level ({@damage 3d8} or {@damage 3d12}), and 17th level ({@damage 4d8} or {@damage 4d12})."
+      ],
+      "scalingLevelDice": [
+        {
+          "label": "dano necrótico",
+          "scaling": {
+            "1": "1d8",
+            "5": "2d8",
+            "11": "3d8",
+            "17": "4d8"
+          }
+        },
+        {
+          "label": "dano necrótico à criatura ferida",
+          "scaling": {
+            "1": "1d12",
+            "5": "2d12",
+            "11": "3d12",
+            "17": "4d12"
+          }
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Transmute Rock",
+      "source": "XGE",
+      "page": 169,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 22
+        }
+      ],
+      "level": 5,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "clay and water"
+      },
+      "duration": [
+        {
+          "type": "permanente",
+          "ends": [
+            "dispel"
+          ]
+        }
+      ],
+      "entries": [
+        "Você escolhe uma área de pedra ou lama que pode ver que se encaixa em um cubo de 40 pés e está dentro do alcance e escolhe um dos seguintes efeitos.",
+        {
+          "type": "entries",
+          "name": "Rock transmuta para lama",
+          "entries": [
+            "Rocha não mágica de qualquer tipo na área se torna um volume igual de lama espessa e fluida que permanece para a duração do feitiço."
+          ]
+        },
+        "O chão na área do feitiço fica enlameado o suficiente para que as criaturas possam afundar nele. Cada pé que uma criatura se move pela lama custa 4 pés de movimento, e qualquer criatura no chão quando você lança o feitiço deve fazer um lance de economia. Uma criatura também deve fazer o lançamento de salvamento quando se move para a área pela primeira vez em uma curva ou termina sua curva lá. Em um salvamento falhado, uma criatura afunda na lama e é {@condition restrita}, embora possa usar uma ação para encerrar a condição {@condition restrita}, puxando -se livre da lama.",
+        "Se você lançar o feitiço em um teto, a lama cai. Qualquer criatura sob a lama quando cair deve fazer um arremesso de economia de destreza. Uma criatura leva {@damage 4d8} danos causados ​​por um salvamento falhado ou na metade do dano em um bem -sucedido.",
+        {
+          "type": "entries",
+          "name": "Lama transmuta para rochas",
+          "entries": [
+            "Lama não mágica ou areia movediça na área não mais que 10 pés de profundidade se transformam em pedra macia para a duração do feitiço. Qualquer criatura na lama quando se transforma deve fazer um arremesso de economia de destreza. Em uma defesa bem -sucedida, uma criatura é desviada com segurança para a superfície em um espaço desocupado. Em uma defesa fracassada, uma criatura se torna {@condition restrita} pela rocha. Uma criatura {@condition restrita}, ou outra criatura ao alcance, pode usar uma ação para tentar quebrar a rocha, conseguindo uma verificação de força {@DC 20} ou causando danos a ela. A rocha possui pontos de vida CA 15 e 25, e é imune a venenos e danos psíquicos."
+          ]
+        }
+      ],
+      "damageImmune": [
+        "tóxico",
+        "psíquico"
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "força",
+        "destreza"
+      ],
+      "abilityCheck": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "C"
+      ]
+    },
+    {
+      "name": "Vitriolic Sphere",
+      "source": "XGE",
+      "page": 170,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 23
+        }
+      ],
+      "reprintedAs": [
+        "Esfera vitriólica | Xphb"
+      ],
+      "level": 4,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a drop of giant slug bile"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você aponta para um local dentro do alcance e uma bola brilhante de um metro de diâmetro de estrias de ácido esmeralda lá e explode em uma esfera de 20 pés de rádio. Cada criatura nessa área deve fazer um arremesso de economia de destreza. Em um salvamento falhado, uma criatura leva {@damage 10d4} danos ácidos e outro dano ao ácido {@damage 5d4} no final do próximo turno. Em uma defesa bem -sucedida, uma criatura recebe metade do dano inicial e nenhum dano no final de sua próxima curva."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 5º nível ou superior, o dano inicial aumenta em {@ScaledAmage 10D4 | 4-9 | 2d4} para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "ácido"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Wall of Light",
+      "source": "XGE",
+      "page": 170,
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a hand mirror"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Uma parede cintilante de luz brilhante aparece em um ponto que você escolhe dentro do alcance. A parede aparece em qualquer orientação que você escolher: horizontalmente, verticalmente ou diagonal. Pode ser flutuante livre, ou pode descansar em uma superfície sólida. A parede pode ter até 60 pés de comprimento, 10 pés de altura e 5 pés de espessura. A parede bloqueia a linha de visão, mas criaturas e objetos podem passar por ela. Emite luz brilhante para 120 pés e luz fraca por mais 120 pés.",
+        "Quando a parede aparece, cada criatura em sua área deve fazer um lance de economia de constituição. Em um salvamento falhado, uma criatura leva {@damage 4d8} dano radiante, e é {@condition cego} por 1 minuto. Em uma defesa bem -sucedida, é preciso metade da dano e não é cegada {@condition}. Uma criatura {@condition cegada} pode fazer um arremesso de economia de constituição no final de cada uma de suas curvas, encerrando o efeito em si mesmo em um sucesso.",
+        "Uma criatura que termina sua vez na área da parede leva danos radiantes {@Damage 4D8}.",
+        "Até que o feitiço termine, você pode usar uma ação para lançar um feixe de brilho da parede em uma criatura que você pode ver a 60 metros dela. Faça um ataque de feitiço à distância. Em um acerto, o alvo leva {@damage 4d8} dano radiante. Se você acertar ou perder, reduza o comprimento da parede em 10 pés. Se o comprimento da parede cair a 0 pés, o feitiço termina."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 6º nível ou superior, o dano aumenta em {@ScaledAmage 4D8 | 5-9 | 1d8} para cada nível de slot acima do 5º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiante"
+      ],
+      "conditionInflict": [
+        "cego"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "LGT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St",
+        "W"
+      ]
+    },
+    {
+      "name": "Wall of Sand",
+      "source": "XGE",
+      "page": 170,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 23
+        }
+      ],
+      "level": 3,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a handful of sand"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria uma parede de areia rodopiante no chão em um ponto que pode ver ao alcance. Você pode fazer a parede de até 30 pés de comprimento, 10 pés de altura e 10 pés de espessura, e ela desaparece quando o feitiço termina. Ele bloqueia a linha de visão, mas não o movimento. Uma criatura está cegada {@Condition} enquanto está no espaço da parede e deve gastar 3 pés de movimento a cada 1 pé que se move para lá."
+      ],
+      "conditionInflict": [
+        "cego"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "W"
+      ]
+    },
+    {
+      "name": "Wall of Water",
+      "source": "XGE",
+      "page": 170,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 23
+        },
+        {
+          "source": "VGM",
+          "page": 116
+        },
+        {
+          "source": "Na direção"
+        }
+      ],
+      "level": 3,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a drop of water"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria uma parede de água no chão em um ponto que pode ver ao alcance. Você pode fazer a parede de até 30 pés de comprimento, 10 pés de altura e 1 pé de espessura, ou pode fazer uma parede com alojamento de até 20 pés de diâmetro, 20 pés de altura e 1 pé de espessura. A parede desaparece quando o feitiço termina. O espaço da parede é {@quickref Terrain Difícil || 3}.",
+        "Qualquer ataque de arma de longo alcance que entra no espaço da parede tem desvantagem no rolo de ataque, e os danos causados ​​pelo incêndio são reduzidos pela metade se o efeito do fogo passar pela parede para atingir seu alvo. Feitiços que causam danos frios que passam pela parede porque a área da parede que eles passam para congelar sólidos (pelo menos uma seção de 5 pés quadrados está congelada). Cada seção congelada quadrada de 5 pés tem pontos de vida CA 5 e 15. Reduzir uma seção congelada para 0 pontos de acerto o destrói. Quando uma seção é destruída, a água da parede não a enche."
+      ],
+      "miscTags": [
+        "Dft",
+        "SGT"
+      ],
+      "areaTags": [
+        "W"
+      ]
+    },
+    {
+      "name": "Warding Wind",
+      "source": "XGE",
+      "page": 170,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 23
+        }
+      ],
+      "level": 2,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Um vento forte (32 quilômetros por hora) sopra em torno de você em um raio de 10 pés e se move com você, permanecendo centralizado em você. O vento dura a duração do feitiço.",
+        "O vento tem os seguintes efeitos:",
+        {
+          "type": "list",
+          "items": [
+            "It {@condition deafened||deafens} you and other creatures in its area.",
+            "It extinguishes unprotected flames in its area that are torch-sized or smaller.",
+            "It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
+            "The area is {@quickref difficult terrain||3} for creatures other than you.",
+            "The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "ensurdecem"
+      ],
+      "miscTags": [
+        "Dft"
+      ]
+    },
+    {
+      "name": "Watery Sphere",
+      "source": "XGE",
+      "page": 170,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 23
+        }
+      ],
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a droplet of water"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você evoca uma esfera de água com um raio de 5 pés em um ponto que pode ver ao alcance. A esfera pode pairar, mas não mais que 10 pés do chão. A esfera permanece para a duração do feitiço.",
+        "Qualquer criatura no espaço da esfera deve fazer um lance de economia. Em uma defesa bem -sucedida, uma criatura é expulsa desse espaço para o espaço desocupado mais próximo da escolha da criatura fora da esfera. Uma criatura enorme ou maior é bem -sucedida no arremesso de economia automaticamente, e uma criatura grande ou menor pode optar por falhar. Em uma defesa fracassada, uma criatura é {@condition restrita} pela esfera e é engolida pela água. No final de cada uma de suas curvas, um alvo {@condition restrito} pode repetir o arremesso de salvamento, encerrando o efeito em si mesmo em um sucesso.",
+        "A esfera pode restringir até quatro criaturas médias ou menores ou uma criatura grande. Se a esfera restringe uma criatura que a faça exceder essa capacidade, uma criatura aleatória que já estava {@condition restrita} na esfera cai e terras {@condition propensa} em um espaço dentro de um metro e oitenta.",
+        "Como ação, você pode mover a esfera até 30 pés em uma linha reta. Se ele se mover sobre um poço, um penhasco ou outra queda, desce com segurança até pairando 10 pés acima do solo. Qualquer criatura {@condition restrita} pela esfera se move com ela. Você pode colocar a esfera em criaturas, forçando -as a fazer o lance de salvamento.",
+        "Quando o feitiço termina, a esfera cai no chão e apaga todas as chamas normais a 30 pés dela. Qualquer criatura {@condition restrita} pela esfera é batida {@condition propensa} no espaço onde cai. A água então desaparece."
+      ],
+      "conditionInflict": [
+        "propenso",
+        "contido"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Whirlwind",
+      "source": "XGE",
+      "page": 171,
+      "otherSources": [
+        {
+          "source": "EEPC",
+          "page": 24
+        }
+      ],
+      "level": 7,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 91
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "a piece of straw"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Um turbilhão uiva até um ponto que você pode ver no chão dentro do alcance. O Whirlwind é um cilindro de 10 pés e 30 pés de altura centrado nesse ponto. Até que o feitiço termine, você pode usar sua ação para mover o turbilhão de até 30 pés em qualquer direção ao longo do chão. O turbilhão suga quaisquer objetos médios ou menores que não sejam protegidos a nada e que não são usados ​​ou carregados por ninguém.",
+        "Uma criatura deve fazer um arremesso de economia de destreza pela primeira vez em uma curva em que entra no turbilhão ou que o turbilhão entra em seu espaço, inclusive quando o turbilhão aparece pela primeira vez. Uma criatura leva {@damage 10d6} danos causados ​​por um salvamento falhado ou na metade do dano em um bem -sucedido. Além disso, uma criatura grande ou menor que falha no salvamento deve ter sucesso em um arremesso de economia de força ou se tornar {@condition restrito} no turbilhão até que o feitiço termine. Quando uma criatura inicia sua vez {@condition restrita} pelo turbilhão, a criatura é puxada 5 pés mais alto dentro dela, a menos que a criatura esteja no topo. Uma criatura {@condition restrita} se move com o turbilhão e cai quando o feitiço termina, a menos que a criatura tenha algum meio de permanecer no ar.",
+        "Uma criatura {@condition restrita} pode usar uma ação para fazer uma verificação de força ou destreza em relação ao seu feitiço Save DC. Se for bem -sucedido, a criatura não é mais {@condition restrita} pelo turbilhão e é arremessada {@dice 3d6 × 10} pés de distância dela em uma direção aleatória."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "destreza",
+        "força"
+      ],
+      "abilityCheck": [
+        "força",
+        "destreza"
+      ],
+      "miscTags": [
+        "Fmv",
+        "SGT"
+      ],
+      "areaTags": [
+        "Y"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Word of Radiance",
+      "source": "XGE",
+      "page": 171,
+      "reprintedAs": [
+        "Palavra de Radiance | Xphb"
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 2
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "a holy symbol"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você pronuncia uma palavra divina, e o brilho ardente entra em erupção de você. Cada criatura de sua escolha que você pode ver dentro do intervalo deve ter sucesso em um lançamento de economia de constituição ou tomar {@damage 1d6} dano radiante.",
+        "O dano do feitiço aumenta em {@damage 1d6} quando você atinge o 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano radiante",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "radiante"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Wrath of Nature",
+      "source": "XGE",
+      "page": 171,
+      "level": 5,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama os espíritos da natureza para despertar contra seus inimigos. Escolha um ponto que você possa ver dentro do intervalo. Os espíritos causam árvores, pedras e gramíneas em um cubo de 60 pés centradas nesse ponto para ficar animado até que o feitiço termine.",
+        {
+          "type": "entries",
+          "name": "Gramíneas e vegetação rasteira",
+          "entries": [
+            "Qualquer área de terra no cubo coberta pela grama ou vegetação rasteira é {@quickref Terrain Difícil || 3} para seus inimigos."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Árvores",
+          "entries": [
+            "No início de cada uma das suas curvas, cada um de seus inimigos a 10 metros de qualquer árvore no cubo deve ter sucesso em um arremesso de economia de destreza ou tomar {@damage 4d6} danos causados ​​por galhos de chicote."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Raízes e videiras",
+          "entries": [
+            "No final de cada uma das suas curvas, uma criatura de sua escolha que está no chão no cubo deve ter sucesso em um arremesso de economia de força ou se tornar {@condition restrito} até que o feitiço termine. Uma criatura {@condition restrita} pode usar uma ação para fazer uma força ({@Skill Athletics}) verificar seu feitiço Save DC, encerrando o efeito em si mesmo com um sucesso."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Pedras",
+          "entries": [
+            "Como uma ação de bônus por sua vez, você pode fazer com que uma pedra solta no cubo seja lançada em uma criatura que pode ver no cubo. Faça um ataque de feitiço à distância contra o alvo. Em um acerto, o alvo leva {@damage 3d8} dano não mágico de espancamento e deve ter sucesso em um arremesso de resistência ou queda {@condition propense}."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "Budgeoning",
+        "cortando"
+      ],
+      "conditionInflict": [
+        "propenso",
+        "contido"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "destreza",
+        "força"
+      ],
+      "abilityCheck": [
+        "força"
+      ],
+      "miscTags": [
+        "Dft",
+        "SGT",
+        "Uba"
+      ],
+      "areaTags": [
+        "C",
+        "St"
+      ]
+    },
+    {
+      "name": "Zephyr Strike",
+      "source": "XGE",
+      "page": 171,
+      "level": 1,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você se move como o vento. Até que o feitiço termine, seu movimento não provoca ataques de oportunidade.",
+        "Uma vez antes que o feitiço termine, você pode dar uma vantagem em um ataque de ataque de arma na sua vez. Esse ataque causa um dano de força extra {@damage 1d8} em um golpe. Se você acertar ou perder, sua velocidade de caminhada aumenta em 30 pés até o final daquele turno."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "Adv"
+      ]
+    }
+  ]
+}

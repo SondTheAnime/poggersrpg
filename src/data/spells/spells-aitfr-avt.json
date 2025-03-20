@@ -1,0 +1,83 @@
+{
+  "spell": [
+    {
+      "name": "Linked Glyphs",
+      "source": "AitFR-AVT",
+      "page": 9,
+      "otherSources": [
+        {
+          "source": "Aitfr-fcd",
+          "page": 11
+        }
+      ],
+      "level": 3,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "incense and powdered diamond worth at least 300 gp, which the spell consumes",
+          "cost": 30000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "permanente",
+          "ends": [
+            "dispel",
+            "trigger"
+          ]
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você inscreve um glifo de detecção que mais tarde ativa um efeito mágico no local de um glifo separado e vinculado. Você inscreve o glifo de detecção em uma superfície (como uma tabela ou uma seção de piso ou parede) ou dentro de um objeto que pode ser fechado (como um livro, um pergaminho ou um baú do tesouro) para ocultar o glifo. O glifo pode cobrir uma área com mais de 10 pés de diâmetro. Se a superfície ou objeto for movido a mais de 10 pés de onde você lançar esse feitiço, o glifo de detecção será quebrado e o feitiço termina sem ser acionado.",
+        "Ambos os glifos são quase invisíveis, e a descoberta requer uma inteligência bem -sucedida ({@skill Investigation}) verifique o seu feitiço Save DC.",
+        "Você decide o que desencadeia o glifo de detecção quando você lança esse feitiço. Para os glifos inscritos em uma superfície, os gatilhos mais típicos incluem tocar ou ficar no glifo, remover outro objeto que cobre o glifo, aproximando -se a uma certa distância do glifo ou manipulando o objeto no qual o glifo está inscrito. Para os glifos inscritos em um objeto, os gatilhos mais comuns incluem a abertura desse objeto, a aproximação de uma certa distância do objeto ou vendo ou lendo o glifo. Uma vez que um glifo é acionado, esse feitiço termina.",
+        "Você pode refinar ainda mais o gatilho para que o feitiço seja ativado apenas em determinadas circunstâncias ou de acordo com as características físicas (como altura ou peso), tipo de criatura (por exemplo, a ala pode ser definida para afetar aberrações ou drow) ou alinhamento. Você também pode definir condições para criaturas que não acionam o glifo, como aqueles que dizem uma certa senha.",
+        "Ao inscrever o glifo de detecção, escolha um glifo de alarme ou soletre glifo para vincular -se a ele.",
+        {
+          "type": "entries",
+          "name": "Glyph de alarme",
+          "entries": [
+            "Você cria e vincula magicamente dois glifos: um glifo de detecção e um efeito de efeito. Cada um desses dois glifos deve permanecer a 160 quilômetros do outro ou o efeito do feitiço termina. Quando o glifo de detecção é desencadeado, o glifo do efeito reage como um feitiço de alarme, criando um ping mental em sua mente se você estiver a 1,6 km do efeito do efeito. Este ping o despertou se você estiver dormindo."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Solete o glifo",
+          "entries": [
+            "Você cria e vincula magicamente dois glifos: um glifo de detecção e um efeito de efeito. Esses dois glifos devem estar a 100 pés um do outro. Você pode armazenar um feitiço preparado do 4º nível ou menor no efeito Glyph, lançando -o como parte da criação dos glifos. O feitiço deve atingir uma única criatura ou uma área. O feitiço que está sendo armazenado não tem efeito imediato quando lançado dessa maneira. Quando o glifo de detecção é acionado, o feitiço armazenado no efeito que o glifo é fundido. Se o feitiço tiver um alvo, ele tem como alvo a criatura que desencadeou o glifo. Se o feitiço afetar uma área, a área será centrada no efeito do efeito. Se o feitiço convocar criaturas hostis ou criar objetos ou armadilhas nocivas, elas aparecem o mais próximo possível do efeito do efeito. Se o feitiço exigir {@status concentração}, dura até o final de sua duração total."
+          ]
+        }
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 5º nível ou superior para criar um glifo de feitiço, você pode armazenar qualquer feitiço até o mesmo nível que o slot que você usa."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "invisível"
+      ],
+      "miscTags": [
+        "Prm"
+      ]
+    }
+  ]
+}

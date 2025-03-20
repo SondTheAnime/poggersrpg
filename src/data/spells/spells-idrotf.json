@@ -1,0 +1,96 @@
+{
+  "spell": [
+    {
+      "name": "Create Magen",
+      "source": "IDRotF",
+      "page": 318,
+      "level": 7,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a vial of quicksilver worth 500 gp and a life-sized human doll, both of which the spell consumes, and an intricate crystal rod worth at least 1,500 gp that is not consumed",
+          "cost": 50000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Ao lançar o feitiço, você coloca um frasco de capa no peito de uma boneca humana em tamanho real, recheada com cinzas ou poeira. Você então costura a boneca e escorra seu sangue nela. No final do elenco, você toca na boneca com uma vara de cristal, transformando -a em um {@filter magen | bestiário | Search = Magen | fonte = idrotf} vestido com o que a boneca estava usando. O tipo de mágica é escolhido por você durante o elenco do feitiço. Veja {@Adventure Apêndice C | Idrotf | 21} Para diferentes tipos de magen e suas estatísticas.",
+        "Quando o Magen aparece, o máximo de seu ponto de vida diminui em uma quantidade igual à classificação do desafio do Magen (redução mínima de 1). Somente um feitiço {@Spell Wish} pode desfazer essa redução no máximo do seu ponto de vida.",
+        "Qualquer magia que você criar com esse feitiço obedece aos seus comandos sem dúvida."
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Frost Fingers",
+      "source": "IDRotF",
+      "page": 318,
+      "level": 1,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "metros",
+          "amount": 5
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Folas frias congelantes da ponta dos dedos em um cone de 15 pés. Cada criatura nessa área deve fazer um arremesso de economia de constituição, sofrendo danos frios {@damage 2d8} em um salvamento falhado ou na metade da dano em um bem -sucedido.",
+        "O frio congela líquidos não mágicos na área que não estão sendo usados ​​ou transportados."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 2º nível ou superior, o dano aumenta em {@damage 1d8} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "frio"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "areaTags": [
+        "N"
+      ]
+    }
+  ]
+}

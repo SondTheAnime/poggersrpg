@@ -1,0 +1,1251 @@
+{
+  "spell": [
+    {
+      "name": "Blade of Disaster",
+      "source": "TCE",
+      "page": 106,
+      "otherSources": [
+        {
+          "source": "Hydrotf",
+          "page": 318
+        }
+      ],
+      "level": 9,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria uma fenda plana em forma de lâmina com cerca de um metro e meio de comprimento em um espaço desocupado que pode ver ao alcance. A lâmina dura a duração. Quando você lança esse feitiço, você pode fazer até dois ataques de feitiço corpo a corpo com a lâmina, cada um contra uma criatura, objeto solto ou estrutura a um metro e meio da lâmina. Em um acerto, o alvo leva {@damage 4d12} dano à força. Esse ataque obtém um acerto crítico se o número no {@Dice D20} for 18 ou superior. Em um acerto crítico, a lâmina causa um dano de força (@damage 8d12} (para um total de {@damage 12d12} dano à força).",
+        "Como uma ação de bônus na sua vez, você pode mover a lâmina de até 30 pés para um espaço desocupado que pode ver e depois fazer dois ataques com feitiços corpo a corpo com ela novamente.",
+        "A lâmina pode passar inofensivamente por qualquer barreira, incluindo uma parede de força {@Spell}."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "miscTags": [
+        "SGT",
+        "Uba"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Booming Blade",
+      "source": "TCE",
+      "page": 106,
+      "otherSources": [
+        {
+          "source": "Filtro",
+          "page": 142
+        }
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "metros",
+          "amount": 2
+        }
+      },
+      "components": {
+        "s": true,
+        "m": {
+          "text": "a melee weapon worth at least 1 sp",
+          "cost": 10
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você brande a arma usada no elenco do feitiço e faz um ataque corpo a corpo contra uma criatura a um metro e meio de você. Em um golpe, o alvo sofre os efeitos normais do ataque de armas e depois fica embainhado em energia em expansão até o início do seu próximo turno. Se o alvo se mover de bom grado 5 pés ou mais antes disso, o alvo sofre de dano de trovão {@damage 1d8} e o feitiço termina.",
+        "Os danos desse feitiço aumentam quando você atinge certos níveis. No 5º nível, o ataque corpo a corpo causa um dano de trovão extra {@damage 1d8} ao alvo em um acerto, e o dano que o alvo leva para mover aumenta para {@damage 2d8}. Ambos os rolos de dano aumentam em 1d8 no 11º nível ({@damage 2d8} e {@damage 3d8}) e novamente no 17º nível ({@damage 3d8} e {@damage 4d8})."
+      ],
+      "scalingLevelDice": [
+        {
+          "label": "Danos de trovões na mudança",
+          "scaling": {
+            "1": "1d8",
+            "5": "2d8",
+            "11": "3d8",
+            "17": "4d8"
+          }
+        },
+        {
+          "label": "Dano de trovão no golpe",
+          "scaling": {
+            "5": "1d8",
+            "11": "2d8",
+            "17": "3d8"
+          }
+        }
+      ],
+      "damageInflict": [
+        "trovão"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "SCL"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Dream of the Blue Veil",
+      "source": "TCE",
+      "page": 106,
+      "level": 7,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 6
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a magic item or a willing creature from the destination world"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 6
+          }
+        }
+      ],
+      "entries": [
+        "Você e até oito criaturas dispostas ao alcance caem {@condition inconsciente} para a duração do feitiço e experimentam visões de outro mundo no plano material, como Oerth, Toril, Krynn ou Eberron. Se o feitiço chegar a toda a sua duração, as visões terminam com cada um de vocês encontrando e puxando uma misteriosa cortina azul. O feitiço termina com você mental e fisicamente transportado para o mundo que estava nas visões.",
+        "Para lançar esse feitiço, você deve ter um item mágico que se originou no mundo que deseja alcançar e deve estar ciente da existência do mundo, mesmo que não conheça o nome do mundo. Seu destino no outro mundo é um local seguro a 1,6 km de onde o item mágico foi criado. Como alternativa, você pode lançar o feitiço se uma das criaturas afetadas nascer no outro mundo, o que faz com que seu destino seja um local seguro a 1,6 km de onde essa criatura nasceu.",
+        "O feitiço termina cedo em uma criatura se essa criatura sofrer algum dano, e a criatura não é transportada. Se você sofrer algum dano, o feitiço termina para você e todas as outras criaturas, com nenhum de vocês sendo transportado."
+      ],
+      "conditionInflict": [
+        "inconsciente"
+      ],
+      "miscTags": [
+        "Ps",
+        "Tp"
+      ],
+      "hasFluff": true
+    },
+    {
+      "name": "Green-Flame Blade",
+      "source": "TCE",
+      "page": 107,
+      "otherSources": [
+        {
+          "source": "Filtro",
+          "page": 143
+        }
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "metros",
+          "amount": 2
+        }
+      },
+      "components": {
+        "s": true,
+        "m": {
+          "text": "a melee weapon worth at least 1 sp",
+          "cost": 10
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você brande a arma usada no elenco do feitiço e faz um ataque corpo a corpo contra uma criatura a um metro e meio de você. Em um golpe, o alvo sofre os efeitos normais do ataque de armas, e você pode fazer com que o fogo verde salte do alvo para uma criatura diferente de sua escolha que você pode ver dentro de um metro e meio dela. A segunda criatura recebe dano de incêndio igual ao seu modificador de capacidade de conjuração.",
+        "Os danos desse feitiço aumentam quando você atinge certos níveis. No 5º nível, o ataque corpo a corpo causa um dano extra de incêndio {@damage 1d8} ao alvo em um acerto, e o dano de incêndio à segunda criatura aumenta para {@damage 1d8} + seu modificador de capacidade de conjuração. Ambos os rolos de dano aumentam por {@damage 1d8} no 11º nível ({@damage 2d8} e {@damage 2d8}) e 17º nível ({@damage 3d8} e {@damage 3d8})."
+      ],
+      "scalingLevelDice": [
+        {
+          "label": "dano de incêndio à criatura secundária",
+          "scaling": {
+            "1": "{{spellcasting_mod}}",
+            "5": "1d8 + {{spellcasting_mod}}",
+            "11": "2d8 + {{spellcasting_mod}}",
+            "17": "3d8 + {{spellcasting_mod}}"
+          }
+        },
+        {
+          "label": "dano de incêndio no golpe",
+          "scaling": {
+            "5": "1d8",
+            "11": "2d8",
+            "17": "3d8"
+          }
+        }
+      ],
+      "damageInflict": [
+        "fogo"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt",
+        "St"
+      ]
+    },
+    {
+      "name": "Intellect Fortress",
+      "source": "TCE",
+      "page": 107,
+      "level": 3,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Durante a duração, você ou uma criatura disposta que você pode ver ao alcance tem resistência a danos psíquicos, além de vantagem de inteligência, sabedoria e salvamento de carisma."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 3º. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "damageResist": [
+        "psíquico"
+      ],
+      "miscTags": [
+        "Adv",
+        "SCT",
+        "SGT"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Lightning Lure",
+      "source": "TCE",
+      "page": 107,
+      "otherSources": [
+        {
+          "source": "Filtro",
+          "page": 143
+        }
+      ],
+      "level": 0,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "metros",
+          "amount": 5
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você cria um cílio de energia raios que atinge uma criatura de sua escolha que você pode ver a 15 metros de você. O alvo deve ter sucesso em um arremesso de economia de força ou ser puxado até 10 pés em uma linha reta em sua direção e, em seguida, tomar {@damage 1d8} danos causados ​​pelo raio se estiver a um metro e meio de você.",
+        "Os danos desse feitiço aumentam em {@damage 1d8} quando você atinge o 5º nível ({@damage 2d8}), 11º nível ({@damage 3d8}) e 17º nível ({@damage 4d8})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano de raios",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      "damageInflict": [
+        "raio"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "Fmv",
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Mind Sliver",
+      "source": "TCE",
+      "page": 108,
+      "reprintedAs": [
+        "Mente Sliver | XPHB"
+      ],
+      "level": 0,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você dirige um pico desorientador de energia psíquica para a mente de uma criatura que pode ver ao alcance. O alvo deve ter sucesso em um arremesso de economia de inteligência ou tomar {@damage 1d6} dano psíquico e subtrair {@dice 1d4} a partir do próximo arremesso de economia que faz antes do final do seu próximo turno.",
+        "Os danos desse feitiço aumentam em {@damage 1d6} quando você atinge determinados níveis: 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano psíquico",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Spirit Shroud",
+      "source": "TCE",
+      "page": 108,
+      "level": 3,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama os espíritos dos mortos, o que voa ao seu redor para a duração do feitiço. Os espíritos são intangíveis e invulneráveis.",
+        "Até que o feitiço termine, qualquer ataque que você faça acordos {@damage 1d8} dano extra quando você atinge uma criatura a 10 metros de você. Esse dano é radiante, necrótico ou frio (sua escolha quando você lança o feitiço). Qualquer criatura que sofra esse dano não pode recuperar pontos de acerto até o início do seu próximo turno.",
+        "Além disso, qualquer criatura de sua escolha que você possa ver que inicia sua curva a 10 metros de você tem sua velocidade reduzida por 10 pés até o início do seu próximo turno."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAmage 1d8 | 3,5,7,9 | 1d8} para cada dois níveis de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiante",
+        "necrótico",
+        "frio"
+      ],
+      "miscTags": [
+        "Extremamente",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Summon Aberration",
+      "source": "TCE",
+      "page": 109,
+      "reprintedAs": [
+        "Invocar aberração | XPHB"
+      ],
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth at least 400 gp",
+          "cost": 40000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito aberrante. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio de status {@creature aberrante | tce}. Quando você lançar o feitiço, escolha Beholderkin, Slaad ou Star Spawn. A criatura se assemelha a uma aberração desse tipo, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 5º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Beast",
+      "source": "TCE",
+      "page": 109,
+      "reprintedAs": [
+        "Invocar a besta | XPHB"
+      ],
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a feather, tuft of fur, and fish tail inside a gilded acorn worth at least 200 gp",
+          "cost": 20000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito bestial. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio {@Creature Bestial Spirit | TCE} Stat. Quando você lançar o feitiço, escolha um ambiente: ar, terra ou água. A criatura se assemelha a um animal de sua escolha, nativo do ambiente escolhido, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Ao lançar esse feitiço usando um slot de feitiço do 3º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Celestial",
+      "source": "TCE",
+      "page": 110,
+      "reprintedAs": [
+        "Invocar Celestial | Xphb"
+      ],
+      "level": 5,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a golden reliquary worth at least 500 gp",
+          "cost": 50000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito celestial. Ele se manifesta em uma forma angelical em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o {@Creature Celestial Spirit | TCE} Bloco de estatísticas. Quando você lançar o feitiço, escolha o vingador ou zagueiro. Sua escolha determina o ataque da criatura em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 6º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Summon Construct",
+      "source": "TCE",
+      "page": 111,
+      "reprintedAs": [
+        "Convocar construto | XPHB"
+      ],
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an ornate stone and metal lockbox worth at least 400 gp",
+          "cost": 40000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama o espírito de um construto. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio de status {@Creature Construct | tce}. Quando você lançar o feitiço, escolha um material: argila, metal ou pedra. A criatura se assemelha a um golem ou um modron (sua escolha) feito do material escolhido, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 4º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Elemental",
+      "source": "TCE",
+      "page": 111,
+      "reprintedAs": [
+        "Invocar Elementar | XPHB"
+      ],
+      "level": 4,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "air, a pebble, ash, and water inside a gold-inlaid vial worth at least 400 gp",
+          "cost": 40000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito elementar. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio {@creature elementar | tce} stat. Quando você lançar o feitiço, escolha um elemento: ar, terra, fogo ou água. A criatura se assemelha a uma forma de bípede envolvida no elemento escolhido, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 5º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Fey",
+      "source": "TCE",
+      "page": 112,
+      "reprintedAs": [
+        "Invocar Fey | XPHB"
+      ],
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a gilded flower worth at least 300 gp",
+          "cost": 30000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito fey. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio {@creature fey spirit | tce} stat. Quando você lançar o feitiço, escolha um humor: fumegante, alegre ou complicado. A criatura se assemelha a uma criatura fey de sua escolha marcada pelo humor escolhido, que determina uma das características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 4º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Fiend",
+      "source": "TCE",
+      "page": 112,
+      "reprintedAs": [
+        "Invocar Fiend | Xphb"
+      ],
+      "level": 6,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "humanoid blood inside a ruby vial worth at least 600 gp",
+          "cost": 60000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito diabólico. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio de status {@creature diabeish | tce}. Quando você lançar o feitiço, escolha Demon, Diabo ou Yugoloth. A criatura se assemelha a um demônio do tipo escolhido, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 7º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Summon Shadowspawn",
+      "source": "TCE",
+      "page": 113,
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "tears inside a gem worth at least 300 gp",
+          "cost": 30000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito sombrio. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio {@creature Shadow Spirit | TCE} Stat. Quando você lançar o feitiço, escolha uma emoção: fúria, desespero ou medo. A criatura se assemelha a um bípede deformado marcado pela emoção escolhida, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 4º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Summon Undead",
+      "source": "TCE",
+      "page": 114,
+      "reprintedAs": [
+        "Invocar mortos -vivos | XPHB"
+      ],
+      "level": 3,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a gilded skull worth at least 300 gp",
+          "cost": 30000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito morto -vivo. Ele se manifesta em um espaço desocupado que você pode ver ao alcance. Este formulário corporal usa o bloqueio de status {@creature mortos -vivos | tce}. Quando você lançar o feitiço, escolha a forma da criatura: fantasmagórica, podre ou esquelética. O espírito se assemelha a uma criatura morta -viva com a forma escolhida, que determina certas características em seu bloco de estatísticas. A criatura desaparece quando cai para 0 pontos de acerto ou quando o feitiço termina.",
+        "A criatura é um aliado para você e seus companheiros. Em combate, a criatura compartilha sua contagem de iniciativas, mas ela leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir, é preciso a ação {@action dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um slot de feitiço do 4º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Sword Burst",
+      "source": "TCE",
+      "page": 115,
+      "otherSources": [
+        {
+          "source": "Filtro",
+          "page": 143
+        }
+      ],
+      "level": 0,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "metros",
+          "amount": 2
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você cria um círculo momentâneo de lâminas espectrais que varrem ao seu redor. Todas as outras criaturas a um metro e meio de você devem ter sucesso em um arremesso de economia de destreza ou tomar {@damage 1d6} dano de força.",
+        "Os danos desse feitiço aumentam em {@damage 1d6} quando você atinge o 5º nível ({@damage 2d6}), 11º nível ({@damage 3d6}) e 17º nível ({@damage 4d6})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano à força",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "SCL"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Tasha's Caustic Brew",
+      "source": "TCE",
+      "page": 115,
+      "level": 1,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a bit of rotten food"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Um fluxo de ácido emana de você em uma linha de 30 pés de comprimento e 5 pés de largura em uma direção que você escolher. Cada criatura na linha deve ter sucesso em um arremesso de economia de destreza ou ser coberta de ácido para a duração do feitiço ou até que uma criatura use sua ação para raspar ou lavar o ácido ou outra criatura. Uma criatura coberta no ácido leva {@damage 2d4} danos ácidos no início de cada uma de suas voltas."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano aumenta em {@ScaledAmage 2d4 | 1-9 | 2d4} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "ácido"
+      ],
+      "savingThrow": [
+        "destreza"
+      ]
+    },
+    {
+      "name": "Tasha's Mind Whip",
+      "source": "TCE",
+      "page": 115,
+      "level": 2,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você ataca psiquicamente em uma criatura que pode ver ao alcance. O alvo deve fazer um lance de economia de inteligência. Em um salvamento falhado, o alvo leva {@damage 3d6} dano psíquico e não pode fazer uma reação até o final do próximo turno. Além disso, em seu próximo turno, ele deve escolher se recebe um movimento, uma ação ou uma ação de bônus; recebe apenas um dos três. Em uma defesa bem -sucedida, o alvo leva metade da dano e não sofre outros efeitos do feitiço."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 3º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 2º. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Tasha's Otherworldly Guise",
+      "source": "TCE",
+      "page": 116,
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an object engraved with a symbol of the Outer Planes, worth at least 500 gp",
+          "cost": 50000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Domitando um encantamento, você se baseia na magia dos aviões inferiores ou dos aviões superiores (sua escolha) para se transformar. Você obtém os seguintes benefícios até que o feitiço termine:",
+        {
+          "type": "list",
+          "items": [
+            "You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).",
+            "You are immune to the {@condition poisoned} condition (Lower Planes) or the {@condition charmed} condition (Upper Planes).",
+            "Spectral wings appear on your back, giving you a flying speed of 40 feet.",
+            "You have a +2 bonus to AC.",
+            "All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.",
+            "You can attack twice, instead of once, when you take the {@action Attack} action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn."
+          ]
+        }
+      ],
+      "damageImmune": [
+        "fogo",
+        "tóxico",
+        "radiante",
+        "necrótico"
+      ],
+      "conditionImmune": [
+        "Encantado",
+        "envenenado"
+      ],
+      "miscTags": [
+        "MAC"
+      ]
+    }
+  ]
+}

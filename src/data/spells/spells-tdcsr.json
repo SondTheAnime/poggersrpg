@@ -1,0 +1,98 @@
+{
+  "spell": [
+    {
+      "name": "Freedom of the Waves",
+      "source": "TDCSR",
+      "page": 176,
+      "level": 3,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a strand of wet hair"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você evoca um dilúvio de água do mar em um cilindro de 15 metros e 10 pés de altura centrado em um ponto ao alcance. Essa água assume a forma de uma onda de marés, um hidromassagem, uma água de água ou outra forma de sua escolha. Cada criatura na área deve ter sucesso em uma força {@quickref salvando arremessos | phb | 2 | 1 | salvando arremesso} contra seu feitiço Salvar dc ou tomar {@damage 2d8} Danos e cair {@condition propense}. Você pode escolher uma série de criaturas iguais ao seu modificador de conjuração (mínimo de 1) para obter sucesso automaticamente nesse {@quickref salvando arremessos | phb | 2 | 1 | salvando arremesso}.",
+        "Se você estiver dentro da área do feitiço, como parte da ação que usa para lançar o feitiço, poderá desaparecer no dilúvio e se teletransportar para um espaço desocupado que você pode ver na área do feitiço."
+      ],
+      "damageInflict": [
+        "Budgeoning"
+      ],
+      "conditionInflict": [
+        "propenso"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp"
+      ],
+      "areaTags": [
+        "Mt",
+        "Y"
+      ]
+    },
+    {
+      "name": "Freedom of the Winds",
+      "source": "TDCSR",
+      "page": 176,
+      "level": 5,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a scrap of sailcloth"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "O vento envolve seu corpo, puxando seus cabelos e roupas enquanto seus pés levantam o chão. Você ganha uma velocidade de vôo de 60 pés. Além disso, você tem {@quickref vantagem e desvantagem | phb | 2 | 0 | vantagem} em {@quickref habily checks | phb | 2 | 0} para evitar ser {@Condition agraped} e em {@quickref Saving Throws |",
+        "Quando você é direcionado por um feitiço ou ataque enquanto esse feitiço está em vigor, você pode usar uma reação para se teletransportar até 60 pés para um espaço desocupado que pode ver. Se esse movimento tirar você do alcance do feitiço ou ataque, você não será afetado por ele. Este feitiço termina quando você reaparece."
+      ],
+      "miscTags": [
+        "Adv",
+        "SGT",
+        "Tp"
+      ]
+    }
+  ]
+}

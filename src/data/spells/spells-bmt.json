@@ -1,0 +1,161 @@
+{
+  "spell": [
+    {
+      "name": "Antagonize",
+      "source": "BMT",
+      "page": 50,
+      "level": 3,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a playing card depicting a rogue"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você sussurra palavras mágicas que antagonizam uma criatura de sua escolha ao alcance. O alvo deve fazer um lance de economia de sabedoria. Em um salvamento falhado, o alvo leva {@damage 4d4} dano psíquico e deve usar imediatamente sua reação para fazer um ataque corpo a corpo contra outra criatura de sua escolha que você pode ver. Se o alvo não puder fazer esse ataque (por exemplo, porque não há ninguém ao seu alcance ou porque sua reação está indisponível), o alvo tem desvantagem no próximo ataque de ataque que faz antes do início do seu próximo turno. Em uma defesa bem -sucedida, o alvo sofre metade daquele dano apenas."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAmage 4D4 | 3-9 | 1d4} para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico"
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Spirit of Death",
+      "source": "BMT",
+      "page": 50,
+      "level": 4,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a gilded playing card worth at least 400 gp and depicting an avatar of death",
+          "cost": 40000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você chama um espírito que incorpora a morte. O Espírito se manifesta em um espaço desocupado que você pode ver ao alcance e usa o bloqueio de estatísticas {@creature Reaper | bmt}. O Espírito desaparece quando é reduzido para 0 pontos de vida ou quando o feitiço termina.",
+        "O Espírito é um aliado para você e seus companheiros. Em combate, o espírito compartilha sua contagem de iniciativas e leva sua vez imediatamente após a sua. Obedece aos seus comandos verbais (nenhuma ação exigida por você). Se você não emitir comandos do Spirit, ele aceita a ação {@Action Dodge} e usa seu movimento para evitar o perigo."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lançar esse feitiço usando um feitiço do 5º nível ou superior, use o nível mais alto onde quer que o nível do feitiço apareça no bloco de estatísticas do Reaper Spirit."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT",
+        "Smn"
+      ]
+    },
+    {
+      "name": "Spray of Cards",
+      "source": "BMT",
+      "page": 50,
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "metros",
+          "amount": 5
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a deck of cards"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você pulveriza um cone de 15 pés de cartões espectrais. Cada criatura nessa área deve fazer um arremesso de economia de destreza. Em um salvamento falhado, uma criatura leva {@damage 2d10} danos forçados e tem a condição {@condition cegada} até o final do próximo turno. Em uma defesa bem -sucedida, uma criatura leva metade daquele dano apenas."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 3º nível ou superior, o dano aumenta em {@ScaledAmage 2D10 | 2-9 | 1d10} para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "conditionInflict": [
+        "cego"
+      ],
+      "savingThrow": [
+        "destreza"
+      ]
+    }
+  ]
+}

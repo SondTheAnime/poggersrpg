@@ -1,0 +1,738 @@
+{
+  "spell": [
+    {
+      "name": "Conjure the Deep Haze",
+      "source": "DoDk",
+      "page": 226,
+      "level": 5,
+      "school": "Conjuração",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}.",
+        "Você cria uma esfera de Radio de 20 pés da névoa profunda em um ponto que escolhe dentro do alcance. O nevoeiro se espalha em torno dos cantos. Dura a duração ou até que o vento forte disperte o nevoeiro, terminando o feitiço. Sua área é fortemente obscurecida.",
+        "Quando uma criatura entra na área do feitiço pela primeira vez em uma curva ou começa sua vez lá, essa criatura deve ter sucesso em um arremesso de economia de constituição. Em um arremesso de economia com falha, ele sofre ({@damage 8d6}) dano necrótico e ganha um {@Adventure Nível de contaminação | Dodk | 12}. Em um salvamento bem -sucedido, a criatura leva metade da dano e não ganha nenhum {@Adventure Contamination Níveis | Dodk | 12}. As criaturas são afetadas, mesmo que prendam a respiração ou não precisam respirar."
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Ob"
+      ]
+    },
+    {
+      "name": "Contaminated Power",
+      "source": "DoDk",
+      "page": 226,
+      "level": 8,
+      "school": "Transmutação",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium shard worth 500 gp, which the spell consumes",
+          "cost": 50000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Você desenha magia arcana sem restrições do Shard Delerium que você segura em sua mão. Até que o feitiço termine, você obtém os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "When you cast a spell that deals acid, fire, cold, lightning, or poison damage, you can change the damage type to force, necrotic, psychic, or radiant damage.",
+            "Once per turn when you deal damage with a spell, you can deal an extra {@damage 1d12} necrotic damage for each {@adventure contamination level|DoDk|12} you have gained to one target of that spell.",
+            "When you cast a spell that forces a creature to make a saving throw to resist its effects, you can choose to gain one {@adventure level of contamination|DoDk|12}. If you do, one target of the spell has disadvantage on its first saving throw made against that spell."
+          ]
+        },
+        "Este feitiço não pode ser dissipado por {@Spell Dispel Magic}."
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "hasFluff": true
+    },
+    {
+      "name": "Contamination Immunity",
+      "source": "DoDk",
+      "page": 226,
+      "level": 7,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "An eldritch lily mixed into 250 gp worth of specially-prepared purified fluids, which the spell consumes",
+          "cost": 25000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 24
+          }
+        }
+      ],
+      "entries": [
+        "Até que o feitiço termine, uma criatura disposta que você toca é imune a danos necróticos e não pode obter {@Adventure Contamination Níveis | Dodk | 12}. A criatura afetada pode repousar normalmente dentro da névoa.",
+        "Este feitiço termina imediatamente se a criatura lança um feitiço contaminado."
+      ],
+      "hasFluff": true
+    },
+    {
+      "name": "Delerium Blast",
+      "source": "DoDk",
+      "page": 227,
+      "level": 4,
+      "school": "Evocação",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}.",
+        "Você acende as energias arcanas armazenadas dentro de um fragmento de delário mantido na sua mão e o joga em direção a um espaço que você pode ver ao alcance. Ele explode em uma esfera de 20 pés de rádio de energia psíquica irregular que sobrecarrega as mentes e os sentidos daqueles que estão dentro. Cada criatura na esfera deve ter sucesso em um lance de economia de inteligência. Em um salvamento falhado, uma criatura toma ({@damage 10d6}) dano psíquico e se torna {@condition incapacitado} até o final do próximo turno. Em uma defesa bem -sucedida, um alvo leva metade do dano e não sofre de outros efeitos do feitiço."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 5º nível ou superior, o dano aumenta em {@damage 2d6} para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "incapacitado"
+      ],
+      "savingThrow": [
+        "inteligência"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Delerium Orb",
+      "source": "DoDk",
+      "page": 227,
+      "level": 1,
+      "school": "Evocação",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Você desenha o poder mágico caótico do fragmento de delírio mantido em sua mão e explodir uma criatura que você pode ver ao alcance com poder paradoxal. Escolha uma pontuação de habilidade e escolha danos frios, fogo, raios, necróticos, psíquicos ou radiantes. O alvo deve ter sucesso em um arremesso de economia usando a pontuação de habilidade escolhida; É preciso dano {@damage 6d6} do tipo escolhido em um arremesso de economia com falha, ou metade do sucesso."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano aumenta em {@damage 2d6} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Forced Evolution",
+      "source": "DoDk",
+      "page": 227,
+      "level": 4,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 8,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "An alchemical cocktail made from rare components and delerium dust worth 250 gold, which the target consumes as part of the spell",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Por meio desse feitiço, você transforma uma mutação obtida de {@Adventure Contamination | Dodk | 12}. Uma das mutações existentes do alvo é removida e é substituída por uma diferente. Essa mutação pode ser escolhida pelo mestre do jogo ou determinada aleatoriamente (consulte o Apêndice C das masmorras de Drakkenheim)."
+      ]
+    },
+    {
+      "name": "Neutralizing Field",
+      "source": "DoDk",
+      "page": 228,
+      "level": 5,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "metros",
+          "amount": 3
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "A delerium crystal or holy relic worth 1,000 gp",
+          "cost": 100000
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você nega energias mágicas contaminadas em uma esfera de raio de 10 pés. Até que o feitiço termine, a esfera se move com você, centrada em você. As criaturas na esfera (incluindo você) não podem ganhar {@Adventure Contamination Níveis | Dodk | 12} e têm imunidade a danos necróticos. Feitiços contaminados não podem ser lançados por criaturas na área."
+      ],
+      "hasFluff": true
+    },
+    {
+      "name": "Octarine Spray",
+      "source": "DoDk",
+      "page": 228,
+      "level": 7,
+      "school": "Evocação",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Raios de Luz de Octarine Flash da sua mão. Cada raio é uma cor diferente e tem um poder e um propósito diferente, veja a tabela abaixo. Cada criatura em um cone de 60 pés deve ter sucesso em um arremesso de economia de constituição. Para cada alvo, role um {@dice d8} para determinar qual raio de cor afeta.",
+        {
+          "type": "table",
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "colLabels": [
+            "d8",
+            "Octarine Spray Effect"
+          ],
+          "rows": [
+            [
+              "1",
+              "The target takes {@damage 20d6} psychic damage on a failed save, or half as much damage on a success."
+            ],
+            [
+              "2",
+              "The target takes {@damage 20d6} necrotic damage on a failed save, or half as much damage on a success."
+            ],
+            [
+              "3",
+              "The target takes {@damage 20d6} force damage on a failed save, or half as much damage on a success."
+            ],
+            [
+              "4",
+              "The target takes {@damage 20d6} radiant damage on a failed save, or half as much damage on a success."
+            ],
+            [
+              "5",
+              "The target takes {@damage 20d6} thunder damage on a failed save, or half as much damage on a success."
+            ],
+            [
+              "6",
+              "At the start of each of its turns, the affected target uses all its movement to move directly towards the closest creature it can see. Then, the affected target uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the affected target does nothing this turn. At the end of each of its turns, the affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+            ],
+            [
+              "7",
+              "At the start of each of its turns, the affected target gains one {@adventure level of contamination|DoDk|12}. At the end of each of its turns, an affected target can make a Constitution saving throw. If it succeeds, this effect ends for that target, but any {@adventure contamination levels|DoDk|12} gained remain."
+            ],
+            [
+              "8",
+              "{@b Special.} The target is struck by an additional ray. Roll again twice. There's no limit to how many additional rays can strike a single creature in this manner."
+            ]
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor",
+        "necrótico",
+        "psíquico",
+        "radiante",
+        "trovão"
+      ],
+      "savingThrow": [
+        "constituição",
+        "sabedoria"
+      ],
+      "miscTags": [
+        "Ro"
+      ]
+    },
+    {
+      "name": "Purge Contamination",
+      "source": "DoDk",
+      "page": 228,
+      "level": 3,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "100 gp of alchemical fluids or holy water, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você aplica fluidos alquímicos ou água benta a uma criatura humanóide contaminada enquanto recita um canto mágico exigente que expulsa os contaminantes de Eldritch do corpo do alvo. Quando você termina de lançar o feitiço, todos os níveis de contaminação @Adventure | Dodk | 12} e mutações são removidos da criatura. Em seguida, ganha um nível de {@condition exaustão} para cada nível de contaminação {@Adventure | Dodk | 12} removido com este feitiço."
+      ],
+      "conditionInflict": [
+        "exaustão"
+      ]
+    },
+    {
+      "name": "Ray of Contamination",
+      "source": "DoDk",
+      "page": 229,
+      "level": 6,
+      "school": "Necromancia",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Um Ray de Octarine nasce do seu dedo apontador para uma criatura que você pode ver ao alcance. O alvo deve ter sucesso em um arremesso de economia de constituição. Em um salvamento falhado, uma criatura leva {@damage 16d6} dano necrótico e ganhos {@dice 1d4} {@Adventure Níveis de contaminação | Dodk | 12}. Em um salvamento bem -sucedido, um alvo leva metade do dano e não ganha nenhum {@Adventure Contamination Níveis | Dodk | 12}."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 7º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 6º. As criaturas devem estar a 30 pés uma da outra quando você as alveja."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Ride the Rifts",
+      "source": "DoDk",
+      "page": 228,
+      "level": 3,
+      "school": "Conjuração",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Um golpe de raios Eldritch formando uma linha de 60 pés de comprimento e 5 pés de largura de você em uma direção que você escolher. Cada criatura na linha deve ter sucesso em um arremesso de economia de destreza. Uma criatura leva {@damage 10d6} danos causados ​​pelo raio em um salvamento falhado ou na metade do dano em um bem -sucedido. Você então se teletransporta para um espaço desocupado que pode ver na área da linha."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o dano aumenta em {@damage 2d6} para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "raio"
+      ],
+      "savingThrow": [
+        "destreza"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Sacrament of the Falling Fire",
+      "source": "DoDk",
+      "page": 229,
+      "level": 9,
+      "school": "Abjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp for each participating creature, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Esse feitiço só pode ser lançado em uma área coberta pela neblina profunda.",
+        "Você realiza uma cerimônia sagrada envolvendo até 12 criaturas humanóides fiéis e dispostas que acabam quando cada criatura participante leva um fragmento de delário no peito. Essas criaturas são santificadas (veja os seguidores do dossiê de fogo em queda no capítulo 3 das masmorras de Drakkenheim).",
+        "Quando você termina de lançar esse feitiço, um {@Creature Shadow} hostil} aparece e ataca cada participante, como uma manifestação da escuridão interior desse personagem. O GM pode determinar que um personagem que carrega grande raiva, medo ou ódio em seu coração faz com que um {@creature wraith} se manifeste."
+      ]
+    },
+    {
+      "name": "Siphon Contamination",
+      "source": "DoDk",
+      "page": 229,
+      "level": 6,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hora"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "500 gp worth of specially-prepared alchemical fluids and a delerium geode worth 5,000 gp, all of which are consumed by the spell",
+          "cost": 50000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Este exigente transferências de feitiços {@Adventure Contamination | Dodk | 12} de uma criatura para outra. Quando você lançou esse feitiço, você deve primeiro tocar em uma criatura humanóide disposta com um ou mais níveis de contaminação {@Adventure | Dodk | 12}, ou uma antiga criatura humanóide cuja forma atual é o resultado de uma transformação monstruosa. Você então toca em uma criatura humanóide disposta diferente.",
+        "Se ambas as criaturas tocadas eram criaturas humanóides dispostas, você remove todos os níveis de contaminação {@Adventure | Dodk | 12} e mutações da primeira criatura, então a segunda criatura que você toca ganha vários níveis de contaminação {@Adventure | Dodk | 12} igual ao número de níveis removidos da primeira criatura.",
+        "If the first creature you touch is a former humanoid who suffered a monstrous {@adventure contamination|DoDk|12}, and the second creature is a willing humanoid creature with a character level or challenge rating equal to or higher than the challenge rating of the transformed creature, you restore the fully contaminated creature to its original form, then the humanoid creature immediately undergoes a monstrous transformation as if it had gained six {@adventure Níveis de contaminação | Dodk | 12}.",
+        "A segunda criatura tocada não pode prevenir ou negar esses níveis de contaminação {@Adventure | Dodk | 12} ou uma transformação resultante de qualquer maneira, ou então o feitiço falha sem nenhum efeito."
+      ],
+      "hasFluff": true
+    },
+    {
+      "name": "Warp Bolt",
+      "source": "DoDk",
+      "page": 229,
+      "level": 2,
+      "school": "Evocação",
+      "subschools": [
+        "contaminado"
+      ],
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a delerium fragment worth 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Quando você lança esse feitiço, você ganha um {@Adventure Nível de contaminação | Dodk | 12}. Um raio de arco de Octarine atinge uma criatura dentro do alcance. Se o destino tiver um ou mais {@Adventure Contamination Níveis | Dodk | 12}, ele será atingido automaticamente. Caso contrário, faça um ataque de feitiço à distância contra essa criatura. Em um acerto, o alvo leva {@damage 6d6} dano necrótico e ganha um {@Adventure Nível de contaminação | Dodk | 12}.",
+        "Você pode criar um novo raio como sua ação em qualquer turno até que o feitiço termine."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 3º nível ou superior, você pode atingir 1 criatura adicional para cada nível de feitiço acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "spellAttack": [
+        "R"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "spell": [
+    {
+      "name": "Dark Star",
+      "source": "EGW",
+      "page": 186,
+      "level": 8,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 46
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a shard of onyx and a drop of the caster's blood, both of which the spell consumes",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Este feitiço cria uma esfera centrada em um ponto que você escolhe dentro do alcance. A esfera pode ter um raio de até 40 pés. A área dentro desta esfera é preenchida com escuridão mágica e força gravitacional esmagadora.",
+        "Durante a duração, a área do feitiço é {@quickref Terrain Difícil || 3}. Uma criatura com Darkvision não pode ver através da escuridão mágica, e a luz não mágica não pode iluminá -la. Nenhum som pode ser criado dentro ou passar pela área. Qualquer criatura ou objeto inteiramente dentro da esfera é imune a danos causados ​​pelo trovão, e as criaturas são {@condition ensurdidas} enquanto estão inteiramente dentro dela. Lançar um feitiço que inclui um componente verbal é impossível lá.",
+        "Qualquer criatura que entre na área do feitiço pela primeira vez em uma curva ou inicie sua vez, deve fazer um lance de economia de constituição. A criatura leva {@damage 8d10} danos forçados em um salvamento falhado ou na metade do dano em um bem -sucedido. Uma criatura reduzida a 0 pontos de vida por esse dano é desintegrada. Uma criatura desintegrada e tudo o que está vestindo e carregando, exceto itens mágicos, são reduzidos a uma pilha de poeira cinza fina."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "conditionInflict": [
+        "ensurdecem"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Dft",
+        "Obj"
+      ],
+      "areaTags": [
+        "S"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Fortune's Favor",
+      "source": "EGW",
+      "page": 186,
+      "level": 2,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a white pearl worth at least 100 gp, which the spell consumes",
+          "cost": 10000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você dá sorte latente a si mesmo ou a uma criatura disposta que pode ver ao alcance. Quando a criatura escolhida faz um rolo de ataque, uma verificação de habilidade ou um arremesso de salvamento antes que o feitiço termine, ela pode descartar esse feitiço para rolar um {@dice d20} adicional e escolher qual dos {@dice d20} s para usar. Como alternativa, quando um rolo de ataque é feito contra a criatura escolhida, ele pode descartar esse feitiço para rolar um {@dice d20} e escolher qual dos {@dice d20} s para usar, aquele que ele rolou ou aquele que o atacante rolou.",
+        "Se o rolo original {@dice d20} tiver vantagem ou desvantagem, a criatura rola o {@dice d20} adicional após a vantagem ou a desvantagem foi aplicada ao rolo original."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 3º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SCT",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Gift of Alacrity",
+      "source": "EGW",
+      "page": 186,
+      "level": 1,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minuto"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 8
+          }
+        }
+      ],
+      "entries": [
+        "Você toca em uma criatura disposta. Durante a duração, o destino pode adicionar {@Dice 1D8} aos seus rolos de iniciativa."
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Gravity Fissure",
+      "source": "EGW",
+      "page": 187,
+      "level": 6,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "metros",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a fistful of iron filings"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você manifesta um barranco de energia gravitacional em uma linha originária de você com 100 pés de comprimento e 5 pés de largura. Cada criatura nessa linha deve fazer um arremesso de economia de constituição, tomando danos à força {@damage 8d8} em um salvamento falhado ou na metade do dano em um bem -sucedido.",
+        "Cada criatura a 10 pés da linha, mas não nela, deve ter sucesso em um arremesso de economia de constituição ou tomar danos à força e ser puxado em direção à linha até que a criatura esteja em sua área."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 7º nível ou superior, o dano aumenta em {@scaledamage 8d8 | 6-9 | 1d8} para cada nível de slot acima do 6º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "areaTags": [
+        "L"
+      ]
+    },
+    {
+      "name": "Gravity Sinkhole",
+      "source": "EGW",
+      "page": 187,
+      "level": 4,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a black marble"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Uma esfera de um raio de 20 pés de força esmagadora se forma em um ponto que você pode ver ao alcance e puxadores nas criaturas lá. Cada criatura na esfera deve fazer um lance de economia de constituição. Em uma defesa fracassada, a criatura leva {@damage 5d10} danos fortes e é puxada em uma linha reta em direção ao centro da esfera, terminando em um espaço desocupado o mais próximo possível do centro (mesmo que esse espaço esteja no ar). Em uma defesa bem -sucedida, a criatura leva metade da dano e não é puxada."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 5º nível ou superior, o dano aumenta em {@ScaledAmage 5D10 | 4-9 | 1d10} para cada nível de slot acima do 4º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Immovable Object",
+      "source": "EGW",
+      "page": 187,
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "toque"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "gold dust worth at least 25 gp, which the spell consumes",
+          "cost": 2500,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você toca em um objeto que não pesa mais de 10 libras e faz com que ele se torne magicamente fixo no lugar. Você e as criaturas que você designam quando lançam esse feitiço podem mover o objeto normalmente. Você também pode definir uma senha que, quando falada a 5 pés do objeto, suprime esse feitiço por 1 minuto.",
+        "Se o objeto estiver fixo no ar, ele poderá manter até 4.000 libras de peso. Mais peso faz com que o objeto caia. Caso contrário, uma criatura pode usar uma ação para fazer uma verificação de força no seu feitiço Salvar DC. Em um sucesso, a criatura pode mover o objeto até 10 pés."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Se você lançar esse feitiço usando um slot de feitiço do 4º ou 5º nível, o CC para mover o objeto aumenta em 5, ele pode transportar até 8.000 libras de peso e a duração aumenta para 24 horas. Se você lançar esse feitiço usando um slot de feitiço do 6º nível ou superior, o CC para mover o objeto aumenta em 10, ele pode transportar até 20.000 libras de peso e o efeito é permanente até que seja dissipado."
+          ]
+        }
+      ],
+      "abilityCheck": [
+        "força"
+      ],
+      "miscTags": [
+        "Obj",
+        "Prm"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Magnify Gravity",
+      "source": "EGW",
+      "page": 188,
+      "level": 1,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "A gravidade em uma esfera de 10 pés de rádio centrada em um ponto que você pode ver dentro do alcance aumenta por um momento. Cada criatura na esfera na curva quando você lança o feitiço deve fazer um lance de economia de constituição. Em um salvamento falhado, uma criatura leva {@damage 2d8} dano à força e sua velocidade é reduzida pela metade até o final do próximo turno. Em uma defesa bem -sucedida, uma criatura leva metade do dano e não sofre redução à sua velocidade.",
+        "Até o início do seu próximo turno, qualquer objeto que não esteja sendo usado ou transportado na esfera exige uma verificação de força bem -sucedida contra o seu feitiço Save DC para pegar ou se mover."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um slot de feitiço do 2º nível ou superior, o dano aumenta em {@ScaledAmage 2d8 | 1-9 | 1d8} para cada nível de slot acima do 1º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Obj",
+        "SGT"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Pulse Wave",
+      "source": "EGW",
+      "page": 188,
+      "level": 3,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você cria pressão intensa, desencadeia-a em um cone de 30 pés e decide se a pressão puxa ou empurra criaturas e objetos. Cada criatura naquele cone deve fazer um lance de economia de constituição. Uma criatura leva {@damage 6d6} danos forçados em um salvamento falhado ou na metade do dano em um bem -sucedido. E toda criatura que falha, o salvamento é puxado 15 pés em sua direção ou empurrado a 15 pés de distância de você, dependendo da escolha que você fez para o feitiço.",
+        "Além disso, objetos não garantidos que estão completamente dentro do cone também são puxados ou empurrados a 15 pés."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 4º nível ou superior, o dano aumenta em {@ScaledAdamage 6d6 | 3-9 | 1d6} e a distância puxada ou empurrada aumenta em 5 pés para cada nível de slot acima do 3º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "Fmv",
+        "Obj"
+      ],
+      "areaTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Ravenous Void",
+      "source": "EGW",
+      "page": 188,
+      "level": 9,
+      "school": "Evocação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 305
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small, nine-pointed star made of iron"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você cria uma esfera de Radio de 20 pés de força gravitacional destrutiva centrada em um ponto que pode ver ao alcance. Para a duração do feitiço, a esfera e qualquer espaço a 100 pés dela são {@quickref Terrain Difícil || 3}, e objetos não mágicos totalmente dentro da esfera são destruídos se não estiverem sendo usados ​​ou transportados.",
+        "Quando a esfera aparece e no início de cada uma das suas curvas até que o feitiço termine, objetos não garantidos a 30 metros da esfera são puxados em direção ao centro da esfera, terminando em um espaço desocupado o mais próximo possível do centro.",
+        "Uma criatura que inicia sua vez a menos de 100 pés da esfera deve ter sucesso em um arremesso de resistência ou ser puxada diretamente em direção ao centro da esfera, terminando em um espaço desocupado o mais próximo possível do centro. Uma criatura que entra na esfera pela primeira vez em uma curva ou inicia sua vez, requer {@damage 5d10} dano de força e é {@condition restrito} até que não esteja mais na esfera. Se a esfera estiver no ar, a criatura {@condition restrita} paira dentro da esfera. Uma criatura pode usar sua ação para fazer uma verificação de força contra o seu feitiço Save DC, encerrando essa condição {@condition restrita} em si ou em outra criatura na esfera que ela pode alcançar. Uma criatura reduzida a 0 pontos de vida por esse feitiço é aniquilada, juntamente com quaisquer itens não mágicos que ele está usando ou carregando."
+      ],
+      "damageInflict": [
+        "vigor"
+      ],
+      "conditionInflict": [
+        "contido"
+      ],
+      "savingThrow": [
+        "força"
+      ],
+      "abilityCheck": [
+        "força"
+      ],
+      "miscTags": [
+        "Obj",
+        "SGT"
+      ],
+      "areaTags": [
+        "S"
+      ]
+    },
+    {
+      "name": "Reality Break",
+      "source": "EGW",
+      "page": 189,
+      "level": 8,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a crystal prism"
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você quebra as barreiras entre realidades e cronogramas, empurrando uma criatura em tumulto e loucura. O alvo deve ter sucesso em um arremesso de economia de sabedoria, ou não pode tomar reações até que o feitiço termine. O alvo afetado também deve rolar um {@dice d10} no início de cada uma de suas curvas; O número rolo determina o que acontece com o alvo, como mostrado na tabela de efeitos de quebra de realidade.",
+        "No final de cada uma de suas curvas, o alvo afetado pode repetir o arremesso de economia da sabedoria, encerrando o feitiço em si mesmo com um sucesso.",
+        {
+          "type": "table",
+          "caption": "Reality Break Effects",
+          "colLabels": [
+            "d10",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1-2",
+              "{@b Vision of the Far Realm.} The target takes {@damage 6d12} psychic damage, and it is {@condition stunned} until the end of the turn."
+            ],
+            [
+              "3-5",
+              "{@b Rending Rift.} The target must make a Dexterity saving throw, taking {@damage 8d12} force damage on a failed save, or half as much damage on a successful one."
+            ],
+            [
+              "6-8",
+              "{@b Wormhole.} The target is teleported, along with everything it is wearing and carrying, up to 30 feet to an unoccupied space of your choice that you can see. The target also takes {@damage 10d12} force damage and is knocked {@condition prone}."
+            ],
+            [
+              "9-10",
+              "{@b Chill of the Dark Void.} The target takes {@damage 10d12} cold damage, and it is {@condition blinded} until the end of the turn."
+            ]
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psíquico",
+        "vigor",
+        "frio"
+      ],
+      "conditionInflict": [
+        "atordoado",
+        "propenso",
+        "cego"
+      ],
+      "savingThrow": [
+        "sabedoria",
+        "destreza"
+      ],
+      "miscTags": [
+        "Ro",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Sapping Sting",
+      "source": "EGW",
+      "page": 189,
+      "level": 0,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 9
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você muda a vitalidade de uma criatura que pode ver no alcance. O alvo deve ter sucesso em um arremesso de economia de constituição ou tomar {@damage 1d4} dano necrótico e queda {@condition propense}.",
+        "Os danos desse feitiço aumentam em {@damage 1d4} quando você atinge o 5º nível ({@damage 2d4}), 11º nível ({@damage 3d4}) e 17º nível ({@damage 4d4})."
+      ],
+      "scalingLevelDice": {
+        "label": "dano necrótico",
+        "scaling": {
+          "1": "1d4",
+          "5": "2d4",
+          "11": "3d4",
+          "17": "4d4"
+        }
+      },
+      "damageInflict": [
+        "necrótico"
+      ],
+      "conditionInflict": [
+        "propenso"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SCL",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Temporal Shunt",
+      "source": "EGW",
+      "page": 189,
+      "level": 5,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reação",
+          "condition": "Tomado quando uma criatura que você pode ver faz um rolo de ataque ou começa a lançar um feitiço"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 37
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "rodada",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você tem como alvo a criatura desencadeante, que deve ter sucesso em um arremesso de economia de sabedoria ou desaparecer, sendo jogado para outro ponto no tempo e fazendo com que o ataque perdesse ou o feitiço seja desperdiçado. No início de seu próximo turno, o alvo reaparece onde estava ou no espaço desocupado mais próximo. O alvo não se lembra de você lançar o feitiço ou ser afetado por ele."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço do 6º nível ou superior, você pode atingir uma criatura adicional para cada nível de slot acima do 5º. Todos os alvos devem estar a 30 pés um do outro."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "sabedoria"
+      ],
+      "miscTags": [
+        "SCT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Tether Essence",
+      "source": "EGW",
+      "page": 189,
+      "level": 7,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a spool of platinum cord worth at least 250 gp, which the spell consumes",
+          "cost": 25000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Duas criaturas que você pode ver ao alcance devem fazer um arremesso de economia de constituição, com desvantagem se estiverem a 30 pés um do outro. Qualquer uma das criaturas pode falhar de bom grado a defesa. Se qualquer uma das salvadas for bem -sucedida, o feitiço não terá efeito. Se ambas as salvamentos falharem, as criaturas estão magicamente ligadas durante a duração, independentemente da distância entre elas. Quando o dano é causado a um deles, o mesmo dano é causado ao outro. Se os pontos de vida forem restaurados para um deles, o mesmo número de pontos de vida será restaurado para o outro. Se qualquer uma das criaturas amarradas for reduzida para 0 pontos de vida, o feitiço termina em ambos. Se o feitiço terminar em uma criatura, ele termina em ambos."
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "Mt"
+      ]
+    },
+    {
+      "name": "Time Ravage",
+      "source": "EGW",
+      "page": 189,
+      "level": 9,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an hourglass filled with diamond dust worth at least 5,000 gp, which the spell consumes",
+          "cost": 500000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você tem como alvo uma criatura que pode ver ao alcance, colocando sua forma física através da devastação do envelhecimento rápido. O alvo deve fazer um arremesso de economia de constituição, sofrendo danos necróticos {@damage 10d12} em uma defesa fracassada ou na metade da dano em um bem -sucedido. Se o salvamento falhar, o alvo também envelhece a ponto de restar apenas 30 dias antes de morrer da velhice. Nesse estado envelhecido, o alvo tem desvantagem nos rolos de ataque, verificações de habilidade e lances de salvamento, e sua velocidade de caminhada é reduzida pela metade. Somente o feitiço {@Spell Wish} ou o {@Spell Greater Restoration} fundido com um slot de feitiço de 9º nível pode encerrar esses efeitos e restaurar o alvo para sua idade anterior."
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Wristpocket",
+      "source": "EGW",
+      "page": 190,
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "Você joga seu pulso, fazendo com que um objeto na sua mão desapareça. O objeto, que somente você pode estar segurando e pode pesar mais de 5 libras, é transportado para um espaço extradimensional, onde permanece durante a duração.",
+        "Até que o feitiço termine, você pode usar sua ação para convocar o objeto para sua mão livre e usar sua ação para retornar o objeto ao espaço extradimensional. Um objeto ainda no plano de bolso quando o feitiço termina em seu espaço, aos seus pés."
+      ],
+      "areaTags": [
+        "St"
+      ]
+    }
+  ]
+}

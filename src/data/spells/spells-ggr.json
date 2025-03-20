@@ -1,0 +1,41 @@
+{
+  "spell": [
+    {
+      "name": "Encode Thoughts",
+      "source": "GGR",
+      "page": 47,
+      "level": 0,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 8
+          }
+        }
+      ],
+      "entries": [
+        "Colocando um dedo na sua cabeça, você puxa uma memória, uma idéia ou uma mensagem da sua mente e a transforma em uma sequência tangível de energia brilhante chamada fita de pensamento, que persiste durante a duração ou até que você lançasse esse feitiço novamente. A fita de pensamento aparece em um espaço desocupado a um metro e meio de você como um objeto semi -sólido minúsculo, sem peso que pode ser mantido e transportado como uma fita. Caso contrário, é estacionário.",
+        "Se você lançar esse feitiço enquanto {@status Concentração || Concentrando} em um feitiço ou uma habilidade que permite ler ou manipular os pensamentos de outras pessoas (como {@Spell Detect Thoughts} ou {@Spell Modify Memory}), você pode transformar os pensamentos ou memórias que lê, em vez de sua própria, em um Strand.",
+        "Ficar esse feitiço enquanto segura uma fita de pensamento permite que você receba instantaneamente qualquer memória, idéia ou mensagem que a fita de pensamento contém. (Casting {@Spell Detect Thoughts} On the Strand tem o mesmo efeito.)"
+      ],
+      "hasFluffImages": true
+    }
+  ]
+}

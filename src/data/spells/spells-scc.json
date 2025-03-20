@@ -1,0 +1,229 @@
+{
+  "spell": [
+    {
+      "name": "Borrowed Knowledge",
+      "source": "SCC",
+      "page": 37,
+      "level": 2,
+      "school": "Adivinhação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a book worth at least 25 gp",
+          "cost": 2500
+        }
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "hora",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Você se baseia no conhecimento dos espíritos do passado. Escolha uma habilidade na qual você não tenha proficiência. Para a duração do feitiço, você tem proficiência na habilidade escolhida. O feitiço termina cedo se você o lançar novamente."
+      ]
+    },
+    {
+      "name": "Kinetic Jaunt",
+      "source": "SCC",
+      "page": 37,
+      "level": 2,
+      "school": "Transmutação",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "pessoal"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "temporal",
+          "duration": {
+            "type": "minuto",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "Você magicamente capacita seu movimento com passos de dança, dando a si mesmo os seguintes benefícios durante a duração.",
+        {
+          "type": "list",
+          "items": [
+            "Your walking speed increases by 10 feet.",
+            "You don't provoke opportunity attacks.",
+            "You can move through the space of another creature, and it doesn't count as {@quickref difficult terrain||3}. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take {@damage 1d8} force damage."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "vigor"
+      ]
+    },
+    {
+      "name": "Silvery Barbs",
+      "source": "SCC",
+      "page": 38,
+      "level": 1,
+      "school": "Encantamento",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reação",
+          "condition": "que você toma quando uma criatura que você pode ver dentro de 60 metros de si mesmo é bem -sucedida em um rolo de ataque, uma verificação de habilidade ou um lance salvador"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você distrai magicamente a criatura desencadeante e transforma sua incerteza momentânea em encorajamento para outra criatura. A criatura desencadeante deve recolocar o {@dice d20} e usar o rolo inferior.",
+        "Você pode escolher uma criatura diferente que pode ver dentro do intervalo (você pode escolher). A criatura escolhida tem vantagem no próximo rolo de ataque, verificação de habilidade ou lançamento de salvamento que faz em 1 minuto. Uma criatura pode ser capacitada por apenas um uso desse feitiço de cada vez."
+      ],
+      "miscTags": [
+        "Adv",
+        "SGT"
+      ],
+      "areaTags": [
+        "St"
+      ]
+    },
+    {
+      "name": "Vortex Warp",
+      "source": "SCC",
+      "page": 38,
+      "level": 2,
+      "school": "Conjuração",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 27
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você magicamente torce o espaço em torno de outra criatura que pode ver ao alcance. O alvo deve ter sucesso em um arremesso de economia de constituição (o alvo pode optar por falhar), ou o alvo é teletransportado para um espaço desocupado de sua escolha que você pode ver dentro do intervalo. O espaço escolhido deve estar em uma superfície ou em um líquido que possa suportar o alvo sem que o alvo tenha que espremer."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o alcance do feitiço aumenta em 30 pés para cada nível de slot acima do 2º."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "SGT",
+        "Tp"
+      ]
+    },
+    {
+      "name": "Wither and Bloom",
+      "source": "SCC",
+      "page": 38,
+      "level": 2,
+      "school": "Necromancia",
+      "time": [
+        {
+          "number": 1,
+          "unit": "ação"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "metros",
+          "amount": 18
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a withered vine twisted into a loop"
+      },
+      "duration": [
+        {
+          "type": "instantânea"
+        }
+      ],
+      "entries": [
+        "Você invoca a morte e a vida em uma esfera de 10 pés de rádio centrada em um ponto ao alcance. Cada criatura de sua escolha nessa área deve fazer um arremesso de economia de constituição, sofrendo danos necróticos {@damage 2d6} em uma defesa fracassada ou metade da dano em um sucesso bem -sucedido. Vegetação não mágica nessa área murcha.",
+        "Além disso, uma criatura de sua escolha nessa área pode gastar e rolar um de seus dados não gastos de acerto e recuperar vários pontos de vida igual ao rolo mais o seu modificador de habilidade de conjuração."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "Em Níveis Superiores",
+          "entries": [
+            "Quando você lança esse feitiço usando um feitiço de 3º nível ou superior, o dano aumenta em {@ScaledAdamage 2d6 | 2-9 | 1d6} para cada slot acima do 2º e o número de dados que podem ser gastos e adicionados ao rolo de cura aumenta por um para cada slot acima do 2º."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "necrótico"
+      ],
+      "savingThrow": [
+        "constituição"
+      ],
+      "miscTags": [
+        "HL"
+      ]
+    }
+  ]
+}
