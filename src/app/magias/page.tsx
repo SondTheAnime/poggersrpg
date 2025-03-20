@@ -15,9 +15,9 @@ export default function MagiasPage() {
   const [filteredMagias, setFilteredMagias] = useState<SpellData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedNivel, setSelectedNivel] = useState<number | null>(null);
-  const [selectedEscola, setSelectedEscola] = useState<string | null>(null);
-  const [selectedClasse, setSelectedClasse] = useState<string | null>(null);
+  const [selectedNiveis, setSelectedNiveis] = useState<number[]>([]);
+  const [selectedEscolas, setSelectedEscolas] = useState<string[]>([]);
+  const [selectedClasses, setSelectedClasses] = useState<string[]>([]);
 
   // Carregar os dados das magias
   useEffect(() => {
@@ -53,27 +53,62 @@ export default function MagiasPage() {
       );
     }
 
-    // Filtrar por nível
-    if (selectedNivel !== null) {
-      filtered = filtered.filter(magia => magia.level === selectedNivel);
+    // Filtrar por níveis
+    if (selectedNiveis.length > 0) {
+      filtered = filtered.filter(magia => 
+        selectedNiveis.includes(magia.level)
+      );
     }
 
-    // Filtrar por escola
-    if (selectedEscola) {
-      filtered = filtered.filter(magia => magia.school === selectedEscola);
+    // Filtrar por escolas
+    if (selectedEscolas.length > 0) {
+      filtered = filtered.filter(magia => 
+        selectedEscolas.includes(magia.school)
+      );
     }
 
-    // Filtrar por classe
-    if (selectedClasse) {
+    // Filtrar por classes
+    if (selectedClasses.length > 0) {
       filtered = filtered.filter(magia => 
         magia.classesWhoCanUse?.some(classe => 
-          classe.name.toLowerCase() === selectedClasse.toLowerCase()
+          selectedClasses.includes(classe.name)
         )
       );
     }
 
     setFilteredMagias(filtered);
-  }, [searchTerm, selectedNivel, selectedEscola, selectedClasse, magias]);
+  }, [searchTerm, selectedNiveis, selectedEscolas, selectedClasses, magias]);
+
+  // Funções para manipular os filtros multiseleção
+  const toggleNivelFilter = (nivel: number) => {
+    setSelectedNiveis(prev => 
+      prev.includes(nivel) 
+        ? prev.filter(n => n !== nivel) 
+        : [...prev, nivel]
+    );
+  };
+
+  const toggleEscolaFilter = (escola: string) => {
+    setSelectedEscolas(prev => 
+      prev.includes(escola) 
+        ? prev.filter(e => e !== escola) 
+        : [...prev, escola]
+    );
+  };
+
+  const toggleClasseFilter = (classe: string) => {
+    setSelectedClasses(prev => 
+      prev.includes(classe) 
+        ? prev.filter(c => c !== classe) 
+        : [...prev, classe]
+    );
+  };
+
+  const limparFiltros = () => {
+    setSelectedNiveis([]);
+    setSelectedEscolas([]);
+    setSelectedClasses([]);
+  };
 
   // Agrupar as escolas de magia disponíveis
   const escolasMagia = magias.length > 0 
@@ -105,14 +140,15 @@ export default function MagiasPage() {
           <FilterBar 
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
-            selectedNivel={selectedNivel}
-            setSelectedNivel={setSelectedNivel}
-            selectedEscola={selectedEscola}
-            setSelectedEscola={setSelectedEscola}
+            selectedNiveis={selectedNiveis}
+            toggleNivelFilter={toggleNivelFilter}
+            selectedEscolas={selectedEscolas}
+            toggleEscolaFilter={toggleEscolaFilter}
             escolasMagia={escolasMagia}
-            selectedClasse={selectedClasse}
-            setSelectedClasse={setSelectedClasse}
+            selectedClasses={selectedClasses}
+            toggleClasseFilter={toggleClasseFilter}
             classesMagia={classesMagia}
+            limparFiltros={limparFiltros}
           />
         </div>
 

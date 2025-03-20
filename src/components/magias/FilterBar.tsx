@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { FaSearch, FaFilter, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { useState, useEffect, ReactNode } from 'react';
+import { FaSearch, FaFilter, FaTimes, FaChevronDown, FaChevronUp, FaCheck } from 'react-icons/fa';
 
 /**
  * Componente de barra de filtros para a página de magias
@@ -8,46 +8,88 @@ import { FaSearch, FaFilter, FaTimes, FaChevronDown, FaChevronUp } from 'react-i
 interface FilterBarProps {
   searchTerm: string;
   setSearchTerm: (term: string) => void;
-  selectedNivel: number | null;
-  setSelectedNivel: (nivel: number | null) => void;
-  selectedEscola: string | null;
-  setSelectedEscola: (escola: string | null) => void;
+  selectedNiveis: number[];
+  toggleNivelFilter: (nivel: number) => void;
+  selectedEscolas: string[];
+  toggleEscolaFilter: (escola: string) => void;
   escolasMagia: string[];
-  selectedClasse: string | null;
-  setSelectedClasse: (classe: string | null) => void;
+  selectedClasses: string[];
+  toggleClasseFilter: (classe: string) => void;
   classesMagia: string[];
+  limparFiltros: () => void;
+}
+
+interface SearchBarProps {
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+  filtrosAvancadosOpen: boolean;
+  setFiltrosAvancadosOpen: (open: boolean) => void;
+  totalFiltrosAplicados: number;
+}
+
+interface FiltrosAplicadosProps {
+  selectedNiveis: number[];
+  toggleNivelFilter: (nivel: number) => void;
+  selectedEscolas: string[];
+  toggleEscolaFilter: (escola: string) => void;
+  selectedClasses: string[];
+  toggleClasseFilter: (classe: string) => void;
+  limparFiltros: () => void;
+}
+
+interface FilterTagProps {
+  label: string;
+  onRemove: () => void;
+}
+
+interface FiltrosAvancadosProps {
+  niveis: number[];
+  selectedNiveis: number[];
+  toggleNivelFilter: (nivel: number) => void;
+  selectedEscolas: string[];
+  toggleEscolaFilter: (escola: string) => void;
+  escolasMagia: string[];
+  selectedClasses: string[];
+  toggleClasseFilter: (classe: string) => void;
+  classesMagia: string[];
+  totalFiltrosAplicados: number;
+  limparFiltros: () => void;
+}
+
+interface FilterSectionProps {
+  title: string;
+  children: ReactNode;
+  layout?: "grid" | "list";
+}
+
+interface ToggleButtonProps {
+  label: string;
+  isSelected: boolean;
+  onClick: () => void;
+  layout?: "grid" | "list";
 }
 
 export function FilterBar({
   searchTerm,
   setSearchTerm,
-  selectedNivel,
-  setSelectedNivel,
-  selectedEscola,
-  setSelectedEscola,
+  selectedNiveis,
+  toggleNivelFilter,
+  selectedEscolas,
+  toggleEscolaFilter,
   escolasMagia,
-  selectedClasse,
-  setSelectedClasse,
+  selectedClasses,
+  toggleClasseFilter,
   classesMagia,
+  limparFiltros,
 }: FilterBarProps) {
   const [filtrosAvancadosOpen, setFiltrosAvancadosOpen] = useState(false);
-  const [filtrosAplicados, setFiltrosAplicados] = useState(0);
+  const [totalFiltrosAplicados, setTotalFiltrosAplicados] = useState(0);
 
   // Verificar quantos filtros estão aplicados
   useEffect(() => {
-    let count = 0;
-    if (selectedNivel !== null) count++;
-    if (selectedEscola) count++;
-    if (selectedClasse) count++;
-    setFiltrosAplicados(count);
-  }, [selectedNivel, selectedEscola, selectedClasse]);
-
-  // Função para limpar todos os filtros
-  const limparFiltros = () => {
-    setSelectedNivel(null);
-    setSelectedEscola(null);
-    setSelectedClasse(null);
-  };
+    const total = selectedNiveis.length + selectedEscolas.length + selectedClasses.length;
+    setTotalFiltrosAplicados(total);
+  }, [selectedNiveis, selectedEscolas, selectedClasses]);
 
   // Lista de níveis de magia (0-9)
   const niveis = Array.from({ length: 10 }, (_, i) => i);
@@ -57,166 +99,291 @@ export function FilterBar({
       {/* Container principal com efeito de vidro */}
       <div className="backdrop-blur-md bg-purple-900/30 border border-purple-500/20 rounded-xl shadow-lg p-4 mb-6 animate-fadeIn">
         {/* Seção de pesquisa sempre visível */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-2 gap-4">
-          {/* Campo de pesquisa por nome */}
-          <div className="relative w-full md:w-1/2">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <FaSearch className="text-purple-300" />
-            </div>
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Buscar por nome da magia..."
-              className="pl-10 w-full py-2.5 bg-purple-800/40 text-white rounded-lg border border-purple-500/30 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-300"
-            />
-            {searchTerm && (
-              <button
-                onClick={() => setSearchTerm('')}
-                className="absolute inset-y-0 right-0 pr-3 flex items-center text-purple-300 hover:text-white transition duration-300"
-              >
-                <FaTimes />
-              </button>
-            )}
-          </div>
+        <SearchBar 
+          searchTerm={searchTerm} 
+          setSearchTerm={setSearchTerm}
+          filtrosAvancadosOpen={filtrosAvancadosOpen}
+          setFiltrosAvancadosOpen={setFiltrosAvancadosOpen}
+          totalFiltrosAplicados={totalFiltrosAplicados}
+        />
 
-          {/* Botão para expandir/colapsar filtros avançados */}
-          <button
-            onClick={() => setFiltrosAvancadosOpen(!filtrosAvancadosOpen)}
-            className="flex items-center gap-2 px-4 py-2.5 bg-purple-700/60 hover:bg-purple-600/60 text-white rounded-lg transition-all duration-300 border border-purple-500/30"
-          >
-            <FaFilter className="animate-pulse" />
-            <span>Filtros Avançados</span>
-            {filtrosAplicados > 0 && (
-              <span className="inline-flex items-center justify-center w-6 h-6 bg-amber-500 text-purple-900 text-xs font-bold rounded-full ml-2">
-                {filtrosAplicados}
-              </span>
-            )}
-            {filtrosAvancadosOpen ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
-          </button>
-        </div>
-
-        {/* Filtros aplicados (visível mesmo quando os filtros avançados estão fechados) */}
-        {filtrosAplicados > 0 && (
-          <div className="flex flex-wrap items-center gap-2 mt-4 text-sm">
-            <span className="text-purple-300">Filtros aplicados:</span>
-            
-            {selectedNivel !== null && (
-              <div className="flex items-center bg-purple-700/60 px-2 py-1 rounded-full border border-purple-500/30">
-                <span className="mr-1">Nível {selectedNivel}</span>
-                <button
-                  onClick={() => setSelectedNivel(null)}
-                  className="text-purple-300 hover:text-white"
-                >
-                  <FaTimes size={12} />
-                </button>
-              </div>
-            )}
-            
-            {selectedEscola && (
-              <div className="flex items-center bg-purple-700/60 px-2 py-1 rounded-full border border-purple-500/30">
-                <span className="mr-1">Escola: {selectedEscola}</span>
-                <button
-                  onClick={() => setSelectedEscola(null)}
-                  className="text-purple-300 hover:text-white"
-                >
-                  <FaTimes size={12} />
-                </button>
-              </div>
-            )}
-            
-            {selectedClasse && (
-              <div className="flex items-center bg-purple-700/60 px-2 py-1 rounded-full border border-purple-500/30">
-                <span className="mr-1">Classe: {selectedClasse}</span>
-                <button
-                  onClick={() => setSelectedClasse(null)}
-                  className="text-purple-300 hover:text-white"
-                >
-                  <FaTimes size={12} />
-                </button>
-              </div>
-            )}
-            
-            <button
-              onClick={limparFiltros}
-              className="text-amber-400 hover:text-amber-300 text-sm"
-            >
-              Limpar todos
-            </button>
-          </div>
+        {/* Tags de filtros ativos */}
+        {totalFiltrosAplicados > 0 && (
+          <FiltrosAplicados 
+            selectedNiveis={selectedNiveis}
+            toggleNivelFilter={toggleNivelFilter}
+            selectedEscolas={selectedEscolas}
+            toggleEscolaFilter={toggleEscolaFilter}
+            selectedClasses={selectedClasses}
+            toggleClasseFilter={toggleClasseFilter}
+            limparFiltros={limparFiltros}
+          />
         )}
 
-        {/* Filtros avançados colapsáveis */}
+        {/* Painel de filtros avançados */}
         {filtrosAvancadosOpen && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 animate-fadeIn">
-            {/* Filtro por nível */}
-            <div>
-              <label className="block text-purple-300 mb-2 font-medium">Nível da Magia</label>
-              <div className="relative">
-                <select
-                  value={selectedNivel === null ? "" : selectedNivel}
-                  onChange={(e) => setSelectedNivel(e.target.value ? Number(e.target.value) : null)}
-                  className="w-full p-2.5 bg-purple-800/40 text-white rounded-lg border border-purple-500/30 focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none"
-                >
-                  <option value="">Todos os níveis</option>
-                  {niveis.map((nivel) => (
-                    <option key={nivel} value={nivel}>
-                      {nivel === 0 ? "Truque (Nível 0)" : `Nível ${nivel}`}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <FaChevronDown className="text-purple-300" />
-                </div>
-              </div>
-            </div>
-
-            {/* Filtro por escola */}
-            <div>
-              <label className="block text-purple-300 mb-2 font-medium">Escola de Magia</label>
-              <div className="relative">
-                <select
-                  value={selectedEscola || ""}
-                  onChange={(e) => setSelectedEscola(e.target.value || null)}
-                  className="w-full p-2.5 bg-purple-800/40 text-white rounded-lg border border-purple-500/30 focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none"
-                >
-                  <option value="">Todas as escolas</option>
-                  {escolasMagia.map((escola) => (
-                    <option key={escola} value={escola}>
-                      {escola}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <FaChevronDown className="text-purple-300" />
-                </div>
-              </div>
-            </div>
-            
-            {/* Filtro por classe */}
-            <div>
-              <label className="block text-purple-300 mb-2 font-medium">Classe</label>
-              <div className="relative">
-                <select
-                  value={selectedClasse || ""}
-                  onChange={(e) => setSelectedClasse(e.target.value || null)}
-                  className="w-full p-2.5 bg-purple-800/40 text-white rounded-lg border border-purple-500/30 focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none"
-                >
-                  <option value="">Todas as classes</option>
-                  {classesMagia.map((classe) => (
-                    <option key={classe} value={classe}>
-                      {classe}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <FaChevronDown className="text-purple-300" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <FiltrosAvancados 
+            niveis={niveis}
+            selectedNiveis={selectedNiveis}
+            toggleNivelFilter={toggleNivelFilter}
+            selectedEscolas={selectedEscolas}
+            toggleEscolaFilter={toggleEscolaFilter}
+            escolasMagia={escolasMagia}
+            selectedClasses={selectedClasses}
+            toggleClasseFilter={toggleClasseFilter}
+            classesMagia={classesMagia}
+            totalFiltrosAplicados={totalFiltrosAplicados}
+            limparFiltros={limparFiltros}
+          />
         )}
       </div>
     </div>
+  );
+}
+
+function SearchBar({ 
+  searchTerm, 
+  setSearchTerm, 
+  filtrosAvancadosOpen, 
+  setFiltrosAvancadosOpen, 
+  totalFiltrosAplicados 
+}: SearchBarProps) {
+  return (
+    <div className="flex flex-col md:flex-row items-center justify-between mb-2 gap-4">
+      <div className="relative w-full md:w-1/2">
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <FaSearch className="text-purple-300" />
+        </div>
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Buscar por nome da magia..."
+          className="pl-10 w-full py-2.5 bg-purple-800/40 text-white rounded-lg border border-purple-500/30 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-300"
+        />
+        {searchTerm && (
+          <button
+            onClick={() => setSearchTerm('')}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-purple-300 hover:text-white transition duration-300"
+          >
+            <FaTimes />
+          </button>
+        )}
+      </div>
+
+      <button
+        onClick={() => setFiltrosAvancadosOpen(!filtrosAvancadosOpen)}
+        className="flex items-center gap-2 px-4 py-2.5 bg-purple-700/60 hover:bg-purple-600/60 text-white rounded-lg transition-all duration-300 border border-purple-500/30"
+      >
+        <FaFilter className="animate-pulse" />
+        <span>Filtros Avançados</span>
+        {totalFiltrosAplicados > 0 && (
+          <span className="inline-flex items-center justify-center w-6 h-6 bg-amber-500 text-purple-900 text-xs font-bold rounded-full ml-2">
+            {totalFiltrosAplicados}
+          </span>
+        )}
+        {filtrosAvancadosOpen ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
+      </button>
+    </div>
+  );
+}
+
+function FiltrosAplicados({ 
+  selectedNiveis, 
+  toggleNivelFilter, 
+  selectedEscolas, 
+  toggleEscolaFilter, 
+  selectedClasses, 
+  toggleClasseFilter, 
+  limparFiltros 
+}: FiltrosAplicadosProps) {
+  return (
+    <div className="flex flex-wrap items-center gap-2 mt-4 text-sm">
+      <span className="text-purple-300">Filtros aplicados:</span>
+      
+      {selectedNiveis.map((nivel: number) => (
+        <FilterTag 
+          key={`nivel-${nivel}`}
+          label={nivel === 0 ? 'Truque' : `Nível ${nivel}`}
+          onRemove={() => toggleNivelFilter(nivel)}
+        />
+      ))}
+      
+      {selectedEscolas.map((escola: string) => (
+        <FilterTag 
+          key={`escola-${escola}`}
+          label={escola}
+          onRemove={() => toggleEscolaFilter(escola)}
+        />
+      ))}
+      
+      {selectedClasses.map((classe: string) => (
+        <FilterTag 
+          key={`classe-${classe}`}
+          label={classe}
+          onRemove={() => toggleClasseFilter(classe)}
+        />
+      ))}
+      
+      <button
+        onClick={limparFiltros}
+        className="text-amber-400 hover:text-amber-300 text-sm"
+      >
+        Limpar todos
+      </button>
+    </div>
+  );
+}
+
+function FilterTag({ label, onRemove }: FilterTagProps) {
+  return (
+    <div className="flex items-center bg-purple-700/60 px-2 py-1 rounded-full border border-purple-500/30">
+      <span className="mr-1">{label}</span>
+      <button
+        onClick={onRemove}
+        className="text-purple-300 hover:text-white"
+      >
+        <FaTimes size={12} />
+      </button>
+    </div>
+  );
+}
+
+function FiltrosAvancados({
+  niveis,
+  selectedNiveis,
+  toggleNivelFilter,
+  selectedEscolas,
+  toggleEscolaFilter,
+  escolasMagia,
+  selectedClasses,
+  toggleClasseFilter,
+  classesMagia,
+  totalFiltrosAplicados,
+  limparFiltros
+}: FiltrosAvancadosProps) {
+  return (
+    <div className="mt-6 animate-fadeIn">
+      <div className="text-center mb-4">
+        <p className="text-sm text-purple-300">Selecione múltiplas opções em cada categoria para filtrar as magias</p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Filtro por nível */}
+        <FilterSection 
+          title="Nível da Magia"
+          layout="grid"
+        >
+          {niveis.map((nivel: number) => (
+            <ToggleButton
+              key={nivel}
+              label={nivel === 0 ? "Truque" : `Nível ${nivel}`}
+              isSelected={selectedNiveis.includes(nivel)}
+              onClick={() => toggleNivelFilter(nivel)}
+            />
+          ))}
+        </FilterSection>
+
+        {/* Filtro por escola */}
+        <FilterSection 
+          title="Escola de Magia"
+          layout="list"
+        >
+          {escolasMagia.map((escola: string) => (
+            <ToggleButton
+              key={escola}
+              label={escola}
+              isSelected={selectedEscolas.includes(escola)}
+              onClick={() => toggleEscolaFilter(escola)}
+              layout="list"
+            />
+          ))}
+        </FilterSection>
+        
+        {/* Filtro por classe */}
+        <FilterSection 
+          title="Classes"
+          layout="list"
+        >
+          {classesMagia.map((classe: string) => (
+            <ToggleButton
+              key={classe}
+              label={classe}
+              isSelected={selectedClasses.includes(classe)}
+              onClick={() => toggleClasseFilter(classe)}
+              layout="list"
+            />
+          ))}
+        </FilterSection>
+      </div>
+
+      {totalFiltrosAplicados > 0 && (
+        <div className="mt-6 flex justify-center">
+          <button
+            onClick={limparFiltros}
+            className="px-4 py-2 bg-purple-800/60 hover:bg-purple-700/60 border border-purple-500/30 rounded-lg transition-colors text-amber-300 flex items-center gap-2"
+          >
+            <FaTimes size={14} />
+            <span>Limpar todos os filtros</span>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FilterSection({ title, children, layout = "grid" }: FilterSectionProps) {
+  return (
+    <div>
+      <h3 className="text-amber-300 font-medium mb-3">{title}</h3>
+      <div className={layout === "grid" 
+        ? "flex flex-wrap gap-2" 
+        : "flex flex-col gap-2 max-h-60 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-amber-500/30 scrollbar-track-purple-900/20"
+      }>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function ToggleButton({ label, isSelected, onClick, layout = "grid" }: ToggleButtonProps) {
+  if (layout === "grid") {
+    return (
+      <button
+        onClick={onClick}
+        className={`
+          px-3 py-1.5 rounded-md border text-sm transition-colors relative
+          ${isSelected
+            ? "bg-amber-500/30 border-amber-500/60 text-amber-200"
+            : "bg-purple-800/40 border-purple-500/30 hover:bg-purple-700/50 text-purple-200"
+          }
+        `}
+      >
+        {label}
+        {isSelected && (
+          <span className="absolute -right-1 -top-1 w-3 h-3 bg-amber-500 rounded-full flex items-center justify-center">
+            <FaCheck size={6} className="text-purple-900" />
+          </span>
+        )}
+      </button>
+    );
+  }
+  
+  return (
+    <button
+      onClick={onClick}
+      className={`
+        px-3 py-1.5 rounded-md border text-sm text-left transition-colors flex items-center justify-between
+        ${isSelected
+          ? "bg-amber-500/30 border-amber-500/60 text-amber-200"
+          : "bg-purple-800/40 border-purple-500/30 hover:bg-purple-700/50 text-purple-200"
+        }
+      `}
+    >
+      {label}
+      {isSelected && (
+        <FaCheck size={12} className="text-amber-400 ml-2" />
+      )}
+    </button>
   );
 } 
