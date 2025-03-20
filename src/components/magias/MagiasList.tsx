@@ -6,12 +6,14 @@ import { useMemo, useState } from "react";
 
 interface MagiasListProps {
   magias: SpellData[];
+  onModalOpen: () => void;
+  onModalClose: () => void;
 }
 
 /**
  * Componente que exibe a lista de magias com paginação
  */
-export function MagiasList({ magias }: MagiasListProps) {
+export function MagiasList({ magias, onModalOpen, onModalClose }: MagiasListProps) {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(12);
 
@@ -36,7 +38,12 @@ export function MagiasList({ magias }: MagiasListProps) {
       {/* Lista de magias */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {paginatedMagias.map((magia, index) => (
-          <MagiaCard key={`${magia.name}-${index}`} magia={magia} />
+          <MagiaCard 
+            key={`${magia.name}-${index}`} 
+            magia={magia} 
+            onModalOpen={onModalOpen}
+            onModalClose={onModalClose}
+          />
         ))}
       </div>
 

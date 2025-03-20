@@ -18,6 +18,7 @@ export default function MagiasPage() {
   const [selectedNiveis, setSelectedNiveis] = useState<number[]>([]);
   const [selectedEscolas, setSelectedEscolas] = useState<string[]>([]);
   const [selectedClasses, setSelectedClasses] = useState<string[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Carregar os dados das magias
   useEffect(() => {
@@ -135,26 +136,32 @@ export default function MagiasPage() {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <MagiasHeader />
 
-        {/* Filtros */}
-        <div className="relative z-30">
-          <FilterBar 
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            selectedNiveis={selectedNiveis}
-            toggleNivelFilter={toggleNivelFilter}
-            selectedEscolas={selectedEscolas}
-            toggleEscolaFilter={toggleEscolaFilter}
-            escolasMagia={escolasMagia}
-            selectedClasses={selectedClasses}
-            toggleClasseFilter={toggleClasseFilter}
-            classesMagia={classesMagia}
-            limparFiltros={limparFiltros}
-          />
-        </div>
+        {/* Filtros - Oculta quando um modal está aberto */}
+        {!isModalOpen && (
+          <div className="relative z-30">
+            <FilterBar 
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              selectedNiveis={selectedNiveis}
+              toggleNivelFilter={toggleNivelFilter}
+              selectedEscolas={selectedEscolas}
+              toggleEscolaFilter={toggleEscolaFilter}
+              escolasMagia={escolasMagia}
+              selectedClasses={selectedClasses}
+              toggleClasseFilter={toggleClasseFilter}
+              classesMagia={classesMagia}
+              limparFiltros={limparFiltros}
+            />
+          </div>
+        )}
 
         {/* Conteúdo da lista de magias */}
         <div className="relative z-20 min-h-[400px]">
-          <MagiasList magias={filteredMagias} />
+          <MagiasList 
+            magias={filteredMagias} 
+            onModalOpen={() => setIsModalOpen(true)}
+            onModalClose={() => setIsModalOpen(false)}
+          />
           
           {/* Mensagem de desenvolvimento */}
           <div className="mt-12">

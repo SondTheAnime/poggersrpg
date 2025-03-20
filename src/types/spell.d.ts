@@ -50,6 +50,19 @@ export interface SpellClass {
   definedInSource?: string;
 }
 
+// Tipos para as entradas de texto da magia
+export type SpellEntryContent = string | SpellEntryObject;
+
+export interface SpellEntryObject {
+  type?: string;
+  name?: string;
+  caption?: string;
+  text?: string;
+  items?: SpellEntryContent[];
+  entries?: SpellEntryContent[];
+  [key: string]: string | number | boolean | SpellEntryContent | SpellEntryContent[] | undefined;
+}
+
 export interface SpellData {
   name: string;
   source: string;
@@ -62,8 +75,8 @@ export interface SpellData {
   range: SpellRange;
   components: SpellComponents;
   duration: SpellDuration[];
-  entries: string[];
-  entriesHigherLevel?: string[];
+  entries: SpellEntryContent[];
+  entriesHigherLevel?: SpellEntryContent[];
   scalingLevelDice?: ScalingLevelDice;
   damageInflict?: string[];
   damageResist?: string[];
