@@ -351,9 +351,42 @@ function FiltrosAvancados({
           title="Fontes"
           layout="list"
         >
-          {availableSources.map((source) => (
+          <div className="mb-2 flex justify-between items-center">
+            <button
+              onClick={() => {
+                // Verificar se todas as fontes já estão selecionadas
+                const todasSelecionadas = availableSources.every(source => 
+                  selectedSources.includes(source.id)
+                );
+                
+                // Se todas estiverem selecionadas, desmarcar todas
+                // Se não, selecionar todas
+                availableSources.forEach(source => {
+                  if (todasSelecionadas) {
+                    if (selectedSources.includes(source.id)) {
+                      toggleSourceFilter(source.id);
+                    }
+                  } else {
+                    if (!selectedSources.includes(source.id)) {
+                      toggleSourceFilter(source.id);
+                    }
+                  }
+                });
+              }}
+              className="text-sm text-amber-300 hover:text-amber-200 mb-1 flex items-center"
+            >
+              <span className="mr-1">
+                {availableSources.every(source => selectedSources.includes(source.id)) 
+                  ? "Desmarcar Todas" 
+                  : "Selecionar Todas"}
+              </span>
+              <FaCheck size={10} className={availableSources.every(source => selectedSources.includes(source.id)) ? "opacity-100" : "opacity-0"} />
+            </button>
+          </div>
+          
+          {availableSources.map((source, index) => (
             <ToggleButton
-              key={source.id}
+              key={`source-${source.id}-${index}`}
               label={source.id}
               isSelected={selectedSources.includes(source.id)}
               onClick={() => toggleSourceFilter(source.id)}
