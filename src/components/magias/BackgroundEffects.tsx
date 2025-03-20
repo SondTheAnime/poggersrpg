@@ -24,7 +24,7 @@ export function BackgroundEffects() {
       </div>
 
       {/* Efeito de pergaminho antigo */}
-      <div className="absolute inset-0 bg-[url('/parchment-texture.png')] opacity-5 mix-blend-overlay pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('/parchment-texture.jpg')] opacity-5 mix-blend-overlay pointer-events-none" />
     </>
   );
 } 

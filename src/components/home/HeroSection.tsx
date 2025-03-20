@@ -47,7 +47,7 @@ export function HeroSection() {
       </div>
 
       <p className="text-lg mb-10 text-amber-100/60">
-        Acesse nossa coleção completa de magias de D&D 5e em português, 
+        Acesse a coleção completa de magias de D&D 5e em português (ou quase), 
         com filtros por nível, classe, escola de magia e muito mais.
       </p>
 
